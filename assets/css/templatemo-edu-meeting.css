@@ -364,11 +364,11 @@ header
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
-    height: 170px;
+    height: 140px;
 }
 
 .header-area.header-sticky {
-    min-height: 120px;
+    min-height: 140px;
 }
 
 .header-area .main-nav .nav {
@@ -609,11 +609,12 @@ header
 }
 
 .header-area.header-sticky {
-    min-height: 170px;
+    min-height: 140px;
 }
 
 .header-area .nav {
-    margin-top: 30px;
+    margin-top: 2px;
+    /* Cambiar el tamaño de separación del navbar (Listas)*/
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -621,10 +622,8 @@ header
 }
 
 @media (max-width: 1180px) {
-
-
     .header-area.header-sticky {
-        min-height: 170px;
+        min-height: 150px;
     }
     .header-area .main-nav .logo {
         color: #1e1e1e;
@@ -671,7 +670,8 @@ header
         border-top: 1px solid #eee;
     }
     .header-area.header-sticky .nav {
-        margin-top: 100px !important;
+        /* Margen de separación del navbar (Lista de navegación) */
+        margin-top: 75px !important;
     }
     .header-area .main-nav .nav li {
         width: 100%;
@@ -732,12 +732,11 @@ header
     }
 }
 
-@media(max-width: 1105px){
-    .header-area{
-        height: 190px;
+@media(max-width: 1105px) {
+    .header-area {
+        height: 170px;
     }
 }
-
 
 @media(max-width:380px) {
     .logo-home {
@@ -2161,11 +2160,15 @@ nav a:visited {
     flex-direction: column;
 }
 
+.mobile-menu-back-link {
+    color: #fff;
+}
+
+.algebraix {
+    display: none;
+}
+
 @media all and (min-width: 951px) {
-    .nav {
-        /* margin-top: 50px; */
-        /* background: #da0c0c; */
-    }
     .nav>nav {
         max-width: 100%;
         margin: 0 auto;
@@ -2286,7 +2289,7 @@ nav a:visited {
     }
     .mobile-menu-header {
         order: -1;
-        background: grey;
+        background: rgb(4, 162, 224);
     }
     .mobile-menu-header a {
         padding: 20px 25px;
@@ -2350,7 +2353,7 @@ nav a:visited {
         order: -1;
     }
     .mobile-menu-back-item a {
-        background: tint(grey, 70%);
+        background: tint(rgb(128, 128, 128), 70%);
         color: #2a2a2a;
         max-height: calc(1.4em + 40px);
         margin-top: calc(0px - (1.4em + 40px));
@@ -2395,10 +2398,36 @@ nav a:visited {
     }
 }
 
-@media all and (max-width: 950px) and (hover: none) {
+@media(max-width: 950px) {
     .menu-bar {
-        background-color: rgb(209, 23, 23);
+        background-color: rgb(255, 255, 255);
     }
+    .mega-menu {
+        height: 93.1vh;
+    }
+    .menu-link {
+        color: #000;
+        /* border-bottom: 0.01em solid rgb(0, 162, 255); */
+    }
+    .mega-menu .menu-list .menu-link {
+        color: #fff;
+        border: none;
+    }
+    .menu-list-link {
+        background-color: #09c;
+    }
+    .algebraix {
+        display: block;
+    }
+    .sub-header {
+        z-index: 1111;
+    }
+    .header-area {
+        z-index: 1112;
+    }
+}
+
+@media all and (max-width: 950px) and (hover: none) {
     .mobile-menu-trigger:hover~ul {
         left: 0;
     }

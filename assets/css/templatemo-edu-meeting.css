@@ -2280,7 +2280,7 @@ nav a:visited {
         display: block;
     }
     .mobile-menu-trigger {
-        background: #177E89;
+        /* background: #177E89; */
         color: #ffffff;
         border: 0;
         padding: 10px;
@@ -2424,6 +2424,15 @@ nav a:visited {
     }
     .header-area {
         z-index: 1112;
+        height: 100px;
+    }
+    .header-area.header-sticky .nav {
+        margin-top: 10px !important;
+        margin-left: 85%;
+        /* min-height: 10px; */
+    }
+    .header-area.header-sticky {
+        min-height: 100px;
     }
 }
 

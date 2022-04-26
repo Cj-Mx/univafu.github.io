@@ -1112,7 +1112,7 @@ apply now
 */
 
 section.apply-now {
-    background-image: url(../images/apply-bg.jpg);
+    background-image: url(../images/noticias/noticia2.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1353,7 +1353,11 @@ our facts
 */
 
 section.our-facts {
-    background-image: url(../images/facts-bg.jpg);
+    background: linear-gradient(
+	rgba(0,0,0,0.7),
+	rgba(0,0,0,0.7)
+), url('../images/fondo.jpg') no-repeat center center fixed;
+background-size: 100% 100%;  
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1482,7 +1486,8 @@ section.contact-us #contact textarea {
 section.contact-us #contact button {
     font-size: 13px;
     color: #fff;
-    background-color: #3d95d4;
+    /* background-color: #3d95d4; */
+    background-color: rgb(5, 100, 163);
     padding: 12px 30px;
     display: inline-block;
     border-radius: 22px;
@@ -1498,7 +1503,8 @@ section.contact-us #contact button:hover {
 }
 
 section.contact-us .right-info {
-    background-color: #3d95d4;
+    /* background-color: #3d95d4; */
+    background-color: rgba(0, 128, 214, 0.555);
     border-radius: 20px;
     padding: 40px;
 }
@@ -2301,10 +2307,9 @@ nav a:visited {
         display: block;
     }
     .mobile-menu-trigger {
-        /* background: #177E89; */
         color: #ffffff;
         border: 0;
-        padding: 10px;
+        padding-top: 5px;
         font-size: 1.2em;
         border-radius: 4px;
     }

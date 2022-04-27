@@ -319,6 +319,8 @@ header
     color: #f5a425;
 }
 
+
+/* Cambiar el fondo de el navbar */
 .background-header {
     background-color: rgba(0, 0, 0, 0.99)!important;
     height: 80px!important;
@@ -964,7 +966,11 @@ upcoming notices
 */
 
 section.upcoming-notices {
-    background-image: url(../images/notices-bg.jpg);
+      background: linear-gradient(
+	rgba(3, 37, 68, 0.459),
+	rgba(0, 0, 0, 0.4),
+	rgba(3, 37, 68, 0.459)
+), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1200,12 +1206,16 @@ section.apply-now .item p {
 
 /* 
 ---------------------------------------------
-courses
+promociones
 --------------------------------------------- 
 */
 
-section.our-courses {
-    background-image: url(../images/notices-bg.jpg);
+section.our-promociones {
+    /* background-image: url(../images/notices-bg.jpg); */
+    background: linear-gradient(
+	rgba(3, 37, 68, 0.459),
+	rgba(0, 0, 0, 0.4)
+), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1214,11 +1224,11 @@ section.our-courses {
     padding-bottom: 130px;
 }
 
-.our-courses .item .down-content {
+.our-promociones .item .down-content {
     background-color: #fff;
 }
 
-.our-courses .item .down-content h4 {
+.our-promociones .item .down-content h4 {
     padding: 25px;
     font-size: 18px;
     color: #1f272b;
@@ -1226,21 +1236,21 @@ section.our-courses {
     border-bottom: 1px solid #eee;
 }
 
-.our-courses .item .down-content .info {
+.our-promociones .item .down-content .info {
     padding: 25px;
 }
 
-.our-courses .item .down-content .info ul li {
+.our-promociones .item .down-content .info ul li {
     display: inline-block;
     margin-right: 1px;
 }
 
-.our-courses .item .down-content .info ul li i {
+.our-promociones .item .down-content .info ul li i {
     color: #f5a425;
     font-size: 14px;
 }
 
-.our-courses .item .down-content .info span {
+.our-promociones .item .down-content .info span {
     color: #a12c2f;
     font-size: 15px;
     font-weight: 600;
@@ -1249,7 +1259,7 @@ section.our-courses {
     width: 100%;
 }
 
-.our-courses .owl-nav {
+.our-promociones .owl-nav {
     text-align: center;
     position: absolute;
     width: 100%;
@@ -1257,14 +1267,14 @@ section.our-courses {
     transform: translateY(-45px);
 }
 
-.our-courses .owl-dots {
+.our-promociones .owl-dots {
     display: inline-block;
     text-align: center;
     width: 100%;
     margin-top: 40px;
 }
 
-.our-courses .owl-dots .owl-dot {
+.our-promociones .owl-dots .owl-dot {
     transition: all .5s;
     width: 7px;
     height: 7px;
@@ -1274,25 +1284,25 @@ section.our-courses {
     outline: none;
 }
 
-.our-courses .owl-dots .active {
+.our-promociones .owl-dots .active {
     width: 24px;
     height: 8px;
     border-radius: 4px;
 }
 
-.our-courses .owl-nav .owl-prev {
+.our-promociones .owl-nav .owl-prev {
     margin-right: 10px;
     outline: none;
     position: absolute;
     left: -80px;
 }
 
-.our-courses .owl-nav .owl-prev span,
-.our-courses .owl-nav .owl-next span {
+.our-promociones .owl-nav .owl-prev span,
+.our-promociones .owl-nav .owl-next span {
     opacity: 0;
 }
 
-.our-courses .owl-nav .owl-prev:before {
+.our-promociones .owl-nav .owl-prev:before {
     display: inline-block;
     font-family: 'FontAwesome';
     color: #1e1e1e;
@@ -1306,32 +1316,32 @@ section.our-courses {
     line-height: 50px;
 }
 
-.our-courses .owl-nav .owl-prev {
+.our-promociones .owl-nav .owl-prev {
     opacity: 1;
     transition: all .5s;
 }
 
-.our-courses .owl-nav .owl-prev:hover {
+.our-promociones .owl-nav .owl-prev:hover {
     opacity: 0.9;
 }
 
-.our-courses .owl-nav .owl-next {
+.our-promociones .owl-nav .owl-next {
     opacity: 1;
     transition: all .5s;
 }
 
-.our-courses .owl-nav .owl-next:hover {
+.our-promociones .owl-nav .owl-next:hover {
     opacity: 0.9;
 }
 
-.our-courses .owl-nav .owl-next {
+.our-promociones .owl-nav .owl-next {
     margin-left: 10px;
     outline: none;
     position: absolute;
     right: -85px;
 }
 
-.our-courses .owl-nav .owl-next:before {
+.our-promociones .owl-nav .owl-next:before {
     display: inline-block;
     font-family: 'FontAwesome';
     color: #1e1e1e;
@@ -1343,6 +1353,10 @@ section.our-courses {
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+}
+
+.oferta-img{
+    height: 350px;
 }
 
 
@@ -1428,7 +1442,12 @@ contact us
 */
 
 section.contact-us {
-    background-image: url(../images/notices-bg.jpg);
+    /* background-image: url(../images/notices-bg.jpg); */
+    background: linear-gradient(
+	rgba(3, 37, 68, 0.459),
+	rgba(0, 0, 0, 0.4),
+	rgba(3, 37, 68, 0.459)
+), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1611,7 +1630,12 @@ upcoming notices page
 */
 
 section.notices-page {
-    background-image: url(../images/notices-bg.jpg);
+    /* background-image: url(../images/notices-bg.jpg); */
+    background: linear-gradient(
+	rgba(3, 37, 68, 0.459),
+	rgba(0, 0, 0, 0.4),
+	rgba(3, 37, 68, 0.459)
+), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1843,10 +1867,10 @@ responsive
     .services .owl-nav .owl-prev {
         left: -25px;
     }
-    .our-courses .owl-nav .owl-next {
+    .our-promociones .owl-nav .owl-next {
         right: -30px;
     }
-    .our-courses .owl-nav .owl-prev {
+    .our-promociones .owl-nav .owl-prev {
         left: -25px;
     }
 }
@@ -1858,10 +1882,10 @@ responsive
     .services .owl-nav .owl-prev {
         left: -65px;
     }
-    .our-courses .owl-nav .owl-next {
+    .our-promociones .owl-nav .owl-next {
         right: -70px;
     }
-    .our-courses .owl-nav .owl-prev {
+    .our-promociones .owl-nav .owl-prev {
         left: -65px;
     }
 }
@@ -1873,10 +1897,10 @@ responsive
     .services .owl-nav .owl-prev {
         left: -25px;
     }
-    .our-courses .owl-nav .owl-next {
+    .our-promociones .owl-nav .owl-next {
         right: -30px;
     }
-    .our-courses .owl-nav .owl-prev {
+    .our-promociones .owl-nav .owl-prev {
         left: -25px;
     }
 }
@@ -1888,10 +1912,10 @@ responsive
     .services .owl-nav .owl-prev {
         display: none;
     }
-    .our-courses .owl-nav .owl-next {
+    .our-promociones .owl-nav .owl-next {
         display: none;
     }
-    .our-courses .owl-nav .owl-prev {
+    .our-promociones .owl-nav .owl-prev {
         display: none;
     }
 }

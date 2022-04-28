@@ -2591,3 +2591,23 @@ nav a:visited {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.btn-algebraix:hover{
+    color:rgb(2, 127, 177);
+    background: #eee
+}
+
+.btn-algebraix-close{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.btn-algebraix-close>span{
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.btn-algebraix-close>span:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

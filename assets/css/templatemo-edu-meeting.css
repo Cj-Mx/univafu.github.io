@@ -1506,7 +1506,7 @@ section.contact-us #contact button {
     font-size: 13px;
     color: #fff;
     /* background-color: #3d95d4; */
-    background-color: rgb(157, 201, 231);
+    background-color: rgb(33, 148, 224);
     padding: 12px 30px;
     display: inline-block;
     border-radius: 22px;
@@ -1526,7 +1526,6 @@ section.contact-us .right-info {
     background-color: rgba(31, 192, 255, 0.555);
     border-radius: 20px;
     padding: 40px;
-    height: 490px;
 }
 
 section.contact-us .right-info ul li {
@@ -1574,7 +1573,7 @@ section.contact-us .icon-group-text i {
     display: grid;
     /* grid-template-columns: repeat(4fr); */
     grid-template-columns: repeat(4, 1fr);
-    
+    gap:1em;
 }
 
 .grid-redes>a{
@@ -1591,8 +1590,9 @@ section.contact-us .icon-group-text i {
 .grid-redes>a:hover{
     
     transition: 0.3s;
-    border: 5px solid #fff;
     transform: translateY(-10px);
+    border: 5px solid #fff;
+
 }
 
 .grid-redes>a>i{
@@ -1618,6 +1618,19 @@ section.contact-us .icon-group-text i {
     color: #f5a425;
 }
 
+
+@media(max-width:1250px){
+    .grid-redes{
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 992px){
+    .grid-redes{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 /*
 ---------------------------------------------

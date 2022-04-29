@@ -31,7 +31,7 @@ https://templatemo.com/tm-569-edu-notice
 
 <body>
 
-  <!-- Modal -->
+<!-- Modal algebraix -->
 <div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -57,8 +57,8 @@ https://templatemo.com/tm-569-edu-notice
                                       <input name="password" type="password" value="" class="input form-control" id="password" placeholder="Contraseña" required="true" aria-label="password" aria-describedby="basic-addon1" />
                                       <div class="input-group-append">
                                         <span class="input-group-text" onclick="password_show_hide();" style="height: 100%;">
-                                          <i class="fa fa-eye" id="show_eye" style="height: 100%;"></i>
-                                          <i class="fa fa-eye-slash d-none" id="hide_eye" ></i>
+                                          <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
+                                          <i class="fa fa-eye-slash " id="hide_eye" ></i>
                                         </span>
                                       </div>
                                     </div>
@@ -79,15 +79,15 @@ function password_show_hide() {
   var x = document.getElementById("password");
   var show_eye = document.getElementById("show_eye");
   var hide_eye = document.getElementById("hide_eye");
-  hide_eye.classList.remove("d-none");
+  show_eye.classList.remove("d-none");
   if (x.type === "password") {
     x.type = "text";
-    show_eye.style.display = "none";
-    hide_eye.style.display = "block";
-  } else {
-    x.type = "password";
     show_eye.style.display = "block";
     hide_eye.style.display = "none";
+  } else {
+    x.type = "password";
+    show_eye.style.display = "none";
+    hide_eye.style.display = "block";
   }
 }
 </script>

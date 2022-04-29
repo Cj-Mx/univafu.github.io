@@ -45,7 +45,7 @@ https://templatemo.com/tm-569-edu-notice
     </div>
 
 <!-- Modal -->
-<div class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
+<div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #0083ee;">
@@ -54,7 +54,7 @@ https://templatemo.com/tm-569-edu-notice
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" >
             <form #algeForm  method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/" target="_blank" >
                 <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
                                 <div class="col-12">
@@ -107,9 +107,10 @@ function password_show_hide() {
    <!-- ***** Inicio de la cabecera ***** -->
    <header class="header-area header-sticky">
     <div class="container-header">
-        <div class="content-logo-home">
+        <div class="content-logo-home" style="display: flex; justify-content: space-between;">
             <!-- Logo de la cabecera en la página-->
             <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+            <a id="acceso" href="#" class="menu-link menu-bar-link btn-algebraix-acceso" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
         </div>
 
         <!--Navbar - Lista de opciones-->
@@ -1162,9 +1163,6 @@ function password_show_hide() {
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     
-    <script src="./js/router.js"></script>
-    <script src="./js/routes.js"></script>
-    <script src="./js/index.js"></script>
     <!-- <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');

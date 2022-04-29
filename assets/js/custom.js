@@ -7,10 +7,20 @@
 	  var box = $('.header-text').height();
 	  var header = $('header').height();
 
+	  var elem = document.getElementById('acceso')
+
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
+		if(window.innerWidth < 951){
+			elem.style.display = 'none'
+		}
+		else{elem.style.display = 'block'}
+		// document.getElementById('acceso').addClass("btn-algebraix-acceso");
+		// $("").addClass("btn-algebraix-acceso");
 	  } else {
 	    $("header").removeClass("background-header");
+		elem.style.display = 'none';
+
 	  }
 	});
 	
@@ -168,7 +178,7 @@
 				var width = $(window).width();
 				if(width < 991) {
 					$('.menu-trigger').removeClass('active');
-					$('.header-area .nav').slideUp(200);	
+					$('.header-area .nav').slideUp(200);
 				}				
 				$('html,body').animate({
 					scrollTop: (target.offset().top) - 80

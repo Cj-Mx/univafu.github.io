@@ -12,6 +12,7 @@
 	  if (scroll >= box - header) {
 		elem.style.background = '#000';
 		elem.style.position = 'fixed';
+		elem.style.width = '100%'
 		$("header").addClass("background-header");
 
 		// if(window.innerWidth < 951){

@@ -325,7 +325,7 @@ header
     background-color: rgba(0, 0, 0, 0.99)!important;
     height: 80px!important;
     position: fixed!important;
-    top: 0!important;
+    top: 30px!important;
     left: 0;
     right: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)!important;

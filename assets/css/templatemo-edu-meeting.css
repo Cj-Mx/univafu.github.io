@@ -1532,6 +1532,7 @@ section.contact-us .right-info {
     background-color: rgba(31, 192, 255, 0.555);
     border-radius: 20px;
     padding: 40px;
+    width: 100%;
 }
 
 section.contact-us .right-info ul li {

@@ -32,236 +32,229 @@ https://templatemo.com/tm-569-edu-notice
 
 <body>
 
-    
 
-<!-- Modal algebraix -->
-<div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color: #0083ee;">
-          <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix</h5>
-          <button type="button" class="close btn-algebraix-close"   data-dismiss="modal" aria-label="Close">
+
+    <!-- Modal algebraix -->
+    <div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #0083ee;">
+                    <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix</h5>
+                    <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
-        <div class="modal-body" >
-            <form #algeForm  method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/" target="_blank" >
-                <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
-                                <div class="col-12">
-                                    <div class="input-group mb-3">
-                                      <div class="input-group-prepend">
+                </div>
+                <div class="modal-body">
+                    <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/" target="_blank">
+                        <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i class="fa fa-user"></i></span>
-                                      </div>
-                                      <input name="username" type="text" value="" class="input form-control" id="username" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <div class="input-group mb-3">
-                                      <input name="password" type="password" value="" class="input form-control" id="password" placeholder="Contraseña" required="true" aria-label="password" aria-describedby="basic-addon1" />
-                                      <div class="input-group-append">
+                                    <input name="username" type="text" value="" class="input form-control" id="username" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <input name="password" type="password" value="" class="input form-control" id="password" placeholder="Contraseña" required="true" aria-label="password" aria-describedby="basic-addon1" />
+                                    <div class="input-group-append">
                                         <span class="input-group-text" onclick="password_show_hide();" style="height: 100%;">
                                           <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
                                           <i class="fa fa-eye-slash " id="hide_eye" ></i>
                                         </span>
-                                      </div>
                                     </div>
-                                  </div>
                                 </div>
-                                <div style="display: flex; justify-content: flex-end;">
-                                    <button type="button" class="btn btn-algebraix" data-dismiss="modal" style="margin-right: 10px;">Cerrar</button>
-                                    <button class="btn btn-algebraix" type="submit" onclick="algerForm.submit()">Ingresar</button>
-                                  </div>      
-            </form>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button type="button" class="btn btn-algebraix" data-dismiss="modal" style="margin-right: 10px;">Cerrar</button>
+                            <button class="btn btn-algebraix" type="submit" onclick="algerForm.submit()">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-<script>
-function password_show_hide() {
-  var x = document.getElementById("password");
-  var show_eye = document.getElementById("show_eye");
-  var hide_eye = document.getElementById("hide_eye");
-  show_eye.classList.remove("d-none");
-  if (x.type === "password") {
-    x.type = "text";
-    show_eye.style.display = "block";
-    hide_eye.style.display = "none";
-  } else {
-    x.type = "password";
-    show_eye.style.display = "none";
-    hide_eye.style.display = "block";
-  }
-}
-</script>
-<div >
-<!-- Sub Header -->
-<div class="sub-header" id="sub-header" >
-    <div class="container">
-        <ul>
-            <li><a href="https://es-la.facebook.com/univafu.oficial/" target="_blank"><i
+    <script>
+        function password_show_hide() {
+            var x = document.getElementById("password");
+            var show_eye = document.getElementById("show_eye");
+            var hide_eye = document.getElementById("hide_eye");
+            show_eye.classList.remove("d-none");
+            if (x.type === "password") {
+                x.type = "text";
+                show_eye.style.display = "block";
+                hide_eye.style.display = "none";
+            } else {
+                x.type = "password";
+                show_eye.style.display = "none";
+                hide_eye.style.display = "block";
+            }
+        }
+    </script>
+    <div>
+        <!-- Sub Header -->
+        <div class="sub-header" id="sub-header">
+            <div class="container">
+                <ul>
+                    <li><a href="https://es-la.facebook.com/univafu.oficial/" target="_blank"><i
                         class="fa fa-facebook"></i></a></li>
-            <li>
-                <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
-            </li>
-        </ul>
-    </div>
-</div>
-   <!-- ***** Inicio de la cabecera ***** -->
-   <header class="header-area header-sticky">
-    <div class="container-header">
-        <div class="content-logo-home" style="display: flex; justify-content: space-between;">
-            <!-- Logo de la cabecera en la página-->
-            <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
-            <!-- <a id="acceso" href="#" class="menu-link menu-bar-link btn-algebraix-acceso" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a> -->
-        </div>
-
-        <!--Navbar - Lista de opciones-->
-        <div class="nav">
-            <nav>
-                <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
-                <ul class="menu menu-bar">
-                     <li>
-                        <a href="https://cj-mx.github.io/univafu.github.io/" class="menu-link menu-bar-link">Inicio</a>
-                    </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
-                            del valle del fuerte</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a href="https://cj-mx.github.io/univafu.github.io/colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
-                            </li>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                    style="color: #fff">Volver</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Prepa
-                            Univafu</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/Higiene-y-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
-                            </li>
-                            <li>
-                                <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
-                            </li>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                    style="color: #fff">Volver</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
-                            Universidad</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
-                                    aria-haspopup="true">Licenciaturas</a>
-                                <ul class="menu menu-list">
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/nutricion.html" class="menu-link menu-list-link">Licenciatura en
-                                            Nutrición</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-fisica.html" class="menu-link menu-list-link">Licenciatura en Terapia
-                                            Fisica y Rehabilitación</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-audicion.html" class="menu-link menu-list-link">Licenciatura Terapia
-                                            Audición y Lenguaje</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/marketing-digital.html" class="menu-link menu-list-link">Licenciatura Marketing
-                                            Digital</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
-                                    aria-haspopup="true">Posgrados</a>
-                                <ul class="menu menu-list">
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/desarrollo-capital-humano.html" class="menu-link menu-list-link">Maestria Des. Cap. H</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/nutricion-clinica.html" class="menu-link menu-list-link">Maestría Nutrición Cli. Y
-                                            H.</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/especialidad-prevencion.html" class="menu-link menu-list-link">Especialidad Prevención y
-                                            Rehabilitación</a>
-                                    </li>
-                                </ul>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                    style="color: #fff">Volver</a>
-                            </li>
-
+                        <a href="#" class="k" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
                     </li>
                 </ul>
-                </li>
+            </div>
+        </div>
+        <!-- ***** Inicio de la cabecera ***** -->
+        <header class="header-area header-sticky">
+            <div class="container-header">
+                <div class="content-logo-home" style="display: flex; justify-content: space-between;">
+                    <!-- Logo de la cabecera en la página-->
+                    <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+                    <!-- <a id="acceso" href="#" class="menu-link menu-bar-link btn-algebraix-acceso" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a> -->
+                </div>
+
+                <!--Navbar - Lista de opciones-->
+                <div class="nav">
+                    <nav>
+                        <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
+                        <ul class="menu menu-bar">
+                            <li>
+                                <a href="https://cj-mx.github.io/univafu.github.io/" class="menu-link menu-bar-link">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
+                            del valle del fuerte</a>
+                                <ul class="mega-menu mega-menu--multiLevel">
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
+                                    </li>
+                                    <li class="mobile-menu-back-item">
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Prepa
+                            Univafu</a>
+                                <ul class="mega-menu mega-menu--multiLevel">
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/Higiene-y-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
+                                    </li>
+                                    <li class="mobile-menu-back-item">
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
+                            Universidad</a>
+                                <ul class="mega-menu mega-menu--multiLevel">
+                                    <li>
+                                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Licenciaturas</a>
+                                        <ul class="menu menu-list">
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/nutricion.html" class="menu-link menu-list-link">Licenciatura en
+                                            Nutrición</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-fisica.html" class="menu-link menu-list-link">Licenciatura en Terapia
+                                            Fisica y Rehabilitación</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-audicion.html" class="menu-link menu-list-link">Licenciatura Terapia
+                                            Audición y Lenguaje</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/marketing-digital.html" class="menu-link menu-list-link">Licenciatura Marketing
+                                            Digital</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Posgrados</a>
+                                        <ul class="menu menu-list">
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/desarrollo-capital-humano.html" class="menu-link menu-list-link">Maestria Des. Cap. H</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/nutricion-clinica.html" class="menu-link menu-list-link">Maestría Nutrición Cli. Y
+                                            H.</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/especialidad-prevencion.html" class="menu-link menu-list-link">Especialidad Prevención y
+                                            Rehabilitación</a>
+                                            </li>
+                                        </ul>
+                                        <li class="mobile-menu-back-item">
+                                            <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                        </li>
+
+                                    </li>
+                                </ul>
+                            </li>
 
 
-                <li>
-                    <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Fundación
+                            <li>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Fundación
                         Univafu</a>
-                    <ul class="mega-menu mega-menu--flat">
-                        <li>
-                            <a href="https://cj-mx.github.io/univafu.github.io/fundacion-univafu/clinica.html" class="menu-link menu-bar-link">Clinica</a>
-                        </li>
-                        <li class="mobile-menu-back-item">
-                            <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                style="color: #fff">Volver</a>
-                        </li>
+                                <ul class="mega-menu mega-menu--multiLevel">
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/fundacion-univafu/clinica.html" class="menu-link menu-bar-link">Clinica</a>
+                                    </li>
+                                    <li class="mobile-menu-back-item">
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                    </li>
 
-                    </ul>
-                </li>
+                                </ul>
+                            </li>
 
 
-                <li>
-                    <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
+                            <li>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
                         Idiomas</a>
-                    <ul class="mega-menu mega-menu--multiLevel">
-                        <li>
-                            <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/ingles.html" class="menu-link menu-bar-link">Ingles</a>
-                        </li>
-                        <li>
-                            <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/frances.html" class="menu-link menu-bar-link">Frances</a>
-                        </li>
-                        <li>
-                            <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/chino.html" class="menu-link menu-bar-link">Chino</a>
-                        </li>
-                        <li class="mobile-menu-back-item">
-                            <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                style="color: #fff">Volver</a>
-                        </li>
+                                <ul class="mega-menu mega-menu--multiLevel">
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/ingles.html" class="menu-link menu-bar-link">Ingles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/frances.html" class="menu-link menu-bar-link">Frances</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/chino.html" class="menu-link menu-bar-link">Chino</a>
+                                    </li>
+                                    <li class="mobile-menu-back-item">
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                    </li>
 
-                    </ul>
-                </li>
+                                </ul>
+                            </li>
 
-                <!-- <li class="algebraix">
+                            <!-- <li class="algebraix">
                     <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
                 </li> -->
-                <li class="mobile-menu-header">
-                    <a href="#" class="">
-                        <!-- <span>UNIVAFU</span> -->
-                        <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
-                    </a>
-                </li>
-                </ul>
-            </nav>
-        </div>
+                            <li class="mobile-menu-header">
+                                <a href="#" class="">
+                                    <!-- <span>UNIVAFU</span> -->
+                                    <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
+            </div>
+        </header>
     </div>
-</header>
-</div>
 
-<!-- ***** Fin de la cabecera ***** -->
+    <!-- ***** Fin de la cabecera ***** -->
 
     <!-- ***** Main Banner Area de inicio ***** -->
     <section class="section main-banner" id="top" data-section="section1">
@@ -277,11 +270,8 @@ function password_show_hide() {
                         <div class="caption">
                             <h6>Hola estudiantes</h6>
                             <h2>Bienvenidos univafu</h2>
-                            <p>This is an edu notice HTML CSS template provided by <a rel="nofollow"
-                                    href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is
-                                a Bootstrap v5.1.3 layout. The video background is taken from Pexels
-                                website, a group of young people by <a rel="nofollow"
-                                    href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
+                            <p>This is an edu notice HTML CSS template provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels
+                                website, a group of young people by <a rel="nofollow" href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
                             <div class="main-button">
                                 <div class="scroll-to-section"><a href="#contact">Accede</a></div>
                             </div>
@@ -306,8 +296,8 @@ function password_show_hide() {
                             </div>
                             <div class="down-content">
                                 <h4>Estudia con nosotros</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                                </p>
                             </div>
                         </div>
 
@@ -318,8 +308,7 @@ function password_show_hide() {
                             </div>
                             <div class="down-content">
                                 <h4>Docentes especializados Nacionales y Extranjeros</h4>
-                                <p>Cercanos, dedicados, comprometidos y enfocados para apoyarte en el desarrollo de tus
-                                    competencias profesionales, preparándote para el futuro.</p>
+                                <p>Cercanos, dedicados, comprometidos y enfocados para apoyarte en el desarrollo de tus competencias profesionales, preparándote para el futuro.</p>
                             </div>
                         </div>
 
@@ -331,8 +320,8 @@ function password_show_hide() {
                             </div>
                             <div class="down-content">
                                 <h4>Nuesto campus</h4>
-                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non
-                                    vestibulum.</p>
+                                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -355,13 +344,19 @@ function password_show_hide() {
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="redes-sociales" style="background-color: rgba(0, 128, 214, 0.555);">
+                    <div class="redes-sociales" style="background-color: #3d95d4c9;">
                         <h4 style="color: #fff;">REDES SOCIALES</h4>
                         <ul>
                             <li class="red-social"> <a href="https://es-la.facebook.com/univafu.oficial/" target="_blank" style="color: #fff;"><i class="fa fa-facebook"></i> Facebook</a></li>
-                            <li class="red-social" style="background-color: #00ACEE; "><a href="https://twitter.com/univafu_oficial" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i> Twitter</a></li>
-                            <li class="red-social instagram" ><a href="https://www.instagram.com/univafuuniversidad/" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-instagram"></i> Instagram</a></li>
-                            <li class="red-social"  style="background-color: #C4302B"><a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i> Youtube</a></li>
+                            <li class="red-social" style="background-color: #00ACEE; ">
+                                <a href="https://twitter.com/univafu_oficial" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i> Twitter</a>
+                            </li>
+                            <li class="red-social instagram">
+                                <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-instagram"></i> Instagram</a>
+                            </li>
+                            <li class="red-social" style="background-color: #C4302B">
+                                <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i> Youtube</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -371,8 +366,7 @@ function password_show_hide() {
                             <div class="notice-item">
                                 <div class="thumb">
                                     <!-- Aqui se debe cambiar la dirección de la imagen para la noticia. -->
-                                    <img src="assets/images/noticias/noticia1.jpg" alt="New Lecturer notice"
-                                        class="notice-img">
+                                    <img src="assets/images/noticias/noticia1.jpg" alt="New Lecturer notice" class="notice-img">
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
@@ -382,13 +376,10 @@ function password_show_hide() {
                                     <!-- Titulo de la noticia -->
                                     <h4>Noticia 1</h4>
                                     <!-- Descripción de la noticia -->
-                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem
-                                        ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti
-                                        consectetur culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
+                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur
+                                        culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#noticia1">Leer Más</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noticia1">Leer Más</button>
                                 </div>
                             </div>
                         </div>
@@ -396,8 +387,7 @@ function password_show_hide() {
                             <div class="notice-item">
                                 <div class="thumb">
                                     <!-- Aqui se debe cambiar la dirección de la imagen para la noticia. -->
-                                    <img src="assets/images/noticias/noticia2.jpg" alt="New Lecturer notice"
-                                        class="notice-img">
+                                    <img src="assets/images/noticias/noticia2.jpg" alt="New Lecturer notice" class="notice-img">
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
@@ -407,13 +397,10 @@ function password_show_hide() {
                                     <!-- Titulo de la noticia -->
                                     <h4>Noticia 2</h4>
                                     <!-- Descripción de la noticia -->
-                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem
-                                        ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti
-                                        consectetur culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
+                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur
+                                        culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#noticia2">Leer Más</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noticia2">Leer Más</button>
                                 </div>
                             </div>
                         </div>
@@ -421,8 +408,7 @@ function password_show_hide() {
                             <div class="notice-item">
                                 <div class="thumb">
                                     <!-- Aqui se debe cambiar la dirección de la imagen para la noticia. -->
-                                    <img src="assets/images/noticias/noticia3.jpg" alt="New Lecturer notice"
-                                        class="notice-img">
+                                    <img src="assets/images/noticias/noticia3.jpg" alt="New Lecturer notice" class="notice-img">
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
@@ -432,13 +418,10 @@ function password_show_hide() {
                                     <!-- Titulo de la noticia -->
                                     <h4>Noticia 3</h4>
                                     <!-- Descripción de la noticia -->
-                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem
-                                        ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti
-                                        consectetur culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
+                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur
+                                        culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#noticia3">Leer Más</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noticia3">Leer Más</button>
                                 </div>
                             </div>
                         </div>
@@ -446,8 +429,7 @@ function password_show_hide() {
                             <div class="notice-item">
                                 <div class="thumb">
                                     <!-- Aqui se debe cambiar la dirección de la imagen para la noticia. -->
-                                    <img src="assets/images/noticias/noticia4.jpg" alt="New Lecturer notice"
-                                        class="notice-img">
+                                    <img src="assets/images/noticias/noticia4.jpg" alt="New Lecturer notice" class="notice-img">
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
@@ -457,13 +439,10 @@ function password_show_hide() {
                                     <!-- Titulo de la noticia -->
                                     <h4>Noticia 4</h4>
                                     <!-- Descripción de la noticia -->
-                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem
-                                        ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti
-                                        consectetur culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
+                                    <p class="notice-text">Morbi in libero blandit lectus<br>cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur
+                                        culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#noticia4">Leer Más</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noticia4">Leer Más</button>
                                 </div>
                             </div>
                         </div>
@@ -476,12 +455,12 @@ function password_show_hide() {
 
     <!-- Modals de noticias -->
     <!-- Modal Noticia 1 -->
-    <div class="modal fade" id="noticia1" tabindex="-1" role="dialog" aria-labelledby="noticia1Label"
-        aria-hidden="true">
+    <div class="modal fade" id="noticia1" tabindex="-1" role="dialog" aria-labelledby="noticia1Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: rgb(4, 113, 214);">
-                    <h4 class="modal-title" id="noticia1Label" style="color: #fff;">Noticia 1 <div class="date">
+                    <h4 class="modal-title" id="noticia1Label" style="color: #fff;">Noticia 1
+                        <div class="date">
                             <!-- Fecha de la noticia. Se deberá de remplazar por la fecha indicada de la noticia -->
                             <h6 style="margin-left: 5px;">Nov <span>10</span></h6>
                         </div>
@@ -511,13 +490,11 @@ function password_show_hide() {
                                 <img class="d-block w-100" src="assets/images/noticias/noticia1.jpg" alt="First slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel-notice1" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-notice1" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-notice1" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-notice1" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
@@ -526,17 +503,11 @@ function password_show_hide() {
 
 
                     <!-- Descripción de la noticia -->
-                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet
-                        consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque
-                        dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae autem illo
-                        debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde
-                        reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore
-                        non omnis. adipisicing elit. Labore ex sequi accusamus esse repudiandae dolore natus iste
-                        placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur
-                        doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique harum. cursus
-                        ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa
-                        delectus expedita veritatis, odit voluptatibus assumenda quas.</p>
+                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae
+                        autem illo debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore non omnis. adipisicing elit.
+                        Labore ex sequi accusamus esse repudiandae dolore natus iste placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique
+                        harum. cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa delectus expedita veritatis,
+                        odit voluptatibus assumenda quas.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -548,12 +519,12 @@ function password_show_hide() {
 
 
     <!-- Modal Noticia 2 -->
-    <div class="modal fade" id="noticia2" tabindex="-1" role="dialog" aria-labelledby="noticia2Label"
-        aria-hidden="true">
+    <div class="modal fade" id="noticia2" tabindex="-1" role="dialog" aria-labelledby="noticia2Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: rgb(4, 113, 214);">
-                    <h4 class="modal-title" id="noticia2Label" style="color: #fff;">Noticia 2 <div class="date">
+                    <h4 class="modal-title" id="noticia2Label" style="color: #fff;">Noticia 2
+                        <div class="date">
                             <!-- Fecha de la noticia. Se deberá de remplazar por la fecha indicada de la noticia -->
                             <h6 style="margin-left: 5px;">Nov <span>10</span></h6>
                         </div>
@@ -583,13 +554,11 @@ function password_show_hide() {
                                 <img class="d-block w-100" src="assets/images/noticias/noticia1.jpg" alt="First slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel-notice2" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-notice2" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-notice2" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-notice2" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
@@ -598,17 +567,11 @@ function password_show_hide() {
 
 
                     <!-- Descripción de la noticia -->
-                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet
-                        consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque
-                        dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae autem illo
-                        debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde
-                        reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore
-                        non omnis. adipisicing elit. Labore ex sequi accusamus esse repudiandae dolore natus iste
-                        placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur
-                        doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique harum. cursus
-                        ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa
-                        delectus expedita veritatis, odit voluptatibus assumenda quas.</p>
+                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae
+                        autem illo debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore non omnis. adipisicing elit.
+                        Labore ex sequi accusamus esse repudiandae dolore natus iste placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique
+                        harum. cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa delectus expedita veritatis,
+                        odit voluptatibus assumenda quas.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -618,12 +581,12 @@ function password_show_hide() {
     </div>
 
     <!-- Modal noticia 3 -->
-    <div class="modal fade" id="noticia3" tabindex="-1" role="dialog" aria-labelledby="noticia3Label"
-        aria-hidden="true">
+    <div class="modal fade" id="noticia3" tabindex="-1" role="dialog" aria-labelledby="noticia3Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: rgb(4, 113, 214);">
-                    <h4 class="modal-title" id="noticia3Label" style="color: #fff;">Noticia 3 <div class="date">
+                    <h4 class="modal-title" id="noticia3Label" style="color: #fff;">Noticia 3
+                        <div class="date">
                             <!-- Fecha de la noticia. Se deberá de remplazar por la fecha indicada de la noticia -->
                             <h6 style="margin-left: 5px;">Nov <span>10</span></h6>
                         </div>
@@ -653,13 +616,11 @@ function password_show_hide() {
                                 <img class="d-block w-100" src="assets/images/noticias/noticia1.jpg" alt="First slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel-notice3" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-notice3" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-notice3" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-notice3" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
@@ -668,17 +629,11 @@ function password_show_hide() {
 
 
                     <!-- Descripción de la noticia -->
-                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet
-                        consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque
-                        dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae autem illo
-                        debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde
-                        reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore
-                        non omnis. adipisicing elit. Labore ex sequi accusamus esse repudiandae dolore natus iste
-                        placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur
-                        doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique harum. cursus
-                        ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa
-                        delectus expedita veritatis, odit voluptatibus assumenda quas.</p>
+                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae
+                        autem illo debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore non omnis. adipisicing elit.
+                        Labore ex sequi accusamus esse repudiandae dolore natus iste placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique
+                        harum. cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa delectus expedita veritatis,
+                        odit voluptatibus assumenda quas.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -688,12 +643,12 @@ function password_show_hide() {
     </div>
 
     <!-- Modal Noticia 4 -->
-    <div class="modal fade" id="noticia4" tabindex="-1" role="dialog" aria-labelledby="noticia4Label"
-        aria-hidden="true">
+    <div class="modal fade" id="noticia4" tabindex="-1" role="dialog" aria-labelledby="noticia4Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: rgb(4, 113, 214);">
-                    <h4 class="modal-title" id="noticia4Label" style="color: #fff;">Noticia 4 <div class="date">
+                    <h4 class="modal-title" id="noticia4Label" style="color: #fff;">Noticia 4
+                        <div class="date">
                             <!-- Fecha de la noticia. Se deberá de remplazar por la fecha indicada de la noticia -->
                             <h6 style="margin-left: 5px;">Nov <span>10</span></h6>
                         </div>
@@ -723,13 +678,11 @@ function password_show_hide() {
                                 <img class="d-block w-100" src="assets/images/noticias/noticia1.jpg" alt="First slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel-notice4" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-notice4" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-notice4" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-notice4" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only"></span>
                         </a>
@@ -738,17 +691,11 @@ function password_show_hide() {
 
 
                     <!-- Descripción de la noticia -->
-                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet
-                        consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque
-                        dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae autem illo
-                        debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde
-                        reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore
-                        non omnis. adipisicing elit. Labore ex sequi accusamus esse repudiandae dolore natus iste
-                        placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur
-                        doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique harum. cursus
-                        ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi
-                        inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa
-                        delectus expedita veritatis, odit voluptatibus assumenda quas.</p>
+                    <p class="notice-description-modal">Morbi in libero blandit lectus Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque dolor impedit ipsum laborum! Sequi, odio vel nulla exercitationem libero nam vitae
+                        autem illo debitis, cupiditate quas inventore quibusdam quasi dolor ipsum? Corrupti consectetur quia unde reprehenderit sed, ut cupiditate amet, consequatur possimus quaerat error, enim mollitia dolore non omnis. adipisicing elit.
+                        Labore ex sequi accusamus esse repudiandae dolore natus iste placeat ipsum fugiat, minima voluptatibus exercitationem provident velit veritatis consequatur doloremque vitae amet nobis suscipit. Cum magnam ut, rem illo similique
+                        harum. cursus ullamcorper. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci deleniti consectetur culpa delectus expedita veritatis,
+                        odit voluptatibus assumenda quas.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -767,8 +714,7 @@ function password_show_hide() {
                         <div class="col-lg-12">
                             <div class="item">
                                 <h3>APPLY FOR BACHELOR DEGREE</h3>
-                                <p>You are allowed to use this edu notice CSS template for your school or university or
-                                    business. You can feel free to modify or edit this layout.</p>
+                                <p>You are allowed to use this edu notice CSS template for your school or university or business. You can feel free to modify or edit this layout.</p>
                                 <div class="main-button">
                                     <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
                                 </div>
@@ -777,8 +723,7 @@ function password_show_hide() {
                         <div class="col-lg-12">
                             <div class="item">
                                 <h3>APPLY FOR BACHELOR DEGREE</h3>
-                                <p>You are not allowed to redistribute the template ZIP file on any other template
-                                    website. Please contact us for more information.</p>
+                                <p>You are not allowed to redistribute the template ZIP file on any other template website. Please contact us for more information.</p>
                                 <div class="main-button-yellow">
                                     <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
                                 </div>
@@ -797,11 +742,8 @@ function password_show_hide() {
                             </div>
                             <div class="accordion-body">
                                 <div class="content">
-                                    <p>If you want to get the latest collection of HTML CSS templates for your websites,
-                                        you may visit <a rel="nofollow" href="https://www.toocss.com/"
-                                            target="_blank">Too CSS website</a>. If you need a working contact form
-                                        script, please visit <a href="https://templatemo.com/contact"
-                                            target="_parent">our contact page</a> for more info.</p>
+                                    <p>If you want to get the latest collection of HTML CSS templates for your websites, you may visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Too CSS website</a>. If you need a working contact form
+                                        script, please visit <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more info.</p>
                                 </div>
                             </div>
                         </article>
@@ -814,12 +756,7 @@ function password_show_hide() {
                             </div>
                             <div class="accordion-body">
                                 <div class="content">
-                                    <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna,
-                                        maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed
-                                        vulputate augue interdum vitae. Aliquam a elit massa.<br><br> Nulla malesuada
-                                        elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat
-                                        aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut
-                                        feugiat ex erat nec mauris. Donec viverra
+                                    <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>                                        Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra
                                         velit eget lectus sollicitudin tincidunt.</p>
                                 </div>
                             </div>
@@ -833,11 +770,8 @@ function password_show_hide() {
                             </div>
                             <div class="accordion-body">
                                 <div class="content">
-                                    <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit,
-                                        at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur
-                                        velit.<br><br> Cras et tortor semper, placerat eros sit
-                                        amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales
-                                        ipsum ac neque ultricies varius.</p>
+                                    <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.
+                                        <br><br> Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</p>
                                 </div>
                             </div>
                         </article>
@@ -850,11 +784,8 @@ function password_show_hide() {
                             </div>
                             <div class="accordion-body">
                                 <div class="content">
-                                    <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et
-                                        malesuada fames ac ante ipsum primis in faucibus.<br><br> Sed eleifend metus sit
-                                        amet magna tristique, posuere laoreet arcu semper. Nulla
-                                        pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi
-                                        quis, convallis nisi.</p>
+                                    <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br> Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla
+                                        pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis, convallis nisi.</p>
                                 </div>
                             </div>
                         </article>
@@ -875,7 +806,7 @@ function password_show_hide() {
                         <h2>Promociones Educativas</h2>
                     </div>
                 </div>
-                
+
 
                 <div class="col-lg-12">
                     <div class="owl-promociones-item owl-carousel">
@@ -1064,8 +995,7 @@ function password_show_hide() {
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h2 style="color: #3d95d4">Contactanos</h2>
-                                        <h6 style="margin-bottom: 20px;">Nos gustaria recibir tus dudas y comentarios,
-                                            en breve uno de nuestros asesores se pondrá en contacto</h6>
+                                        <h6 style="margin-bottom: 20px;">Nos gustaria recibir tus dudas y comentarios, en breve uno de nuestros asesores se pondrá en contacto</h6>
                                     </div>
                                     <div class="col-lg-4">
                                         <fieldset>
@@ -1074,20 +1004,17 @@ function password_show_hide() {
                                     </div>
                                     <div class="col-lg-4">
                                         <fieldset>
-                                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
-                                                placeholder="Correo Electronico" required="">
+                                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Correo Electronico" required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-4">
                                         <fieldset>
-                                            <input name="subject" type="text" id="subject" placeholder="Telefono*"
-                                                required="">
+                                            <input name="subject" type="text" id="subject" placeholder="Telefono*" required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" type="text" class="form-control" id="message"
-                                                placeholder="Mensaje" required=""></textarea>
+                                            <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
@@ -1119,13 +1046,19 @@ function password_show_hide() {
                                 <span onclick="openMap()" style="cursor: pointer;">
                                     Río Presidio, No. 1955 Nte. Col. Tepeca Los Mochis, Sinaloa, México.
                                 </span>
+                                <div style="margin-top: 20px; box-shadow: 0 0 50px rgb(104, 104, 104);">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.5820608686886!2d-108.99286578460658!3d25.817358812594744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba28a4115ecddb%3A0xa9f5909e831263d1!2sUNIVAFU%20Universidad!5e0!3m2!1ses-419!2smx!4v1651297178135!5m2!1ses-419!2smx"
+                                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 3px;"></iframe>
+
+                                </div>
+
                             </li>
                             <li style="display: flex; justify-content: center;">
                                 <div class="grid-redes">
                                     <a href="https://es-la.facebook.com/univafu.oficial/" target="_blank" style="color: #fff;"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://twitter.com/univafu_oficial" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/univafuuniversidad/" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"  style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
+                                    <a href="https://twitter.com/univafu_oficial" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
                                 </div>
                             </li>
                         </ul>
@@ -1150,15 +1083,9 @@ function password_show_hide() {
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -1167,7 +1094,7 @@ function password_show_hide() {
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    
+
     <!-- <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');

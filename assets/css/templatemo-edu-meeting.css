@@ -321,19 +321,16 @@ header
 
 
 /* Cambiar el fondo de el navbar */
+
 .background-header {
-    background-color: rgba(0, 0, 0, 0.99)!important;
+    background-color: #000000!important;
     height: 80px!important;
     position: fixed!important;
     top: 30px!important;
     left: 0;
     right: 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)!important;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)!important; */
 }
-
-
-
-
 
 .main-nav {
     display: flex;
@@ -375,9 +372,7 @@ header
 
 .header-area.header-sticky {
     min-height: 140px;
-    
 }
-
 
 .header-area .main-nav .nav {
     margin-top: 0px;
@@ -854,7 +849,8 @@ services
 }
 
 .services .item {
-    background-image: url(../images/service-item-bg.jpg);
+    /* background-image: url(../images/service-item-bg.jpg); */
+    background-color: #3d95d4c9;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -972,11 +968,8 @@ upcoming notices
 */
 
 section.upcoming-notices {
-      background: linear-gradient(
-	rgba(3, 37, 68, 0.459),
-	rgba(0, 0, 0, 0.4),
-	rgba(3, 37, 68, 0.459)
-), url('../images/notices-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient( rgba(12, 12, 12, 0.952), rgba(19, 19, 19, 0.473), rgba(0, 0, 0, 0.658)), url('../images/notices-bg.jpg') no-repeat center center fixed;
+    /* background-color: rgb(160, 72, 1); */
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1034,6 +1027,10 @@ section.upcoming-notices .redes-sociales .main-button-red a {
 
 .notice-item {
     margin-bottom: 30px;
+    border-radius: 20px;
+    /* border: 5px solid #ddd; */
+    /* box-shadow: 0 0 35px #ddd; */
+    box-shadow: 2px 2px 5px 0px rgba(105, 105, 104, 0.856);
 }
 
 .notice-item .thumb {
@@ -1102,20 +1099,20 @@ section.upcoming-notices .redes-sociales .main-button-red a {
     font-size: 14px;
 }
 
-
-.red-social{
-    border-radius: 25px;  
-    border: 3px solid #fff; 
+.red-social {
+    border-radius: 25px;
+    border: 3px solid #fff;
     padding: 5px;
 }
 
-.instagram{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.red-social>a:hover{
-    color:red;
+.red-social>a:hover {
+    color: red;
 }
+
 
 /*
 ---------------------------------------------
@@ -1218,10 +1215,7 @@ promociones
 
 section.our-promociones {
     /* background-image: url(../images/notices-bg.jpg); */
-    background: linear-gradient(
-	rgba(3, 37, 68, 0.459),
-	rgba(0, 0, 0, 0.4)
-), url('../images/notices-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient( rgba(3, 37, 68, 0.459), rgba(0, 0, 0, 0.4)), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1361,7 +1355,7 @@ section.our-promociones {
     line-height: 50px;
 }
 
-.oferta-img{
+.oferta-img {
     height: 350px;
 }
 
@@ -1373,11 +1367,8 @@ our facts
 */
 
 section.our-facts {
-    background: linear-gradient(
-	rgba(0,0,0,0.7),
-	rgba(0,0,0,0.7)
-), url('../images/fondo.jpg') no-repeat center center fixed;
-background-size: 100% 100%;  
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/fondo.jpg') no-repeat center center fixed;
+    background-size: 100% 100%;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1449,11 +1440,7 @@ contact us
 
 section.contact-us {
     /* background-image: url(../images/notices-bg.jpg); */
-    background: linear-gradient(
-	rgba(3, 37, 68, 0.459),
-	rgba(0, 0, 0, 0.4),
-	rgba(3, 37, 68, 0.459)
-), url('../images/notices-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient( rgba(3, 37, 68, 0.459), rgba(0, 0, 0, 0.4), rgba(3, 37, 68, 0.459)), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1529,7 +1516,7 @@ section.contact-us #contact button:hover {
 
 section.contact-us .right-info {
     /* background-color: #3d95d4; */
-    background-color: rgba(31, 192, 255, 0.555);
+    background-color: #3d95d4;
     border-radius: 20px;
     padding: 40px;
     width: 100%;
@@ -1576,43 +1563,39 @@ section.contact-us .icon-group-text i {
     font-size: 1.5em;
 }
 
-.grid-redes{
+.grid-redes {
     display: grid;
     /* grid-template-columns: repeat(4fr); */
     grid-template-columns: repeat(4, 1fr);
-    gap:1em;
+    gap: 1em;
 }
 
-.grid-redes>a{
+.grid-redes>a {
     width: 60px;
-    height:60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;    
+    transition: 0.4s;
     border-radius: 50%;
 }
 
-
-.grid-redes>a:hover{
-    
+.grid-redes>a:hover {
     transition: 0.3s;
     transform: translateY(-10px);
     border: 5px solid #fff;
-
 }
 
-.grid-redes>a>i{
+.grid-redes>a>i {
     font-size: 2em;
 }
-
 
 .footer {
     text-align: center;
     margin-top: 140px;
     border-top: 1px solid rgba(250, 250, 250, 0.15);
     padding: 50px 0px;
-    background-color: rgb(2, 127, 177);
+    background-color: #3d95d4;
 }
 
 .footer p {
@@ -1625,19 +1608,19 @@ section.contact-us .icon-group-text i {
     color: #f5a425;
 }
 
-
-@media(max-width:1250px){
-    .grid-redes{
+@media(max-width:1250px) {
+    .grid-redes {
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(max-width: 992px){
-    .grid-redes{
+@media(max-width: 992px) {
+    .grid-redes {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 
 /*
 ---------------------------------------------
@@ -1683,11 +1666,7 @@ upcoming notices page
 
 section.notices-page {
     /* background-image: url(../images/notices-bg.jpg); */
-    background: linear-gradient(
-	rgba(3, 37, 68, 0.459),
-	rgba(0, 0, 0, 0.4),
-	rgba(3, 37, 68, 0.459)
-), url('../images/notices-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient( rgba(3, 37, 68, 0.459), rgba(0, 0, 0, 0.4), rgba(3, 37, 68, 0.459)), url('../images/notices-bg.jpg') no-repeat center center fixed;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1875,12 +1854,15 @@ section.notices-page .pagination ul li a:hover {
     color: #f5a425;
 }
 
+
 /* Imagen de noticia */
-.notice-img{
-    width: 100%; height: 260px;
+
+.notice-img {
+    width: 100%;
+    height: 260px;
 }
 
-.notice-description-modal{
+.notice-description-modal {
     /* text-transform: capitalize; */
     margin-top: 15px;
     text-align: justify;
@@ -2251,7 +2233,7 @@ nav a:visited {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #136a73;
+    color: #000607;
 }
 
 .mega-menu {
@@ -2374,6 +2356,13 @@ nav a:visited {
 }
 
 @media all and (max-width: 950px) {
+    .background-header {
+        top: 39px!important;
+        box-shadow: none;
+    }
+    .sub-header {
+        max-height: 40px;
+    }
     .nav {
         padding: 20px;
     }
@@ -2391,7 +2380,7 @@ nav a:visited {
     }
     .mobile-menu-header {
         order: -1;
-        background: rgb(4, 162, 224);
+        background: #3d95d4;
     }
     .mobile-menu-header a {
         padding: 20px 25px;
@@ -2499,14 +2488,13 @@ nav a:visited {
     .menu-bar>li:focus-within~.mobile-menu-header a {
         visibility: hidden;
     }
-    
-    .btn-algebraix-acceso{
+    .btn-algebraix-acceso {
         display: none;
     }
 }
 
-@media(max-height: 400px){
-    .menu-bar{
+@media(max-height: 400px) {
+    .menu-bar {
         overflow: scroll;
     }
 }
@@ -2596,29 +2584,29 @@ nav a:visited {
     }
 }
 
-.notice-text{
+.notice-text {
     /* width: 230px; */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.btn-algebraix:hover{
-    color:rgb(2, 127, 177);
+.btn-algebraix:hover {
+    color: rgb(2, 127, 177);
     background: #eee
 }
 
-.btn-algebraix-close{
+.btn-algebraix-close {
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
 
-.btn-algebraix-close>span{
+.btn-algebraix-close>span {
     font-size: 1.7em;
     color: #fff;
 }
 
-.btn-algebraix-close>span:hover{
+.btn-algebraix-close>span:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }

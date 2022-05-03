@@ -22,9 +22,6 @@
     background-size: cover;
     /* margin-top: ; */
     margin-top: 7px;
-    /* padding-top: 230px; */
-    /* padding-bottom: 110px; */
-    /* margin-top: 20%; */
 }
 
 .grid-mision-vision {
@@ -39,10 +36,6 @@
 
 .grid-mision-vision:nth-child(2) {
     gap: 0;
-}
-
-.contact-us {
-    background-color: #3d95d4;
 }
 
 .contact-us-info {
@@ -168,6 +161,14 @@ h1 {
 
 .footer {
     margin: 0;
+}
+
+@media (min-width: 720px) {
+    #contact {
+        /* margin-top: 100px; */
+        padding: 100px 0;
+        background-color: #4a9dd8;
+    }
 }
 
 @media (max-width: 720px) {

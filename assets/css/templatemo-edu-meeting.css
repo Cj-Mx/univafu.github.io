@@ -1565,8 +1565,9 @@ section.contact-us .icon-group-text i {
 
 .grid-redes {
     display: grid;
-    /* grid-template-columns: repeat(4fr); */
     grid-template-columns: repeat(4, 1fr);
+    /* justify-content: center; */
+    justify-items: center;
     gap: 1em;
 }
 

@@ -7,21 +7,13 @@
     background-size: cover;
 }
 
-.services {
-    top: 700px;
-}
-
 .about {
-    /* margin-top: -0px; */
-    /* top:-100px; */
-    /* background: linear-gradient( rgba(53, 161, 250, 0.952), rgba(31, 117, 156, 0.473), rgba(46, 46, 46, 0.658)), url('../assets/images/notices-bg.jpg') no-repeat center center fixed; */
-    /* background-color: rgb(160, 72, 1); */
+    background-color: #eeeeee;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: ; */
-    margin-top: 7px;
+    /* margin: 50px 0 0 0; */
 }
 
 .grid-mision-vision {
@@ -85,6 +77,10 @@ p {
     border-radius: 10px;
 }
 
+.item {
+    height: 600px;
+}
+
 .grid-secundaria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -104,7 +100,16 @@ p {
 .services {
     display: inline-block;
     position: static;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    /* margin: 30px 0; */
+    margin: 0;
+    padding: 30vh 0;
+    /* background-color: #0f0101c2; */
+    background: linear-gradient( rgba(7, 32, 59, 0.349), rgba(43, 57, 65, 0.473), rgba(12, 64, 116, 0.418)), url('../assets/images/notices-bg.jpg') no-repeat center center fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* background: linear-gradient( rgba(12, 12, 12, 0.952), rgba(19, 19, 19, 0.473), rgba(0, 0, 0, 0.658)), url('../assets/images/notices-bg.jpg') no-repeat center center fixed; */
     /* background: linear-gradient( rgba(3, 37, 68, 0.459), rgba(0, 0, 0, 0.4), rgba(3, 37, 68, 0.459)), url('../assets/images/notices-bg.jpg') no-repeat center center fixed; */
 }
@@ -139,14 +144,6 @@ h1 {
 
 .grid-redes-footer>a>i {
     font-size: 2em;
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: none;
-    border-radius: 0;
-    background-color: #3d95d4;
 }
 
 .pointer {
@@ -185,7 +182,7 @@ h1 {
         grid-row: 6;
     }
     .services {
-        margin-bottom: 150px;
+        padding: 10vh 0;
     }
     .contact-us-info {
         grid-template-columns: 1fr;

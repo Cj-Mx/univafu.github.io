@@ -1115,6 +1115,68 @@ section.upcoming-notices .redes-sociales .main-button-red a {
 }
 
 
+/* ABOUT */
+.about {
+    background-color: #eeeeee;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 50px 0 0 0; */
+}
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.img-grid>img {
+    height: 500px;
+}
+
+
+.about-description {
+    padding: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.about-description>p{
+    text-align: justify;
+}
+
+.about-description-list{
+    list-style: square inside;
+}
+
+
+ @media(max-width:720px){
+    .grid-about {
+        grid-template-columns: 1fr;
+    }
+    .grid-about .img-grid:nth-child(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .grid-about .img-grid:nth-child(4) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .img-grid{
+        height: 400px;
+    }
+    .contact-us-info {
+        grid-template-columns: 1fr;
+    }
+    .contact-us-info-right {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+    }
+ }
+
+
+
 /*
 ---------------------------------------------
 apply now
@@ -1597,7 +1659,7 @@ section.contact-us .icon-group-text i {
     margin-top: 140px;
     border-top: 1px solid rgba(250, 250, 250, 0.15);
     padding: 50px 0px;
-    background-color: #3d95d4;
+    background-color: #1e91e4;
 }
 
 .footer p {
@@ -2611,4 +2673,69 @@ nav a:visited {
 .btn-algebraix-close>span:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin: 0;
+}
+
+
+.grid-redes-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    /* justify-content: center; */
+    /* gap: 1em; */
+}
+
+.grid-redes-footer>a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.grid-redes-footer>a:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    border: 5px solid #fff;
+}
+
+.grid-redes-footer>a>i {
+    font-size: 2em;
+}
+.contact-us-info {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-us-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e91e4;
+    padding: 100px 5%;
+}
+
+.contact-us-info-right {
+    padding: 30px;
+    background-color: #1e91e4;
+}
+
+.pointer {
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.pointer:hover {
+    color: rgb(241, 190, 113);
 }

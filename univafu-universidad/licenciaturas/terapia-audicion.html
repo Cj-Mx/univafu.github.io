@@ -9,12 +9,14 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Univafu Universidad - Lic. Terapia de Audición y Lenguaje</title>
+    <title>Univafu Universidad - Lic. en Terapia de Audición y Lenguaje</title>
 
 
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
     <!-- Additional CSS Files -->
@@ -22,6 +24,10 @@
     <link rel="stylesheet" href="../../assets/css/templatemo-edu-meeting.css">
     <link rel="stylesheet" href="../../assets/css/owl.css">
     <link rel="stylesheet" href="../../assets/css/lightbox.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--
 TemplateMo 569 Edu notice
 
@@ -31,43 +37,52 @@ https://templatemo.com/tm-569-edu-notice
 </head>
 
 <body>
-
     <!-- Modal algebraix -->
-    <div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog" aria-labelledby="algebraixTitle" aria-hidden="true">
+    <div style="z-index: 9999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog"
+        aria-labelledby="algebraixTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #0083ee;">
-                    <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix</h5>
+                    <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix
+                    </h5>
                     <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/" target="_blank">
+                    <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/"
+                        target="_blank">
                         <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
                             <div class="col-12">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i
+                                                class="fa fa-user"></i></span>
                                     </div>
-                                    <input name="username" type="text" value="" class="input form-control" id="username" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                                    <input name="username" type="text" value="" class="input form-control" id="username"
+                                        placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="input-group mb-3">
-                                    <input name="password" type="password" value="" class="input form-control" id="password" placeholder="Contraseña" required="true" aria-label="password" aria-describedby="basic-addon1" />
+                                    <input name="password" type="password" value="" class="input form-control"
+                                        id="password" placeholder="Contraseña" required="true" aria-label="password"
+                                        aria-describedby="basic-addon1" />
                                     <div class="input-group-append">
-                                        <span class="input-group-text" onclick="password_show_hide();" style="height: 100%;">
-                                          <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
-                                          <i class="fa fa-eye-slash " id="hide_eye" ></i>
+                                        <span class="input-group-text" onclick="password_show_hide();"
+                                            style="height: 100%;">
+                                            <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
+                                            <i class="fa fa-eye-slash " id="hide_eye"></i>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div style="display: flex; justify-content: flex-end;">
-                            <button type="button" class="btn btn-algebraix" data-dismiss="modal" style="margin-right: 10px;">Cerrar</button>
-                            <button class="btn btn-algebraix" type="submit" onclick="algerForm.submit()">Ingresar</button>
+                            <button type="button" class="btn btn-algebraix" data-dismiss="modal"
+                                style="margin-right: 10px;">Cerrar</button>
+                            <button class="btn btn-algebraix" type="submit"
+                                onclick="algerForm.submit()">Ingresar</button>
                         </div>
                     </form>
                 </div>
@@ -98,9 +113,10 @@ https://templatemo.com/tm-569-edu-notice
             <div class="container">
                 <ul>
                     <li><a href="https://es-la.facebook.com/univafu.oficial/" target="_blank"><i
-                        class="fa fa-facebook"></i></a></li>
+                                class="fa fa-facebook"></i></a></li>
                     <li>
-                        <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
+                        <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i
+                                class="fa fa-user"></i> Acceso a estudiantes</a>
                     </li>
                 </ul>
             </div>
@@ -110,7 +126,8 @@ https://templatemo.com/tm-569-edu-notice
             <div class="container-header">
                 <div class="content-logo-home" style="display: flex; justify-content: space-between;">
                     <!-- Logo de la cabecera en la página-->
-                    <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+                    <a href="https://cj-mx.github.io/univafu.github.io/"><img
+                            src="../../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
                     <!-- <a id="acceso" href="#" class="menu-link menu-bar-link btn-algebraix-acceso" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a> -->
                 </div>
 
@@ -120,157 +137,185 @@ https://templatemo.com/tm-569-edu-notice
                         <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
                         <ul class="menu menu-bar">
                             <li>
-                                <a href="https://cj-mx.github.io/univafu.github.io/" class="menu-link menu-bar-link">Inicio</a>
+                                <a href="https://cj-mx.github.io/univafu.github.io/"
+                                    class="menu-link menu-bar-link">Inicio</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
-                        del valle del fuerte</a>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                    aria-haspopup="true">Colegio
+                                    del valle del fuerte</a>
                                 <ul class="mega-menu mega-menu--multiLevel">
                                     <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/colegio-valle-fuerte/Secundaria.html"
+                                            class="menu-link menu-bar-link">Secundaria</a>
                                     </li>
                                     <li class="mobile-menu-back-item">
-                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                            style="color: #fff">Volver</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li>
                                 <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Prepa
-                        Univafu</a>
+                                    Univafu</a>
                                 <ul class="mega-menu mega-menu--multiLevel">
                                     <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/Higiene-y-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/Higiene-y-salud.html"
+                                            class="menu-link menu-bar-link">Higiene y Salud C.</a>
                                     </li>
                                     <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
+                                        <a href="https://cj-mx.github.io/univafu.github.io/prepa-univafu/tecnologias.html"
+                                            class="menu-link menu-bar-link">Tecnologias</a>
                                     </li>
                                     <li class="mobile-menu-back-item">
-                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                            style="color: #fff">Volver</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
-                        Universidad</a>
+                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                    aria-haspopup="true">Univafu
+                                    Universidad</a>
                                 <ul class="mega-menu mega-menu--multiLevel">
                                     <li>
-                                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Licenciaturas</a>
+                                        <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                            aria-haspopup="true">Licenciaturas</a>
                                         <ul class="menu menu-list">
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/nutricion.html" class="menu-link menu-list-link">Licenciatura en
-                                        Nutrición</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/nutricion.html"
+                                                    class="menu-link menu-list-link">Licenciatura en
+                                                    Nutrición</a>
                                             </li>
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-fisica.html" class="menu-link menu-list-link">Licenciatura en Terapia
-                                        Física y Rehabilitación</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-fisica.html"
+                                                    class="menu-link menu-list-link">Licenciatura en Terapia
+                                                    Física y Rehabilitación</a>
                                             </li>
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-audicion.html" class="menu-link menu-list-link">Licenciatura en Terapia
-                                        de Audición y Lenguaje</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/terapia-audicion.html"
+                                                    class="menu-link menu-list-link">Licenciatura en Terapia
+                                                    de Audición y Lenguaje</a>
                                             </li>
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/marketing-digital.html" class="menu-link menu-list-link">Licenciatura en Marketing
-                                        Digital</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/licenciaturas/marketing-digital.html"
+                                                    class="menu-link menu-list-link">Licenciatura en Marketing
+                                                    Digital</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Posgrados</a>
+                                        <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                            aria-haspopup="true">Posgrados</a>
                                         <ul class="menu menu-list">
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/desarrollo-capital-humano.html" class="menu-link menu-list-link">Maestría en Desarrollo del Capital Humano</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/desarrollo-capital-humano.html"
+                                                    class="menu-link menu-list-link">Maestría en Desarrollo del Capital
+                                                    Humano</a>
                                             </li>
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/nutricion-clinica.html" class="menu-link menu-list-link">Maestría en Nutrición Clinica y
-                                        Hospitalaria</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/nutricion-clinica.html"
+                                                    class="menu-link menu-list-link">Maestría en Nutrición Clinica y
+                                                    Hospitalaria</a>
                                             </li>
                                             <li>
-                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/especialidad-prevencion.html" class="menu-link menu-list-link">Especialidad Prevención y
-                                        Rehabilitación de lesiones Deportivas</a>
+                                                <a href="https://cj-mx.github.io/univafu.github.io/univafu-universidad/posgrados/especialidad-prevencion.html"
+                                                    class="menu-link menu-list-link">Especialidad Prevención y
+                                                    Rehabilitación de lesiones Deportivas</a>
                                             </li>
                                         </ul>
-                                        <li class="mobile-menu-back-item">
-                                            <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
-                                        </li>
-
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Fundación
-                    Univafu</a>
-                                <ul class="mega-menu mega-menu--multiLevel">
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/fundacion-univafu/clinica.html" class="menu-link menu-bar-link">Clinica</a>
-                                    </li>
                                     <li class="mobile-menu-back-item">
-                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
+                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                            style="color: #fff">Volver</a>
                                     </li>
 
-                                </ul>
                             </li>
+                        </ul>
+                        </li>
 
 
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
-                    Idiomas</a>
-                                <ul class="mega-menu mega-menu--multiLevel">
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/ingles.html" class="menu-link menu-bar-link">Ingles</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/frances.html" class="menu-link menu-bar-link">Frances</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/chino.html" class="menu-link menu-bar-link">Chino</a>
-                                    </li>
-                                    <li class="mobile-menu-back-item">
-                                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
-                                    </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Fundación
+                                Univafu</a>
+                            <ul class="mega-menu mega-menu--multiLevel">
+                                <li>
+                                    <a href="https://cj-mx.github.io/univafu.github.io/fundacion-univafu/clinica.html"
+                                        class="menu-link menu-bar-link">Clinica</a>
+                                </li>
+                                <li class="mobile-menu-back-item">
+                                    <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                        style="color: #fff">Volver</a>
+                                </li>
 
-                                </ul>
-                            </li>
+                            </ul>
+                        </li>
 
-                            <!-- <li class="algebraix">
+
+                        <li>
+                            <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
+                                Idiomas</a>
+                            <ul class="mega-menu mega-menu--multiLevel">
+                                <li>
+                                    <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/ingles.html"
+                                        class="menu-link menu-bar-link">Ingles</a>
+                                </li>
+                                <li>
+                                    <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/frances.html"
+                                        class="menu-link menu-bar-link">Frances</a>
+                                </li>
+                                <li>
+                                    <a href="https://cj-mx.github.io/univafu.github.io/univafu-idiomas/chino.html"
+                                        class="menu-link menu-bar-link">Chino</a>
+                                </li>
+                                <li class="mobile-menu-back-item">
+                                    <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                        style="color: #fff">Volver</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- <li class="algebraix">
                 <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user" ></i> Acceso a estudiantes</a>
             </li> -->
-                            <li class="mobile-menu-header">
-                                <a href="#" class="">
-                                    <!-- <span>UNIVAFU</span> -->
-                                    <a href="https://cj-mx.github.io/univafu.github.io/"><img src="assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
-                                </a>
-                            </li>
+                        <li class="mobile-menu-header">
+                            <a href="#" class="">
+                                <!-- <span>UNIVAFU</span> -->
+                                <a href="https://cj-mx.github.io/univafu.github.io/"><img
+                                        src="../../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+                            </a>
+                        </li>
                         </ul>
                     </nav>
                 </div>
+
             </div>
         </header>
     </div>
 
     <!-- ***** Fin de la cabecera ***** -->
 
+
+    <script>
+        AOS.init({
+            once: true,
+            mirror: true
+        });
+    </script>
     <!-- ***** Main Banner Area de inicio ***** -->
     <section class="section main-banner" id="top" data-section="section1">
-        <video autoplay muted loop id="bg-video">
-        <!-- Video de fondo del main -->
-        <source src="assets/images/fondo.mp4" type="video/mp4" />
-    </video>
-
+        <img src="../../assets/images/main-banner/main-banner-ltal.jpg" alt="" id="bg-video">
         <div class="video-overlay header-text">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="caption">
-                            <h6>Hola estudiantes</h6>
-                            <h2>Bienvenidos univafu</h2>
-                            <p>This is an edu notice HTML CSS template provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels
-                                website, a group of young people by <a rel="nofollow" href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
+                            <h2>Licenciatura en Terapia de Audición y Lenguaje</h2>
                             <div class="main-button">
-                                <div class="scroll-to-section"><a href="#contact">Accede</a></div>
+                                <div class="scroll-to-section"><a href="#contact" class="btn-acceso" data-toggle="modal"
+                                        data-target="#algebraix">Acceder</a></div>
                             </div>
                         </div>
                     </div>
@@ -279,24 +324,392 @@ https://templatemo.com/tm-569-edu-notice
         </div>
     </section>
     <!-- ***** Main Banner Area final ***** -->
+    <section class="about" id="about">
+        <div class="grid-about">
+            <div class="img-grid" data-aos="fade-up" data-aos-offset="250" data-aos-delay="300">
+                <img src="../../assets/images/univafu-universidad/licenciaturas/ltal/1.jpg" alt="">
+            </div>
+            <div class="about-description" data-aos="fade-left" data-aos-delay="300">
+                <div style="border-bottom: 10px solid #ee7f00ce; width: 20%;"></div>
+                <h1>Licenciatura en Terapia de Audición y Lenguaje</h1>
+                <p>Conocerás y diagnosticarás los trastornos de Audición y Lenguaje; atenderás a pacientes de todas las edades que presenten dificultades, tanto en el desarrollo del lenguaje y/o la comunicación, como en proporcionar terapia, tratamiento o reeducación en los posibles trastornos que aparecen en el área de la comunicación humana.</p>
+            </div>
+            <div class="about-description" data-aos="fade-right" data-aos-delay="300">
+                <div style="border-bottom: 10px solid #ee7f00ce; width: 20%;"></div>
+                <h1>Campo Profesional</h1>
+                <p>Como especialista en rehabilitación de los trastornos de la audición, lenguaje y comunicación, en centros hospitalarios y de rehabilitación, en el ámbito educativo y empresarial; así como en el ejercicio de la práctica privada.</p>
+            </div>
+            <div class="img-grid" data-aos="fade-up" data-aos-offset="250" data-aos-delay="300">
+                <img src="../../assets/images/univafu-universidad/licenciaturas/ltal/2.jpg" alt="">
+            </div>
+
+            <div class="img-grid" data-aos="fade-up" data-aos-offset="250" data-aos-delay="300">
+                <img src="../../assets/images/univafu-universidad/licenciaturas/ltal/3.jpg" alt="">
+            </div>
+            <div class="about-description" data-aos="fade-left" data-aos-delay="300">
+                <div style="border-bottom: 10px solid #ee7f00ce; width: 20%;"></div>
+
+                <h1>Perfil de Ingreso</h1>
+                <ul style="padding: 10px 20px;">
+                    <li style="list-style: circle;">Gusto por el área de la Salud y Clínica.</li>
+                    <li style="list-style: circle;">Facilidad y disposición para el trato con grupos especiales.</li>
+                    <li style="list-style: circle;">Compromiso y respeto por la diversidad.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
 
 
-    <h1>Terapia audición y lenguaje</h1>
+    <section class="provides container ">
+        <h2 data-aos="fade-up"><span style="color: #eea300;">¿</span> Que nos distingue <span
+                style="color: #eea300;">?</span></h2>
+        <div class="grid-provides " data-aos="fade-up" data-aos-offset="230">
+            <div class="provide ">
+                <img src="../../assets/images/provides/instalaciones-icon.png " alt=" ">
+                <h3>INSTALACIONES DE VANGUARDIA</h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/practicas.png " alt=" ">
+                <h3>PRÁCTICAS DESDE EL PRIMER SEMESTRE</h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/internacional-icon.png " alt=" ">
+                <h3>MAESTROS INTERNACIONALES
+                </h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/convenio-icon.png " alt=" ">
+                <h3>CONVENIOS CON EMPRESAS</h3>
+            </div>
+        </div>
+    </section>
 
-    <h1 style="font-size: 3em;">EN CONSTRUCCIÓN</h1>
+    <!-- Sección de Carga Academica -->
+    <section id="academic-charge">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseOne">
+                    <a class="card-link">
+                        1er Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">Anatomía Humana I</li>
+                            <li class="card-body-list">
+                                Fisiología</li>
+                            <li class="card-body-list">Histoembriología
+                            </li>
+                            <li class="card-body-list">Fundamentos de Fisioterapia y Rehabilitación</li>
+                            <li class="card-body-list">Principios Físicos de la Fisioterapia</li>
+                            <li class="card-body-list">Taller de Expresión Oral y Escrita</li>
+                            <li class="card-body-list">Tecnologías de Información y Comunicación (TIC´S)</li>
+                            <li class="card-body-list">Valores Humanos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseTwo">
+                    <a class="collapsed card-link">
+                        2do Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">Anatomía y Humana II</li>
+                            <li class="card-body-list">
+                                Bioquímica</li>
+                            <li class="card-body-list">Evaluación Funcional
+                            </li>
+                            <li class="card-body-list">Agentes Físicos I</li>
+                            <li class="card-body-list">Análisis de la Información</li>
+                            <li class="card-body-list">Ingles I</li>
+                            <li class="card-body-list">Bioestadística</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseThree">
+                    <a class="collapsed card-link">
+                        3er Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Psicología de Rehabilitación
+                            </li>
+                            <li class="card-body-list">
+                                Agentes Físicos II
+                            </li>
+                            <li class="card-body-list">
+                                Kinesiología
+                            </li>
+                            <li class="card-body-list">
+                                Metodología de la Investigación
+                            </li>
+                            <li class="card-body-list">
+                                Inglés II
+                            </li>
+                            <li class="card-body-list">
+                                Ergonomía
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseFour">
+                    <a class="collapsed card-link">
+                        4to Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Imagenología
+                            </li>
+                            <li class="card-body-list">
+                                Neurodesarrollo
+                            </li>
+                            <li class="card-body-list">
+                                Rehabilitación Infantil
+                            </li>
+                            <li class="card-body-list">
+                                Propedéutica Clínica
+                            </li>
+                            <li class="card-body-list">
+                                Kinesioterapia
+                            </li>
+                            <li class="card-body-list">
+                                Desarrollo Sustentable
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseFive">
+                    <a class="collapsed card-link">
+                        5to Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Farmacología
+                            </li>
+                            <li class="card-body-list">
+                                Neurología del Adulto
+                            </li>
+
+                            <li class="card-body-list">
+                                Rehabilitación Geriátrica y Gerontología
+                            </li>
+
+                            <li class="card-body-list">
+                                Prácticas Clínicas I
+                            </li>
+
+                            <li class="card-body-list">
+                                Masoterapia
+                            </li>
+
+                            <li class="card-body-list">
+                                Liderazgo
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header " data-toggle="collapse" href="#collapseSix">
+                    <a class="collapsed card-link">
+                        6to Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Nutrición en la Rehabilitación
+                            </li>
+                            <li class="card-body-list">
+                                Terapias Alternativas en Reumatología
+                            </li>
+                            <li class="card-body-list">
+                                Rehabilitación Especial
+                            </li>
+                            <li class="card-body-list">
+                                Prácticas Clínicas II
+                            </li>
+                            <li class="card-body-list">
+                                Ortopedia y Traumatología
+                            </li>
+                            <li class="card-body-list">
+                                Medicina Preventiva y Salud Pública
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseSeven">
+                    <a class="collapsed card-link">
+                        7mo Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Rehabilitación en la Actividad Física
+                            </li>
+                            <li class="card-body-list">
+                                Rehabilitación Cardiorespiratoria
+                            </li>
+                            <li class="card-body-list">
+                                Prótesis y Órtesis
+                            </li>
+                            <li class="card-body-list">
+                                Cultura Emprendedora
+                            </li>
+                            <li class="card-body-list">
+                                Gestión de la Calidad
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseEight">
+                    <a class="collapsed card-link">
+                        8vo Semestre
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseEight" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                Terapia Ocupacional
+                            </li>
+                            <li class="card-body-list">
+                                Seminario de Trabajo de Investigación
+                            </li>
+
+                            <li class="card-body-list">
+                                Desarrollo de Emprendedores
+                            </li>
+
+                            <li class="card-body-list">
+                                Bioética
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseNine">
+                    <a class="collapsed card-link">
+                        Servicio Social
+                    </a>
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <div id="collapseNine" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li class="card-body-list">
+                                El servicio social es obligatorio para los alumnos y egresados de educación superior
+                                incorporadas a SEPyC, y es requisito previo para la obtención del título
+                                correspondiente.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="contact-us-info ">
+        <div class="contact-us-info-left ">
+            <h2><i class="fa fa-location-arrow "></i> Domicilio</h2>
+            <span class="pointer " onclick="openMap() " class="text-justify ">Río Presidio, No. 1955 Nte. Col. Tepeca
+                Los Mochis, Sinaloa, México.</span>
+            <h2 style="margin-top: 50px; "><i class="fa fa-phone "></i> Telefono</h2>
+            <span style=" text-align: center; "><a href="tel:668807374 " class="pointer ">(668) 880-7374</a></span>
+            <h2 style="margin-top: 50px; ">Redes Sociales</h2>
+            <div class="grid-redes-footer ">
+                <a href="https://es-la.facebook.com/univafu.oficial/ " target="_blank " style="color: #fff; "><i
+                        class="fa fa-facebook "></i></a>
+                <a href="https://twitter.com/univafu_oficial " target="_blank " style="color: rgb(255, 255, 255); "> <i
+                        class="fa fa-twitter "></i></a>
+                <a href="https://www.instagram.com/univafuuniversidad/ " target="_blank "
+                    style="color: rgb(255, 255, 255); "> <i class="fa fa-instagram "></i></a>
+                <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg " target="_blank "
+                    style="color: rgb(255, 255, 255); "> <i class="fa fa-youtube "></i></a>
+            </div>
+        </div>
+        <div class="contact-us-info-right ">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.5820608686886!2d-108.99286578460658!3d25.817358812594744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba28a4115ecddb%3A0xa9f5909e831263d1!2sUNIVAFU%20Universidad!5e0!3m2!1ses-419!2smx!4v1651297178135!5m2!1ses-419!2smx "
+                width="100% " height="100% " style="border:0; " allowfullscreen=" " loading="lazy "
+                referrerpolicy="no-referrer-when-downgrade " style="border-radius: 3px; "></iframe>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2022 Univafu , Todos los derechos reservados.
+
+        </p>
+    </div>
+
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js "
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+
+    <script src="../../assets/js/isotope.min.js "></script>
+    <script src="../../assets/js/owl-carousel.js "></script>
+    <script src="../../assets/js/lightbox.js "></script>
+    <script src="../../assets/js/tabs.js "></script>
+    <script src="../../assets/js/video.js "></script>
+    <script src="../../assets/js/slick-slider.js "></script>
+    <script src="../../assets/js/custom.js "></script>
 </body>
 
 </html>

@@ -973,13 +973,13 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NhZ1aGaPYcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/NhZ1aGaPYcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="contact-us" id="contact">
         <div class="container">
             <div class="row">
@@ -1061,14 +1061,74 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>Copyright © 2022 Univafu , Todos los derechos reservados.
-            </p>
+        
+    </section> -->
+
+    
+    <section class="contact-us">
+        <div class="contact-univafu-grid">
+            <div class="contact-univafu-grid-left">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 >Contactanos</h2>
+                            <h6 class="contact-description">Nos gustaria recibir tus dudas y comentarios, en breve uno de nuestros asesores se pondrá en contacto</h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Nombre*" required="" >
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Correo Electronico" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Telefono*" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button">Enviar
+                                    Mensaje</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-univafu-grid-right">
+                <h2 class="contact-header"><i class="fa fa-location-arrow"></i> Domicilio</h2>
+                <span onclick="openMap()" class="contact-text">Río Presidio, No. 1955 Nte. Col. Tepeca Los Mochis, Sinaloa, México.</span>
+                <div style="padding: 30px 10%; height: 70%;" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.5820608686886!2d-108.99286578460658!3d25.817358812594744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba28a4115ecddb%3A0xa9f5909e831263d1!2sUNIVAFU%20Universidad!5e0!3m2!1ses-419!2smx!4v1651297178135!5m2!1ses-419!2smx"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 3px;"></iframe>
+    
+                </div>
+                <h2 class="contact-header"><i class="fa fa-phone"></i> Telefono</h2>
+                <span><a href="tel:668807374" class="contact-text">(668) 880-7374</a></span>
+            </div>
+            </div>
         </div>
     </section>
 
+    <div class="footer">
+        <p>Copyright © 2022 Univafu , Todos los derechos reservados.
+        </p>
+        <div class="grid-redes">
+            <a href="https://es-la.facebook.com/univafu.oficial/" target="_blank" style="color: #fff;"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/univafu_oficial" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank" style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
+        </div>
 
-
+    </div>
 
     <script>
         function openMap() {
@@ -1089,54 +1149,6 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
-
-        var showSection = function showSection(section, isAnimate) {
-            var
-                direction = section.replace(/#/, ''),
-                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-                reqSectionPos = reqSection.offset().top - 0;
-
-            if (isAnimate) {
-                $('body, html').animate({
-                        scrollTop: reqSectionPos
-                    },
-                    800);
-            } else {
-                $('body, html').scrollTop(reqSectionPos);
-            }
-
-        };
-
-        var checkSection = function checkSection() {
-            $('.section').each(function() {
-                var
-                    $this = $(this),
-                    topEdge = $this.offset().top - 80,
-                    bottomEdge = topEdge + $this.height(),
-                    wScroll = $(window).scrollTop();
-                if (topEdge < wScroll && bottomEdge > wScroll) {
-                    var
-                        currentId = $this.data('section'),
-                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                    reqLink.closest('li').addClass('active').
-                    siblings().removeClass('active');
-                }
-            });
-        };
-
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
-            e.preventDefault();
-            showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function() {
-            checkSection();
-        });
-    </script> -->
-
 </body>
 
 </html>

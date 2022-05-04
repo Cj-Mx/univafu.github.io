@@ -2790,7 +2790,7 @@ nav a:visited {
 }
 
 .provide>h3 {
-    padding: 25px 0;
+    padding: 25px 10px;
     font-size: 1.2em;
 }
 
@@ -2848,4 +2848,41 @@ nav a:visited {
         width: 100px;
         height: 100px;
     }
+}
+
+
+/* Academic Charge */
+
+#academic-charge {
+    padding: 10px 5px;
+}
+
+.card-body-list {
+    list-style: circle;
+    margin: 10px 50px;
+}
+
+.card-header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.card-header:hover {
+    cursor: pointer;
+    background-color: #cfcfcf;
+}
+
+.card-header>a {
+    text-decoration: none;
+    color: #1f8ad6;
+}
+
+.card-header>i {
+    color: #1f8ad6;
+}
+
+.card-body {
+    color: #1f272b;
 }

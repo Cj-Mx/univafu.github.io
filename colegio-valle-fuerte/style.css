@@ -1,19 +1,9 @@
 .mision-vision {
     background: linear-gradient( rgba(12, 12, 12, 0.952), rgba(19, 19, 19, 0.473), rgba(0, 0, 0, 0.658)), url('../assets/images/notices-bg.jpg') no-repeat center center fixed;
-    /* /* background-color: rgb(160, 72, 1); */
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.about {
-    background-color: #eeeeee;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* margin: 50px 0 0 0; */
 }
 
 .grid-mision-vision {

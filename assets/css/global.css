@@ -287,6 +287,14 @@ header
     margin: 30px 0 0 50px;
 }
 
+.logo-secu{
+    width: 110px;
+}
+
+.logo-prepa{
+    width:110px;
+}
+
 .container>ul {
     display: flex;
     align-items: center;
@@ -2198,8 +2206,7 @@ nav a:visited {
 
 .menu-link {
     padding: 20px 25px;
-    /* background: #0500009d; */
-    /* background-color: #000; */
+    text-transform: uppercase;
     color: #ffffff;
     transition: background .2s, color .2s;
     position: relative;

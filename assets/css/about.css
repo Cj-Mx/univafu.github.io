@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 10% 30px;
+    min-height: 450px;
     color: rgb(0, 0, 0);
   }
   
@@ -45,6 +46,12 @@
   h1 {
     display: inline-block;
   }
+
+  @media(max-width: 1200px){
+    .description{
+      min-height: 350px;
+    }
+  }
   
   @media (max-width: 720px) {
     .grid-about {
@@ -60,6 +67,7 @@
     }
     .img1-grid>img{
       height: 100%;
+      min-height: 250px;
     }
   
     .description{

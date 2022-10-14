@@ -22,7 +22,7 @@
       <link rel="stylesheet" href="../assets/css/lightbox.css">
 </head>
 
-<body>
+<body onload="loadNavigation()">
 
     <!-- Sub Cabecera -->
     <div class="sub-header">
@@ -45,20 +45,20 @@
                 <a href="#"><img src="../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
             </div>
 
-            <!--Navbar - Lista de opciones-->
-            <div class="nav">
+             <!--Navbar - Lista de opciones-->
+             <div class="nav">
                 <nav>
                     <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
                     <ul class="menu menu-bar">
                         <li>
-                            <a href="" class="menu-link menu-bar-link">Inicio</a>
+                            <a id="router-index" href="" class="menu-link menu-bar-link">Inicio</a>
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
                                 del valle del fuerte</a>
                             <ul class="mega-menu mega-menu--multiLevel">
                                 <li>
-                                    <a href="colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
+                                    <a id="router-secundaria" href="colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
                                 </li>
                                 <li class="mobile-menu-back-item">
                                     <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
@@ -71,10 +71,10 @@
                                 Univafu</a>
                             <ul class="mega-menu mega-menu--multiLevel">
                                 <li>
-                                    <a href="prepa-univafu/higiene-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
+                                    <a id="router-prepa-hs" href="prepa-univafu/higiene-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
                                 </li>
                                 <li>
-                                    <a href="prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
+                                    <a id="router-prepa-ti" href="prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
                                 </li>
                                 <li class="mobile-menu-back-item">
                                     <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
@@ -91,27 +91,27 @@
                                         aria-haspopup="true">Licenciaturas</a>
                                     <ul class="menu menu-list">
                                         <li>
-                                            <a href="/univafu-universidad/licenciaturas/nutricion.html"
+                                            <a id="router-uni-lnut" href="/univafu-universidad/licenciaturas/nutricion.html"
                                                 class="menu-link menu-list-link">Licenciatura en
                                                 Nutrición</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html"
+                                            <a id="router-uni-gtyg" href="/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html"
                                                 class="menu-link menu-list-link">Licenciatura en
                                                 Gestión Turística y Gastronomía</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/licenciaturas/terapia-fisica.html"
+                                            <a id="router-uni-tfyr" href="/univafu-universidad/licenciaturas/terapia-fisica.html"
                                                 class="menu-link menu-list-link">Licenciatura en Terapia
                                                 Fisica y Rehabilitación</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/licenciaturas/terapia-audicion.html"
+                                            <a id="router-uni-tayl" href="/univafu-universidad/licenciaturas/terapia-audicion.html"
                                                 class="menu-link menu-list-link">Licenciatura en Terapia
                                                 Audición y Lenguaje</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/licenciaturas/marketing-digital.html"
+                                            <a id="router-uni-lmkt" href="/univafu-universidad/licenciaturas/marketing-digital.html"
                                                 class="menu-link menu-list-link">Licenciatura en Marketing
                                                 Digital</a>
                                         </li>
@@ -122,17 +122,17 @@
                                         aria-haspopup="true">Posgrados</a>
                                     <ul class="menu menu-list">
                                         <li>
-                                            <a href="/univafu-universidad/posgrados/desarrollo-capital-humano.html"
+                                            <a id="router-uni-mdch" href="/univafu-universidad/posgrados/desarrollo-capital-humano.html"
                                                 class="menu-link menu-list-link">Maestría en Desarrollo del Capital
                                                 Humano</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/posgrados/nutricion-clinica.html"
+                                            <a id="router-uni-mnch" href="/univafu-universidad/posgrados/nutricion-clinica.html"
                                                 class="menu-link menu-list-link">Maestría en Nutrición Clínica y
                                                 Hospitalaria</a>
                                         </li>
                                         <li>
-                                            <a href="/univafu-universidad/posgrados/especialidad-prevencion.html"
+                                            <a id="router-uni-epyr" href="/univafu-universidad/posgrados/especialidad-prevencion.html"
                                                 class="menu-link menu-list-link">Especialidad en Prevención y
                                                 Rehabilitación de Lesiones Deportivas</a>
                                         </li>
@@ -151,7 +151,7 @@
                             Univafu</a>
                             <ul class="mega-menu mega-menu--flat">
                                 <li>
-                                    <a href="fundacion-univafu/clinica.html" class="menu-link menu-bar-link">Clinica</a>
+                                    <a id="router-fundacion-cli" href="fundacion-univafu/clinica.html" class="menu-link menu-bar-link">Clinica</a>
                                 </li>
                                 <li class="mobile-menu-back-item">
                                     <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
@@ -160,7 +160,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="univafu-idiomas/idiomas.html" class="menu-link menu-bar-link">Univafu
+                            <a id="router-idiomas" href="univafu-idiomas/idiomas.html" class="menu-link menu-bar-link">Univafu
                             Idiomas</a>
                         </li>
 
@@ -176,6 +176,7 @@
                     </ul>
                 </nav>
             </div>
+
 
         </div>
     </header>
@@ -214,6 +215,8 @@
     <h1>Clinica</h1>
 
     <h1 style="font-size: 3em;">EN CONSTRUCCIÓN</h1>
+
+    <script src="../assets/js/navigation.js"></script>
 </body>
 
 </html>

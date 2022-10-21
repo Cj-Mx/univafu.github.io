@@ -16,58 +16,7 @@ function loadNavigation(){
     document.getElementById("router-fundacion-cli").href = "http://127.0.0.1:5500/fundacion-univafu/clinica.html"
     
     document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html" ;
+
     loadNotices();
 }
-
-
-var noticias = [
-    {
-        "img" : [
-            {
-                "name" : "assets/images/noticias/noticia1.jpg"
-            }
-        ],
-        "title": "Noticia 1",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img" : [
-            {
-                "name" : "assets/images/noticias/noticia2.jpg"
-            }
-        ],
-        "title": "Noticia 2",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img" : [
-            {
-                "name" : "assets/images/noticias/noticia3.jpg"
-            }
-        ],
-        "title": "Noticia 3",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img" : [
-            {
-                "name" : "assets/images/noticias/noticia4.jpg"
-            }
-        ],
-        "title": "Noticia 4",
-        "description" : "4 ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl  lñaskdlñksalñdñasl sadlñasklñ kalñs 4"
-    }
-]
-
-function loadNotices(){
-    noticias.map((noticia, index)=> {
-        var noticeImg = document.getElementById(`nt${index+1}-img`);
-        var noticeTitle = document.getElementById(`nt${index+1}-title`);
-        var noticeDescription = document.getElementById(`nt${index+1}-description`);
-        noticeImg.src = noticia.img[0].name;
-        noticeTitle.innerHTML = noticia.title;
-        noticeDescription.innerHTML = noticia.description;
-    });
-}
-
 

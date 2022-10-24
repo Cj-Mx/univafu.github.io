@@ -375,9 +375,11 @@ header
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
     height: 140px;
+
 }
 
 .header-area.header-sticky {
+    z-index:50;
     min-height: 140px;
 }
 

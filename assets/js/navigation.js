@@ -61,13 +61,17 @@ var noticias = [
 
 function loadNotices(){
     noticias.map((noticia, index)=> {
-        var noticeImg = document.getElementById(`nt${index+1}-img`);
-        var noticeTitle = document.getElementById(`nt${index+1}-title`);
-        var noticeDescription = document.getElementById(`nt${index+1}-description`);
+        var noticeImg = document.querySelector(`.nt${index+1}-img`);
+        var noticeTitle = document.querySelector(`.nt${index+1}-title`);
+        var noticeDescription = document.querySelector(`.nt${index+1}-description`);
         noticeImg.src = noticia.img[0].name;
         noticeTitle.innerHTML = noticia.title;
         noticeDescription.innerHTML = noticia.description;
     });
+}
+
+function showModal(nModal){
+    document.querySelector('.modal-title').innerHTML = noticias[nModal].title; 
 }
 
 

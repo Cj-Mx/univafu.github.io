@@ -1,14 +1,3 @@
-import { Noticias } from "./noticias";
-
-class Navigation extends Noticias{
-    constructor(){}
-        getNavigation() {
-            return loadNavigation();
-        }        
-}
-
-const navigation = new Navigation();
-
 function loadNavigation(){
     document.getElementById("router-index").href = "http://127.0.0.1:5500" ;
     document.getElementById("router-secundaria").href = "http://127.0.0.1:5500/colegio-valle-fuerte/Secundaria.html" ;
@@ -27,7 +16,9 @@ function loadNavigation(){
     document.getElementById("router-fundacion-cli").href = "http://127.0.0.1:5500/fundacion-univafu/clinica.html"
     
     document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html" ;
-    loadNotices();
+
+    window.location.pathname === '/' && loadNotices();
+
 }
 
 

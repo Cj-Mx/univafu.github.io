@@ -1,18 +1,89 @@
-.container-mv{
+.container-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     /* padding: 10%; */
 }
 
-.container-mv > .mv-img{
-    width: 50%;
+.container-grid > .mv-img{
+    width: 70%;
 }
 
 
 .mision-vision{
     padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mision, .vision{
+    margin: 20px 0; 
+}
+
+.mision > h2 , .vision > h2{
+    font-weight: 500;
+}
+
+
+.container-description{
+    padding:30px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_fundacion{
+    width: 19%;
 }
 
 .clinica-description{
     text-align: justify;
+    margin: 0px 20%;
+    font-size: 1.2em;
+}
+
+.container-img > img{
+    height: 450px;
+}
+
+.fundacion-servicios{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list{
+    padding-left: 5%;
+
+}
+
+.list > li{
+    list-style: disc;
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.container-reconocimientos{
+    background-color: rgb(169, 29, 29);
+    margin: 2% 10%;
+    color: #fff;
+}
+
+.cr-padding{
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+
+.line-bar{
+    position: relative;
+    right: -70%;
+    /* top: 10px; */
+    border: 5px solid rgb(255, 255, 255);
+    width: 30%;
+}
+
+.title-servicios{
+    text-transform: uppercase;
 }

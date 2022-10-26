@@ -1,0 +1,18 @@
+.container-mv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* padding: 10%; */
+}
+
+.container-mv > .mv-img{
+    width: 50%;
+}
+
+
+.mision-vision{
+    padding-right: 5%;
+}
+
+.clinica-description{
+    text-align: justify;
+}

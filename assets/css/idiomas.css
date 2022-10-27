@@ -20,12 +20,12 @@ max-width: 500px;
 box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
 -webkit-box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
 -moz-box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
-transition: 1s;
+transition: 0.5s;
 }
 
 .card:hover{
     transform: translateY(-10px);
-    transition: 1s;
+    transition: 0.5s;
 }
 .title-idioma{
     padding: 10px;

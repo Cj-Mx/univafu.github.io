@@ -125,12 +125,6 @@ html[xmlns] .clearfix {
     height: 1%;
 }
 
-ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
 header,
 nav,
@@ -2588,3 +2582,7 @@ nav a:visited {
     overflow: hidden;
 }
 
+
+.contenedor{
+    padding: 5% 10%;
+}

@@ -2586,3 +2586,12 @@ nav a:visited {
 .contenedor{
     padding: 5% 10%;
 }
+
+.aviso-privacidad{
+    color: #fff;
+}
+
+.aviso-privacidad:hover{
+    color: #fff; border-bottom:1px solid #fff;
+}
+

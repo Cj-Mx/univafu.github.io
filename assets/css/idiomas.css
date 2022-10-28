@@ -118,6 +118,15 @@ p{
     margin: 10px 0;
 }
 
+.grid-servicios-title{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-servicios-title > img{
+    width: 60%;
+}
+
 @media(max-width: 1428px){
     .contenedor-beneficios{
         grid-template-columns: repeat(2,1fr);
@@ -134,11 +143,21 @@ p{
     }
     .grid-idiomas{
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 5%;
     }
 
     .grid-servicios{
         grid-template-columns: 1fr;
     }
+
+    .grid-servicios-description{
+        padding: 5% 10%;
+    }
+
+    .grid-servicios-title{
+        /* padding: 0 25%; */
+    }
+
     .beneficios{
         padding: 1%;
         margin: 50px 4%;

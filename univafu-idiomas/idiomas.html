@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/lightbox.css">
     <link rel="stylesheet" href="../assets/css/idiomas.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/clinica.css">
 
 </head>
 
@@ -203,7 +204,42 @@
     </section>
     <!-- ***** Main Banner Area final ***** -->
 
+    <div class="container-description">
+        <img src="../assets/logos/logo_idiomas.png" alt="" class="logo">
+        <p class="py-5 description">UNIVAFU IDIOMAS, es un centro especializado en el aprendizaje de idiomas. UNIVAFU IDIOMAS, es una institución abierta al público en general, en donde recibimos a toda clase de alumnos interesados en aprender o actualizar sus conocimientos en una lengua extranjera..</p>
+    </div>
 
+
+    <div class="container-grid my-5">
+        <div class="mv-img">
+            <img src="../assets/images/mision-vision/idiomas_mv.jpg" alt="">
+        </div>
+        <div class="mision-vision">
+            <div class="mision">
+                <!-- <div class="line-bar-green"></div> -->
+                <div class="meter">
+                    <span class="line-width"><span class="no-progress"></span></span>
+                </div>
+                <h2>MISIÓN</h2>
+                <p>Privilegiar la comunicación internacional.</p>
+            </div>
+            <div class="vision">
+                <!-- <div class="line-bar-green"></div> -->
+                <div class="meter">
+                    <span class="line-width"><span class="no-progress"></span></span>
+                </div>
+                <h2>VISIÓN</h2>
+                <p>Posicionarnos en nuestro estado como el mejor instituto de comunicación humana global.</p>
+            </div>
+            <div class="filosofia">
+                <div class="meter">
+                    <span class="line-width"><span class="no-progress"></span></span>
+                </div>                
+                <h2>FILOSOFIA</h2>
+                <p>Somos perseverantes para darle valor a la expresión humana.</p>
+            </div>
+        </div>
+    </div>
     <!-- ABOUT -->
     <div class="about">
         <div class="container">
@@ -221,7 +257,6 @@
                 <h5 class="title-idioma">Frances</h5>
                 <p class="description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos veritatis explicabo itaque doloremque provident quod nemo iure enim. Reprehenderit expedita dolor quaerat atque corporis ratione iure tempore esse a vitae, voluptatum incidunt et inventore dolorum pariatur architecto placeat dolores delectus repudiandae mollitia! Et velit modi dolor placeat. Deserunt, at ducimus!
                 </p>
 
             </div>
@@ -231,10 +266,10 @@
                 <p class="description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
                 </p>
-
             </div>
         </div>
         </div>
+    </div>
     </div>
 
     <!-- NUESTROS SERVICIOS -->
@@ -243,7 +278,7 @@
         <div class="grid-servicios">
             <div class="grid-servicios-description">
                 <h1>Nuestros Servicios</h1>
-                                <ul>
+                                <ul class="list">
                                     <li class="servicios-list">
                                         Curso de inglés para jóvenes y adultos.
                                     </li>
@@ -270,6 +305,48 @@
         </div>
     </div>
 
+
+
+
+    <div class="beneficios">
+        <h1>Beneficios adicionales</h1>
+        <div class="contenedor-beneficios">
+            <div class="beneficios-items">
+                <div class="contain-icon">
+                    <img src="../assets/images/examen.png" alt="" class="icon-beneficios">
+                </div>
+                <b>Examen diagnostico </b>
+            </div>
+            <div class="beneficios-items">
+                <div class="contain-icon">
+                    <img src="../assets/images/libro.png" alt="" class="icon-beneficios">
+                </div>
+                <b>Material didáctico incluido</b>
+            </div>
+            <div class="beneficios-items">
+                <div class="contain-icon">
+                    <img src="../assets/images/accidente.png" alt="" class="icon-beneficios">
+                </div>
+                <b>Seguro contra accidentes </b>
+            </div>
+            <div class="beneficios-items">
+                <div class="contain-icon">
+                    <img src="../assets/images/educacion-virtual.png" alt="" class="icon-beneficios">
+                </div>
+                <b>Desarrollo de actividades en el aula tecnológica</b>
+            </div>
+        </div>
+        <!-- <ul>
+            <li>Examen diagnostico (sin costo)</li>
+            <li>Material didáctico incluido</li>
+            <li>Seguro contra accidentes</li>
+            <li>Desarrollo de actividades en el aula tecnologica</li>
+        </ul> -->
+        <i></i>
+      </div>
+
+
+    <!-- Footer -->
     <div class="footer">
         <p>Copyright © 2022 Univafu , Todos los derechos reservados.
         </p>
@@ -286,6 +363,37 @@
         <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de privacidad</a>
 
       </div>
+
+
+
+
+
+
+
   <script src="../assets/js/navigation.js"></script>
+
+
+  <script>
+    let activeProgressBar = false;
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".no-progress");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("progress");
+                reveals[i+1].classList.add("progress");
+                reveals[i+2].classList.add("progress");
+                i = reveals.length;
+            }
+        }
+    }
+    
+    window.addEventListener("scroll", reveal);
+    reveal();
+</script>
+
 </body>
 </html>

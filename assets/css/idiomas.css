@@ -24,7 +24,8 @@ transition: 0.5s;
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    transform: scale(1.1);
     transition: 0.5s;
 }
 .title-idioma{

@@ -50,7 +50,7 @@ p{
 
 .grid-servicios-description{
     color: #fff;
-    background-color: rgb(74, 183, 251);
+    background-color: #1C447E;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,6 +168,8 @@ p{
         grid-template-columns: 1fr;
     }
 
+    .grid-servicios-description{
+    }
     .grid-servicios-description{
         padding: 2% 8%;
     }

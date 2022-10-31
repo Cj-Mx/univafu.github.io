@@ -338,6 +338,7 @@ header
     justify-content: center;
     padding: 0;
     margin: 0;
+    
 }
 
 .background-header .main-nav .nav li a {
@@ -369,11 +370,10 @@ header
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
     height: 140px;
-
 }
 
 .header-area.header-sticky {
-    z-index:50;
+    z-index: 11112;
     min-height: 140px;
 }
 

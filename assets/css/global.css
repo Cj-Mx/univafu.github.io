@@ -2594,3 +2594,34 @@ nav a:visited {
 .aviso-privacidad:hover{
     color: #fff; border-bottom:1px solid #fff;
 }
+
+
+
+/* LO QUE OFRECEMOS */
+.grid-moreServices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10%;
+}
+
+
+.card{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:nth-child(1){
+    background-color: #fdfd96;
+}
+.card:nth-child(2){
+    background-color: #77dd77;
+}
+.card:nth-child(3){
+    background-color: #ff6961;
+}
+.card:nth-child(4){
+    background-color: #84b6f4;
+}

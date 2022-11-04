@@ -15,6 +15,8 @@
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/global.css">
@@ -243,9 +245,9 @@
     <!-- ABOUT -->
     <div class="about">
         <div class="container">
-        <h1 class="text-center p-5">Nuestros idiomas</h1>
-        <div class="grid-idiomas">
-            <div class="grid-idiomas-ingles card">
+        <h1 class="text-center p-5" data-aos="fade-up">Nuestros idiomas</h1>
+        <div class="grid-idiomas" data-aos="fade-up" data-aos-delay="500">
+            <div class="grid-idiomas-ingles card" >
                 <img src="../assets/images/flags/united-states.png" alt="" class="flag-icon">
                 <h5 class="title-idioma">Ingles</h5>
                 <p class="description">
@@ -277,8 +279,8 @@
     <div class="servicios">
         <div class="grid-servicios">
             <div class="grid-servicios-description">
-                <h1>Nuestros Servicios</h1>
-                                <ul class="list">
+                <h1 data-aos="fade-left" data-aos-offset="200">Nuestros Servicios</h1>
+                                <ul class="list" data-aos="flip-up" data-aos-offset="200">
                                     <li class="servicios-list">
                                         Curso de inglés para jóvenes y adultos.
                                     </li>
@@ -300,7 +302,7 @@
                                 </ul>
                             </div>
             <div class="grid-servicios-title">
-<img src="../assets/images/idiomas.jpg" alt="">
+<img src="../assets/images/idiomas.jpg" alt="" data-aos="flip-right" data-aos-offset="200">
             </div>
         </div>
     </div>
@@ -336,13 +338,6 @@
                 <b>Desarrollo de actividades en el aula tecnológica</b>
             </div>
         </div>
-        <!-- <ul>
-            <li>Examen diagnostico (sin costo)</li>
-            <li>Material didáctico incluido</li>
-            <li>Seguro contra accidentes</li>
-            <li>Desarrollo de actividades en el aula tecnologica</li>
-        </ul> -->
-        <i></i>
       </div>
 
 
@@ -394,6 +389,15 @@
     window.addEventListener("scroll", reveal);
     reveal();
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        mirror: true,
+        once: true
+    });
+  </script>
 
 </body>
 </html>

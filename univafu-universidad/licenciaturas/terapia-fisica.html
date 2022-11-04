@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../../assets/css/fontawesome.css">
@@ -222,7 +224,7 @@
 
     <!-- ABOUT -->
     <!-- Inicio de la Sección About -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="overflow: hidden">
         <div class="grid-about">
             <div class="img1-grid" data-aos="fade-up" data-aos-offset="250" data-aos-delay="300">
                 <img src="../../assets/images/about/universidad/licenciaturas/ltal/1.jpg" alt="">
@@ -523,6 +525,16 @@
 
     <script src="../../assets/js/isotope.min.js"></script>
     <script src="../../assets/js/custom.js"></script>
+
+    <!-- script data-aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            mirror: true,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

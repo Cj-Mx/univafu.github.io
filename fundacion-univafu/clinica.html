@@ -15,6 +15,9 @@
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/global.css">
@@ -298,21 +301,21 @@
         </div>
     </div>
 
-        <!-- Nuestros servicios -->
-        <div class="container-servicios">
-            <div class="cr-padding">
-                <div class="text-aling">
-                    <div class="line-bar"></div>
-                    <h1 class="title-servicios">Nuestros Servicios</h1>
-                </div>
-                <ul class="list">
-                    <li>Terapia de Rehabilitación Física</li>
-                    <li>Terapia de Audición y Lenguaje</li>
-                    <li>Asesorías Nutricionales</li>
-                    <li>Asesorías Psicológicas</li>
-                </ul>
+    <!-- Nuestros servicios -->
+    <div class="container-servicios">
+        <div class="cr-padding">
+            <div class="text-aling">
+                <div class="line-bar"></div>
+                <h1 class="title-servicios">Nuestros Servicios</h1>
             </div>
+            <ul class="list">
+                <li>Terapia de Rehabilitación Física</li>
+                <li>Terapia de Audición y Lenguaje</li>
+                <li>Asesorías Nutricionales</li>
+                <li>Asesorías Psicológicas</li>
+            </ul>
         </div>
+    </div>
 
 
     <!-- Inicio del contenedor del Footer -->
@@ -329,7 +332,8 @@
             <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"
                 style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
         </div>
-        <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de privacidad</a>
+        <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de
+            privacidad</a>
     </div>
     <!-- Fin del contenedor del Footer -->
     <script src="../assets/js/navigation.js"></script>
@@ -350,9 +354,19 @@
                 }
             }
         }
-        
+
         window.addEventListener("scroll", reveal);
         reveal();
+    </script>
+
+    <!-- script data-aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            mirror: true,
+            once: true
+        });
     </script>
 </body>
 

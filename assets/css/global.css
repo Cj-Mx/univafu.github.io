@@ -361,7 +361,7 @@ header
 .header-area {
     background-color: rgba(0, 0, 0, 0.15);
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: 100;
@@ -2606,3 +2606,10 @@ nav a:visited {
 }
 
 
+/* NAVBAR SCROLL */
+
+.scrollNavbar{
+    margin-top:   "-40px";
+    background-color:  "black";
+    position : "fixed";
+}

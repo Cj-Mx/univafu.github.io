@@ -2613,3 +2613,41 @@ nav a:visited {
     background-color:  "black";
     position : "fixed";
 }
+
+
+/* PRACTICANDO CSS */
+
+.figure{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img;
+}
+
+.figure::after{
+    content: "Soy Idiomas";
+    grid-area:img;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6, 200, 225);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+.figure:hover::after{
+    clip-path: circle(150% at top right);
+}

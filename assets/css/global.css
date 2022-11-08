@@ -2651,3 +2651,24 @@ nav a:visited {
 .figure:hover::after{
     clip-path: circle(150% at top right);
 }
+
+.btn-contact{
+    background-color: #fb9016; font-weight: bold;
+}
+
+.divisor{
+    width: 100px;background-color:#fb9016; height: 10px; margin: 0 auto;
+}
+
+.perfil-egreso{
+    overflow: scroll; max-height: 350px;
+}
+
+@media(max-width: 720px){
+    .perfil-egreso{
+        overflow: hidden;
+        max-height: 100%;
+        /* background-color: red; */
+    }
+}
+

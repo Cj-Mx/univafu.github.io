@@ -2690,3 +2690,44 @@ img.btn-whatsapp {
     transform: translateY(-5px);
     transition-duration: 0.5s;
     } 
+
+    .morado{
+        color: rgb(47, 2, 98);
+    }
+    .bold{ font-weight: bold;}
+
+    .title-color{
+        color: rgb(192, 31, 87);
+        font-weight: bold;
+    }
+
+
+    .plan-estudios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .plan-estudios>p{
+        padding: 30px 25%;
+    }
+
+    .plan-estudios>a{
+        background-color: #136a73;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .plan-estudios>a:hover{
+        background-color: #177E89;
+    }
+
+    @media(max-width: 650px){
+        .plan-estudios>p{
+            padding: 30px 10%;
+        }
+    }

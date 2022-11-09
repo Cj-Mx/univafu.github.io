@@ -29,6 +29,9 @@
 </head>
 
 <body onload="loadNavigation()">
+    <!-- BOTON DE WHATSAPP -->
+    <img class="btn-whatsapp" src="../assets/images/whatsapp.png" width="64" height="64" alt="Whatsapp"
+        onclick="sendMessageWhatsapp()">
 
     <!-- Sub Cabecera -->
     <div class="sub-header">
@@ -43,142 +46,158 @@
         </div>
     </div>
 
-       <!-- ***** Inicio de la cabecera ***** -->
-       <header class="header-area header-sticky">
+    <!-- ***** Inicio de la cabecera ***** -->
+    <header class="header-area header-sticky">
         <div class="container-header">
             <div class="content-logo-home">
                 <!-- Logo de la cabecera en la página-->
                 <a href="#"><img src="../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
             </div>
 
-           <!--Navbar - Lista de opciones-->
-           <div class="nav">
-            <nav>
-                <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
-                <ul class="menu menu-bar">
-                    <li>
-                        <a id="router-index" href="" class="menu-link menu-bar-link">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
-                            del valle del fuerte</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a id="router-secundaria" href="colegio-valle-fuerte/Secundaria.html" class="menu-link menu-bar-link">Secundaria</a>
-                            </li>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
-                            </li>
-                        </ul>
-                    </li>
+            <!--Navbar - Lista de opciones-->
+            <div class="nav">
+                <nav>
+                    <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
+                    <ul class="menu menu-bar">
+                        <li>
+                            <a id="router-index" href="" class="menu-link menu-bar-link">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Colegio
+                                del valle del fuerte</a>
+                            <ul class="mega-menu mega-menu--multiLevel">
+                                <li>
+                                    <a id="router-secundaria" href="colegio-valle-fuerte/Secundaria.html"
+                                        class="menu-link menu-bar-link">Secundaria</a>
+                                </li>
+                                <li class="mobile-menu-back-item">
+                                    <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                        style="color: #fff">Volver</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Prepa
-                            Univafu</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a id="router-prepa-hs" href="prepa-univafu/higiene-salud.html" class="menu-link menu-bar-link">Higiene y Salud C.</a>
-                            </li>
-                            <li>
-                                <a id="router-prepa-ti" href="prepa-univafu/tecnologias.html" class="menu-link menu-bar-link">Tecnologias</a>
-                            </li>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link" style="color: #fff">Volver</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Prepa
+                                Univafu</a>
+                            <ul class="mega-menu mega-menu--multiLevel">
+                                <li>
+                                    <a id="router-prepa-hs" href="prepa-univafu/higiene-salud.html"
+                                        class="menu-link menu-bar-link">Higiene y Salud C.</a>
+                                </li>
+                                <li>
+                                    <a id="router-prepa-ti" href="prepa-univafu/tecnologias.html"
+                                        class="menu-link menu-bar-link">Tecnologias</a>
+                                </li>
+                                <li class="mobile-menu-back-item">
+                                    <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                        style="color: #fff">Volver</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
-                            Universidad</a>
-                        <ul class="mega-menu mega-menu--multiLevel">
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
-                                    aria-haspopup="true">Licenciaturas</a>
-                                <ul class="menu menu-list">
-                                    <li>
-                                        <a id="router-uni-lnut" href="/univafu-universidad/licenciaturas/nutricion.html"
-                                            class="menu-link menu-list-link">Licenciatura en
-                                            Nutrición</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-gtyg" href="/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html"
-                                            class="menu-link menu-list-link">Licenciatura en
-                                            Gestión Turística y Gastronomía</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-tfyr" href="/univafu-universidad/licenciaturas/terapia-fisica.html"
-                                            class="menu-link menu-list-link">Licenciatura en Terapia
-                                            Fisica y Rehabilitación</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-tayl" href="/univafu-universidad/licenciaturas/terapia-audicion.html"
-                                            class="menu-link menu-list-link">Licenciatura en Terapia
-                                            Audición y Lenguaje</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-lmkt" href="/univafu-universidad/licenciaturas/marketing-digital.html"
-                                            class="menu-link menu-list-link">Licenciatura en Marketing
-                                            Digital</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="menu-link menu-bar-link"
-                                    aria-haspopup="true">Posgrados</a>
-                                <ul class="menu menu-list">
-                                    <li>
-                                        <a id="router-uni-mdch" href="/univafu-universidad/posgrados/desarrollo-capital-humano.html"
-                                            class="menu-link menu-list-link">Maestría en Desarrollo del Capital
-                                            Humano</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-mnch" href="/univafu-universidad/posgrados/nutricion-clinica.html"
-                                            class="menu-link menu-list-link">Maestría en Nutrición Clínica y
-                                            Hospitalaria</a>
-                                    </li>
-                                    <li>
-                                        <a id="router-uni-epyr" href="/univafu-universidad/posgrados/especialidad-prevencion.html"
-                                            class="menu-link menu-list-link">Especialidad en Prevención y
-                                            Rehabilitación de Lesiones Deportivas</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu-back-item">
-                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
-                                    style="color: #fff">Volver</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Univafu
+                                Universidad</a>
+                            <ul class="mega-menu mega-menu--multiLevel">
+                                <li>
+                                    <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                        aria-haspopup="true">Licenciaturas</a>
+                                    <ul class="menu menu-list">
+                                        <li>
+                                            <a id="router-uni-lnut"
+                                                href="/univafu-universidad/licenciaturas/nutricion.html"
+                                                class="menu-link menu-list-link">Licenciatura en
+                                                Nutrición</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-gtyg"
+                                                href="/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html"
+                                                class="menu-link menu-list-link">Licenciatura en
+                                                Gestión Turística y Gastronomía</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-tfyr"
+                                                href="/univafu-universidad/licenciaturas/terapia-fisica.html"
+                                                class="menu-link menu-list-link">Licenciatura en Terapia
+                                                Fisica y Rehabilitación</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-tayl"
+                                                href="/univafu-universidad/licenciaturas/terapia-audicion.html"
+                                                class="menu-link menu-list-link">Licenciatura en Terapia
+                                                Audición y Lenguaje</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-lmkt"
+                                                href="/univafu-universidad/licenciaturas/marketing-digital.html"
+                                                class="menu-link menu-list-link">Licenciatura en Marketing
+                                                Digital</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="menu-link menu-bar-link"
+                                        aria-haspopup="true">Posgrados</a>
+                                    <ul class="menu menu-list">
+                                        <li>
+                                            <a id="router-uni-mdch"
+                                                href="/univafu-universidad/posgrados/desarrollo-capital-humano.html"
+                                                class="menu-link menu-list-link">Maestría en Desarrollo del Capital
+                                                Humano</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-mnch"
+                                                href="/univafu-universidad/posgrados/nutricion-clinica.html"
+                                                class="menu-link menu-list-link">Maestría en Nutrición Clínica y
+                                                Hospitalaria</a>
+                                        </li>
+                                        <li>
+                                            <a id="router-uni-epyr"
+                                                href="/univafu-universidad/posgrados/especialidad-prevencion.html"
+                                                class="menu-link menu-list-link">Especialidad en Prevención y
+                                                Rehabilitación de Lesiones Deportivas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu-back-item">
+                                    <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"
+                                        style="color: #fff">Volver</a>
+                                </li>
+                            </ul>
+                        </li>
 
 
-                    <li>
-                        <a id="router-fundacion-cli" href="javascript:void(0);" class="menu-link menu-bar-link">Fundación
-                            Univafu</a>
-                    </li>
-                    <li>
-                        <a id="router-idiomas" href="univafu-idiomas/idiomas.html" class="menu-link menu-bar-link">Univafu
-                        Idiomas</a>
-                    </li>
+                        <li>
+                            <a id="router-fundacion-cli" href="javascript:void(0);"
+                                class="menu-link menu-bar-link">Fundación
+                                Univafu</a>
+                        </li>
+                        <li>
+                            <a id="router-idiomas" href="univafu-idiomas/idiomas.html"
+                                class="menu-link menu-bar-link">Univafu
+                                Idiomas</a>
+                        </li>
 
-                    <li class="algebraix">
-                        <a href="#" class="menu-link menu-bar-link"><i class="fa fa-user"></i> Acceso a estudiantes</a>
-                    </li>
-                    <li class="mobile-menu-header">
-                        <a href="#" class="">
-                            <!-- <span>UNIVAFU</span> -->
-                            <a href="#"><img src="../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                        <li class="algebraix">
+                            <a href="#" class="menu-link menu-bar-link"><i class="fa fa-user"></i> Acceso a
+                                estudiantes</a>
+                        </li>
+                        <li class="mobile-menu-header">
+                            <a href="#" class="">
+                                <!-- <span>UNIVAFU</span> -->
+                                <a href="#"><img src="../assets/logos/univafu_blanco.png" alt="" class="logo-home"></a>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
 
         </div>
     </header>
     <!-- ***** Fin de la cabecera ***** -->
-    
+
     <!-- ***** Main Banner Area de inicio ***** -->
     <section class="section main-banner" id="top" data-section="section1">
         <img id="bg-video" src="../assets/images/banners/banner-idioma.jpg" alt="UNIVAFU Idiomas">
@@ -192,8 +211,9 @@
                             <h2>UNIVAFU IDIOMAS</h2>
                             <p>This is an edu notice HTML CSS template provided by</p>
                             <div class="main-button mt-2">
-                            <div class="scroll-to-section"><a class="btn btn-contact" href="#contact">Contactar</a></div>
-                        </div>
+                                <div class="scroll-to-section"><a class="btn btn-contact" href="#contact">Contactar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,7 +224,9 @@
 
     <div class="container-description">
         <img src="../assets/logos/logo_idiomas.png" alt="" class="logo">
-        <p class="py-5 description">UNIVAFU IDIOMAS, es un centro especializado en el aprendizaje de idiomas. UNIVAFU IDIOMAS, es una institución abierta al público en general, en donde recibimos a toda clase de alumnos interesados en aprender o actualizar sus conocimientos en una lengua extranjera..</p>
+        <p class="py-5 description">UNIVAFU IDIOMAS, es un centro especializado en el aprendizaje de idiomas. UNIVAFU
+            IDIOMAS, es una institución abierta al público en general, en donde recibimos a toda clase de alumnos
+            interesados en aprender o actualizar sus conocimientos en una lengua extranjera..</p>
     </div>
 
 
@@ -232,7 +254,7 @@
             <div class="filosofia">
                 <div class="meter">
                     <span class="line-width"><span class="no-progress"></span></span>
-                </div>                
+                </div>
                 <h2>FILOSOFIA</h2>
                 <p>Somos perseverantes para darle valor a la expresión humana.</p>
             </div>
@@ -241,31 +263,40 @@
     <!-- ABOUT -->
     <div class="about">
         <div class="container">
-        <h1 class="text-center p-5" data-aos="fade-up">Nuestros idiomas</h1>
-        <div class="grid-idiomas" data-aos="fade-up" data-aos-delay="500">
-            <div class="grid-idiomas-ingles card" >
-                <img src="../assets/images/flags/united-states.png" alt="" class="flag-icon">
-                <h5 class="title-idioma">Ingles</h5>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
-                </p>
-            </div>
-            <div class="grid-idiomas-frances card">
-                <img src="../assets/images/flags/france.png" alt="" class="flag-icon">
-                <h5 class="title-idioma">Frances</h5>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
-                </p>
+            <h1 class="text-center p-5" data-aos="fade-up">Nuestros idiomas</h1>
+            <div class="grid-idiomas" data-aos="fade-up" data-aos-delay="500">
+                <div class="grid-idiomas-ingles card">
+                    <img src="../assets/images/flags/united-states.png" alt="" class="flag-icon">
+                    <h5 class="title-idioma">Ingles</h5>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio
+                        nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat
+                        sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure
+                        repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
+                    </p>
+                </div>
+                <div class="grid-idiomas-frances card">
+                    <img src="../assets/images/flags/france.png" alt="" class="flag-icon">
+                    <h5 class="title-idioma">Frances</h5>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio
+                        nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat
+                        sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure
+                        repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
+                    </p>
 
+                </div>
+                <div class="grid-idiomas-chino card">
+                    <img src="../assets/images/flags/china.png" alt="" class="flag-icon">
+                    <h5 class="title-idioma">Chino Mandarin</h5>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio
+                        nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat
+                        sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure
+                        repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
+                    </p>
+                </div>
             </div>
-            <div class="grid-idiomas-chino card">
-                <img src="../assets/images/flags/china.png" alt="" class="flag-icon">
-                <h5 class="title-idioma">Chino Mandarin</h5>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis sunt ab odio nulla, enim quam totam officia cupiditate minima est? Id, tenetur? Molestiae perferendis placeat sunt delectus, sint aut culpa nesciunt sed repellendus facere maxime autem temporibus iure repudiandae libero ex voluptas. Aperiam nemo quaerat laboriosam, rerum nobis fuga.
-                </p>
-            </div>
-        </div>
         </div>
     </div>
     </div>
@@ -276,29 +307,29 @@
         <div class="grid-servicios">
             <div class="grid-servicios-description">
                 <h1 data-aos="fade-left" data-aos-offset="200">Nuestros Servicios</h1>
-                                <ul class="list" data-aos="flip-up" data-aos-offset="200">
-                                    <li class="servicios-list">
-                                        Curso de inglés para jóvenes y adultos.
-                                    </li>
-                                    <li class="servicios-list">
-                                        Clases de francés para niños (a partir de los 7 años).
-                                    </li>
-                                    <li class="servicios-list">
-                                        Curso de francés para jóvenes y adultos.
-                                    </li>
-                                    <li class="servicios-list">
-                                        Club de conversación.
-                                    </li>
-                                    <li class="servicios-list">
-                                        Cursos de lectura y redacción.
-                                    </li>
-                                    <li class="servicios-list">
-                                        Cursos para certificaciones.
-                                    </li>
-                                </ul>
-                            </div>
+                <ul class="list" data-aos="flip-up" data-aos-offset="200">
+                    <li class="servicios-list">
+                        Curso de inglés para jóvenes y adultos.
+                    </li>
+                    <li class="servicios-list">
+                        Clases de francés para niños (a partir de los 7 años).
+                    </li>
+                    <li class="servicios-list">
+                        Curso de francés para jóvenes y adultos.
+                    </li>
+                    <li class="servicios-list">
+                        Club de conversación.
+                    </li>
+                    <li class="servicios-list">
+                        Cursos de lectura y redacción.
+                    </li>
+                    <li class="servicios-list">
+                        Cursos para certificaciones.
+                    </li>
+                </ul>
+            </div>
             <div class="grid-servicios-title">
-<img src="../assets/images/idiomas.jpg" alt="" data-aos="flip-right" data-aos-offset="200">
+                <img src="../assets/images/idiomas.jpg" alt="" data-aos="flip-right" data-aos-offset="200">
             </div>
         </div>
     </div>
@@ -334,7 +365,7 @@
                 <b>Desarrollo de actividades en el aula tecnológica</b>
             </div>
         </div>
-      </div>
+    </div>
 
 
     <!-- Footer -->
@@ -351,53 +382,58 @@
             <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"
                 style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
         </div>
-        <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de privacidad</a>
+        <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de
+            privacidad</a>
 
-      </div>
-
-
-
+    </div>
 
 
 
 
-  <script src="../assets/js/navigation.js"></script>
 
 
-  <script>
-    let activeProgressBar = false;
 
-    function reveal() {
-        var reveals = document.querySelectorAll(".no-progress");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("progress");
-                reveals[i+1].classList.add("progress");
-                reveals[i+2].classList.add("progress");
-                i = reveals.length;
+    <script src="../assets/js/navigation.js"></script>
+
+
+    <script>
+        let activeProgressBar = false;
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".no-progress");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("progress");
+                    reveals[i + 1].classList.add("progress");
+                    reveals[i + 2].classList.add("progress");
+                    i = reveals.length;
+                }
             }
         }
-    }
-    
-    window.addEventListener("scroll", reveal);
-    reveal();
-</script>
 
-<!-- Script Navbar Scroll -->
-<script src="../assets/js/scrollNavbar.js"></script>
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
 
-<!-- Script AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script Navbar Scroll -->
+    <script src="../assets/js/scrollNavbar.js"></script>
 
-<script>
-    AOS.init({
-        mirror: true,
-        once: true
-    });
-  </script>
+    <!-- script whatsapp -->
+    <script src="../assets/js/whatsapp.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            mirror: true,
+            once: true
+        });
+    </script>
 
 </body>
+
 </html>

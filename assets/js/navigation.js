@@ -39,7 +39,6 @@ function loadNavigation(){
     document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html" ;
     document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html" ;
 
-
     window.location.pathname === '/' && loadNotices();
 
 }

@@ -2670,4 +2670,23 @@ nav a:visited {
         /* background-color: red; */
     }
 }
-
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border-radius:100px !important;
+    width: 60px;
+    height: 60px;
+    transition-duration: 0.5s;
+    }
+    img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+    } 

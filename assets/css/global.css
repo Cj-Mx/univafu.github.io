@@ -859,9 +859,9 @@ services
     border-radius: 20px;
     text-align: center;
     color: #fff;
-    padding: 40px;
+    padding: 20px 2% 10px;
     z-index: 1;
-    height: 320px;
+    height: 330px;
 }
 
 

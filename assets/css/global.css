@@ -2702,6 +2702,8 @@ img.btn-whatsapp {
     }
 
 
+    /* PLAN DE ESTUDIOS */
+
     .plan-estudios{
         display: flex;
         flex-direction: column;
@@ -2732,6 +2734,16 @@ img.btn-whatsapp {
         }
     }
 
+    /* Linea naranja */
+    .line-orange{
+        height: 10px; width: 30%; margin: 8px 0 5px;
+        background-color: #ee7f00ce;
+    }
+    .line-shadow{
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.981);
+        -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.981);
+        -moz-box-shadow: 4px 4px 0px -0px rgba(0, 0, 0, 0.981);
+    }
 
 
 

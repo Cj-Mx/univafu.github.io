@@ -343,36 +343,9 @@
     <!-- Fin del contenedor del Footer -->
     <script src="../assets/js/navigation.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script que contiene las funciones para el scrollNavbar, progressbar y sendWhatsapp -->
+    <script src="../assets/js/myFunctions.js"></script>
 
-    <script>
-        let activeProgressBar = false;
-
-        function reveal() {
-            var reveals = document.querySelectorAll(".no-progress");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("progress");
-                    reveals[i + 1].classList.add("progress");
-                    reveals[i + 2].classList.add("progress");
-                    i = reveals.length;
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-        reveal();
-    </script>
-
-
-    <!-- Script Navbar Scroll -->
-    <script src="../assets/js/scrollNavbar.js"></script>
-
-    <!-- script whatsapp -->
-    <script src="../assets/js/whatsapp.js"></script>
 
     <!-- script data-aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

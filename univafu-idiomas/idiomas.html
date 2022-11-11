@@ -192,8 +192,6 @@
                     </ul>
                 </nav>
             </div>
-
-
         </div>
     </header>
     <!-- ***** Fin de la cabecera ***** -->
@@ -222,21 +220,24 @@
     </section>
     <!-- ***** Main Banner Area final ***** -->
 
+    <!-- Contenedor que contenie la descripción de idiomas -->
     <div class="container-description mt-5">
-        <img src="../assets/logos/logo_idiomas.png" alt="" class="logo" class="logo" data-aos="fade-up" data-aos-offset="300">
-        <p class="py-5 description" class="logo" data-aos="fade-up" data-aos-offset="400">UNIVAFU IDIOMAS, es un centro especializado en el aprendizaje de idiomas. UNIVAFU
+        <img src="../assets/logos/logo_idiomas.png" alt="" class="logo" class="logo" data-aos="fade-up"
+            data-aos-offset="300">
+        <p class="py-5 description" class="logo" data-aos="fade-up" data-aos-offset="400">UNIVAFU IDIOMAS, es un centro
+            especializado en el aprendizaje de idiomas. UNIVAFU
             IDIOMAS, es una institución abierta al público en general, en donde recibimos a toda clase de alumnos
             interesados en aprender o actualizar sus conocimientos en una lengua extranjera..</p>
     </div>
 
 
+    <!-- Contenedor de misión y visión -->
     <div class="container-grid my-5">
         <div class="mv-img">
-            <img src="../assets/images/mision-vision/idiomas_mv.jpg" alt="" data-aos="fade-left"  data-aos-offset="300">
+            <img src="../assets/images/mision-vision/idiomas_mv.jpg" alt="" data-aos="fade-left" data-aos-offset="300">
         </div>
-        <div class="mision-vision" data-aos="fade-up"  data-aos-offset="300">
+        <div class="mision-vision" data-aos="fade-up" data-aos-offset="300">
             <div class="mision">
-                <!-- <div class="line-bar-green"></div> -->
                 <div class="meter">
                     <span class="line-width"><span class="no-progress"></span></span>
                 </div>
@@ -244,7 +245,6 @@
                 <p>Privilegiar la comunicación internacional.</p>
             </div>
             <div class="vision">
-                <!-- <div class="line-bar-green"></div> -->
                 <div class="meter">
                     <span class="line-width"><span class="no-progress"></span></span>
                 </div>
@@ -260,7 +260,9 @@
             </div>
         </div>
     </div>
-    <!-- ABOUT -->
+
+
+    <!-- ABOUT  - Grid que muestra los idiomas que ofrecemos-->
     <div class="about">
         <div class="container">
             <h1 class="text-center p-5" data-aos="fade-up">Nuestros idiomas</h1>
@@ -301,8 +303,8 @@
     </div>
     </div>
 
-    <!-- NUESTROS SERVICIOS -->
 
+    <!-- NUESTROS SERVICIOS -->
     <div class="servicios">
         <div class="grid-servicios">
             <div class="grid-servicios-description">
@@ -336,7 +338,7 @@
 
 
 
-
+    <!-- BENEFICIOS -->
     <div class="beneficios" data-aos="fade-up" data-aos-offset="300">
         <h1>Beneficios adicionales</h1>
         <div class="contenedor-beneficios">
@@ -368,15 +370,15 @@
     </div>
 
 
-    <!-- Footer -->
+    <!-- Footer - (Pie de página) -->
     <div class="footer">
         <p>Copyright © 2022 Univafu , Todos los derechos reservados.
         </p>
         <div class="grid-redes">
             <a href="https://www.facebook.com/UNIVAFUIdiomas/" target="_blank" style="color: #fff;"><i
                     class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/univafuidiomas/?hl=es-la" target="_blank" style="color: rgb(255, 255, 255);"> <i
-                    class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/univafuidiomas/?hl=es-la" target="_blank"
+                style="color: rgb(255, 255, 255);"> <i class="fa fa-twitter"></i></a>
             <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);">
                 <i class="fa fa-instagram"></i></a>
             <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"
@@ -387,46 +389,16 @@
 
     </div>
 
-
-
-
-
-
-
+    <!-- Script para cambiar la navegación -->
     <script src="../assets/js/navigation.js"></script>
 
-
-    <script>
-        let activeProgressBar = false;
-
-        function reveal() {
-            var reveals = document.querySelectorAll(".no-progress");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("progress");
-                    reveals[i + 1].classList.add("progress");
-                    reveals[i + 2].classList.add("progress");
-                    i = reveals.length;
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-        reveal();
-    </script>
-
-    <!-- Script Navbar Scroll -->
-    <script src="../assets/js/scrollNavbar.js"></script>
-
-    <!-- script whatsapp -->
-    <script src="../assets/js/whatsapp.js"></script>
+    <!-- script que contiene las funciones para el scrollNavbar, progressbar y sendWhatsapp -->
+    <script src="../assets/js/myFunctions.js"></script>
 
     <!-- Script AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Inicializar data aos -->
     <script>
         AOS.init({
             mirror: true,

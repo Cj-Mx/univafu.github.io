@@ -31,7 +31,8 @@
 <body onload="loadNavigation()">
 
     <!-- BOTON DE WHATSAPP -->
-<img class="btn-whatsapp" src="../assets/images/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="sendMessageWhatsapp()">
+    <img class="btn-whatsapp" src="../assets/images/whatsapp.png" width="64" height="64" alt="Whatsapp"
+        onclick="sendMessageWhatsapp()">
 
 
     <!-- Sub Cabecera -->
@@ -215,7 +216,8 @@
                             <h2>FUNDACIÓN UNIVAFU</h2>
                             <p>Donde nuestro lema es "Servir es una Misión Mágica".</p>
                             <div class="main-button mt-2">
-                                <div class="scroll-to-section"><a class="btn btn-contact" href="#contact">Contactar</a></div>
+                                <div class="scroll-to-section"><a class="btn btn-contact" href="#contact">Contactar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -226,15 +228,17 @@
     <!-- ***** Main Banner Area final ***** -->
     <div class="container-description">
         <img src="../assets/logos/logo_fundacion.png" alt="" class="logo" data-aos="fade-up" data-aos-offset="300">
-        <p class="p-5 clinica-description" data-aos="fade-up" data-aos-offset="300">UNIVAFU Universidad para atender la función de Asistencia Social, crea: <br>
+        <p class="p-5 clinica-description" data-aos="fade-up" data-aos-offset="300">UNIVAFU Universidad para atender la
+            función de Asistencia Social, crea: <br>
             UNIVAFU FUNDACIÓN A.C., con el lema <b>“Servir es una Misión Mágica”. </b></p>
     </div>
 
     <div class="container-grid">
         <div>
-            <img src="../assets/images/banners/banner-fundacion.jpg" alt="" class="container-img" data-aos="fade-left"  data-aos-offset="400">
+            <img src="../assets/images/banners/banner-fundacion.jpg" alt="" class="container-img" data-aos="fade-left"
+                data-aos-offset="400">
         </div>
-        <div class="fundacion-servicios" data-aos="fade-up"  data-aos-offset="400" data-aos-delay="400">
+        <div class="fundacion-servicios" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300">
             <h2> Actividades
             </h2>
             <ul class="list">
@@ -267,8 +271,9 @@
     </div>
 
     <div class="container-description">
-        <img src="../assets/logos/logo_clinica.png" alt="" class="logo"  data-aos="fade-up" data-aos-offset="300">
-        <p class="p-5 clinica-description"  data-aos="fade-up" data-aos-offset="300">Nos especializamos en el servicio de rehabilitación física atendiendo
+        <img src="../assets/logos/logo_clinica.png" alt="" class="logo" data-aos="fade-up" data-aos-offset="300">
+        <p class="p-5 clinica-description" data-aos="fade-up" data-aos-offset="300">Nos especializamos en el servicio de
+            rehabilitación física atendiendo
             diversas patologías, además, de asesoría nutricional, asesorías psicológicas y terapia de audición y
             lenguaje. Nuestro objetivo principal, es lograr una permanente mejora en nuestras actividades a fin de dar
             un servicio de calidad para nuestros pacientes.</p>
@@ -276,7 +281,7 @@
 
     <div class="container-grid">
         <div class="mv-img">
-            <img src="../assets/images/mision-vision/clinica_mv.jpg" alt="" data-aos="fade-left"  data-aos-offset="300">
+            <img src="../assets/images/mision-vision/clinica_mv.jpg" alt="" data-aos="fade-left" data-aos-offset="300">
         </div>
         <div class="mision-vision" data-aos="fade-up" data-aos-offset="300">
             <div class="mision">
@@ -284,18 +289,18 @@
                 <div class="meter">
                     <span class="line-width"><span class="no-progress"></span></span>
                 </div>
-                <h2 >MISIÓN</h2>
-                <p >Somos agentes de cambio en la formación de recurso humano y en la contribución a la rehabilitación
+                <h2>MISIÓN</h2>
+                <p>Somos agentes de cambio en la formación de recurso humano y en la contribución a la rehabilitación
                     integral, la adopción del cuidado de la salud y el bienestar físico como estilo de vida de nuestra
                     comunidad, de una manera inclusiva y con calidez humana.</p>
             </div>
-            <div class="vision" >
+            <div class="vision">
                 <!-- <div class="line-bar-green"></div> -->
                 <div class="meter">
                     <span class="line-width"><span class="no-progress"></span></span>
                 </div>
                 <h2>VISIÓN</h2>
-                <p >Ser líderes en la región Noroeste en el mejoramiento de la salud integral de las personas, en el
+                <p>Ser líderes en la región Noroeste en el mejoramiento de la salud integral de las personas, en el
                     ámbito de la prevención y rehabilitación física, favoreciendo su desempeño y calidad de vida.</p>
             </div>
         </div>
@@ -341,27 +346,27 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-     let activeProgressBar = false;
+        let activeProgressBar = false;
 
-function reveal() {
-    var reveals = document.querySelectorAll(".no-progress");
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("progress");
-            reveals[i + 1].classList.add("progress");
-            reveals[i + 2].classList.add("progress");
-            i = reveals.length;
+        function reveal() {
+            var reveals = document.querySelectorAll(".no-progress");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("progress");
+                    reveals[i + 1].classList.add("progress");
+                    reveals[i + 2].classList.add("progress");
+                    i = reveals.length;
+                }
+            }
         }
-    }
-}
 
-window.addEventListener("scroll", reveal);
-reveal();
+        window.addEventListener("scroll", reveal);
+        reveal();
     </script>
-    
+
 
     <!-- Script Navbar Scroll -->
     <script src="../assets/js/scrollNavbar.js"></script>

@@ -29,7 +29,7 @@ function reveal() {
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("progress");
             reveals[i + 1].classList.add("progress");
-            reveals[i + 2].classList.add("progress");
+            if(reveals[i + 2] )reveals[i + 2].classList.add("progress");
             i = reveals.length;
         }
     }

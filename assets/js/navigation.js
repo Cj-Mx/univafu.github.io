@@ -1,4 +1,4 @@
-function loadNavigation(){
+function loadNavigation() {
     // Router para servidor
     // document.getElementById("router-index").href = "https://univafu-ng.000webhostapp.com" ;
     // document.getElementById("router-secundaria").href = "https://univafu-ng.000webhostapp.com/colegio-valle-fuerte/Secundaria" ;
@@ -15,29 +15,31 @@ function loadNavigation(){
     // document.getElementById("router-uni-epyr").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/posgrados/especialidad-prevencion" ;
 
     // document.getElementById("router-fundacion-cli").href = "https://univafu-ng.000webhostapp.com/fundacion-univafu/clinica"
-    
+
     // document.getElementById("router-idiomas").href = "https://univafu-ng.000webhostapp.com/univafu-idiomas/idiomas" ;
     // document.getElementById("router-privacidad").href = "https://univafu-ng.000webhostapp.com/avisoPrivacidad" ;
 
 
-        document.getElementById("router-index").href = "http://127.0.0.1:5500/index.html" ;
-    document.getElementById("router-secundaria").href = "http://127.0.0.1:5500/colegio-valle-fuerte/Secundaria.html" ;
-    document.getElementById("router-prepa-hs").href = "http://127.0.0.1:5500/prepa-univafu/higiene-salud.html" ;
-    document.getElementById("router-prepa-ti").href = "http://127.0.0.1:5500/prepa-univafu/tecnologias.html" ;
-    document.getElementById("router-uni-lnut").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/nutricion.html" ;
-    document.getElementById("router-uni-gtyg").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html" ;
-    document.getElementById("router-uni-tfyr").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-fisica.html" ;
-    document.getElementById("router-uni-tayl").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-audicion.html" ;
-    document.getElementById("router-uni-lmkt").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/marketing-digital.html" ;
+    document.getElementById("router-index").href = "http://127.0.0.1:5500/index.html";
 
-    document.getElementById("router-uni-mdch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/desarrollo-capital-humano.html" ;
-    document.getElementById("router-uni-mnch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/nutricion-clinica.html" ;
-    document.getElementById("router-uni-epyr").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/especialidad-prevencion.html" ;
+    document.getElementById("router-secundaria").href = "http://127.0.0.1:5500/colegio-valle-fuerte/Secundaria.html";
+    document.getElementById("router-prepa-hs").href = "http://127.0.0.1:5500/prepa-univafu/higiene-salud.html";
+    document.getElementById("router-prepa-ti").href = "http://127.0.0.1:5500/prepa-univafu/tecnologias.html";
+    document.getElementById("router-uni-lnut").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/nutricion.html";
+    document.getElementById("router-uni-gtyg").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html";
+    document.getElementById("router-uni-tfyr").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-fisica.html";
+    document.getElementById("router-uni-tayl").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-audicion.html";
+    document.getElementById("router-uni-lmkt").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/marketing-digital.html";
+
+    // POSGRADOS NO SE ABRIERON
+    // document.getElementById("router-uni-mdch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/desarrollo-capital-humano.html";
+    // document.getElementById("router-uni-mnch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/nutricion-clinica.html";
+    // document.getElementById("router-uni-epyr").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/especialidad-prevencion.html";
 
     document.getElementById("router-fundacion-cli").href = "http://127.0.0.1:5500/fundacion-univafu/clinica.html";
-    
-    document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html" ;
-    document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html" ;
+
+    document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html";
+    document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html";
 
     window.location.pathname === '/' && loadNotices();
 
@@ -46,56 +48,56 @@ function loadNavigation(){
 
 let noticias = [
     {
-        "img" : [
+        "img": [
             {
-                "name" : "assets/images/noticias/noticia1.jpg"
+                "name": "assets/images/noticias/noticia1.jpg"
             }
         ],
         "title": "Noticia 1",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
+        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
     },
     {
-        "img" : [
+        "img": [
             {
-                "name" : "assets/images/noticias/noticia2.jpg"
+                "name": "assets/images/noticias/noticia2.jpg"
             }
         ],
         "title": "Noticia 2",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
+        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
     },
     {
-        "img" : [
+        "img": [
             {
-                "name" : "assets/images/noticias/noticia3.jpg"
+                "name": "assets/images/noticias/noticia3.jpg"
             }
         ],
         "title": "Noticia 3",
-        "description" : "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
+        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
     },
     {
-        "img" : [
+        "img": [
             {
-                "name" : "assets/images/noticias/noticia4.jpg"
+                "name": "assets/images/noticias/noticia4.jpg"
             }
         ],
         "title": "Noticia 4",
-        "description" : "4 ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl  lñaskdlñksalñdñasl sadlñasklñ kalñs 4"
+        "description": "4 ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl  lñaskdlñksalñdñasl sadlñasklñ kalñs 4"
     }
 ]
 
-function loadNotices(){
-    noticias.map((noticia, index)=> {
-        var noticeImg = document.querySelector(`.nt${index+1}-img`);
-        var noticeTitle = document.querySelector(`.nt${index+1}-title`);
-        var noticeDescription = document.querySelector(`.nt${index+1}-description`);
+function loadNotices() {
+    noticias.map((noticia, index) => {
+        var noticeImg = document.querySelector(`.nt${index + 1}-img`);
+        var noticeTitle = document.querySelector(`.nt${index + 1}-title`);
+        var noticeDescription = document.querySelector(`.nt${index + 1}-description`);
         noticeImg.src = noticia.img[0].name;
         noticeTitle.innerHTML = noticia.title;
         noticeDescription.innerHTML = noticia.description;
     });
 }
 
-function showModal(nModal){
-    document.querySelector('.modal-title').innerHTML = noticias[nModal].title; 
+function showModal(nModal) {
+    document.querySelector('.modal-title').innerHTML = noticias[nModal].title;
 }
 
 

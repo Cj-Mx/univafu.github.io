@@ -30,6 +30,8 @@ function loadNavigation() {
     document.getElementById("router-uni-tfyr").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-fisica.html";
     document.getElementById("router-uni-tayl").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-audicion.html";
     document.getElementById("router-uni-lmkt").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/marketing-digital.html";
+    document.getElementById("router-posgrados").href = "http://127.0.0.1:5500/univafu-universidad/posgrados.html";
+
 
     // POSGRADOS NO SE ABRIERON
     // document.getElementById("router-uni-mdch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/desarrollo-capital-humano.html";

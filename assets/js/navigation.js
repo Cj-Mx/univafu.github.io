@@ -20,7 +20,7 @@ function loadNavigation() {
     // document.getElementById("router-privacidad").href = "https://univafu-ng.000webhostapp.com/avisoPrivacidad" ;
 
 
-    document.getElementById("router-index").href = "http://127.0.0.1:5500/index.html";
+    document.getElementById("router-index").href = "http://127.0.0.1:5500";
 
     document.getElementById("router-secundaria").href = "http://127.0.0.1:5500/colegio-valle-fuerte/Secundaria.html";
     document.getElementById("router-prepa-hs").href = "http://127.0.0.1:5500/prepa-univafu/higiene-salud.html";

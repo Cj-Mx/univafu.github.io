@@ -2720,6 +2720,7 @@ img.btn-whatsapp {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: 60%;
   }
   
   #myImg:hover { opacity: 0.7;}
@@ -2733,7 +2734,7 @@ img.btn-whatsapp {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
+    overflow: scroll; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
@@ -2787,9 +2788,20 @@ img.btn-whatsapp {
     cursor: pointer;
   }
   
+
+  @media only screen and (max-width: 1200px){
+    #myImg{
+        width: 80%;
+    }
+  }
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+
+    #myImg{
+        width: 100%;
     }
   }

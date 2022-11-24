@@ -256,10 +256,10 @@
 
     <!-- Plan de estudios -->
     <div class="plan-estudios">
-        <h1 class="d-block text-center mt-5 bold">Plan de Estudios</h1>
+        <!-- <h1 class="d-block text-center mt-5 bold">Plan de Estudios</h1> -->
         <!-- Imagen - Click para mostrar -->
-        <img id="myImg" src="../../assets/images/plan-de-estudios/plan.jpg" alt="Plan estudios de Nutrición"
-            style="width: 80%; height: 80vh; ">
+        <img id="myImg" src="../../assets/images/plan-de-estudios/nutricion.png" alt="Plan estudios de Nutrición"
+           >
     </div>
 
     <!-- Modal imagen plan de estudios -->
@@ -280,7 +280,7 @@
     <!-- ***************   ACORDION CARGA ACADEMICA    ************* -->
     <!-- *********************************************************** -->
     <!-- CARGA ACADEMICA ACORDION-->
-    <div class="accordion p-5" id="accordionExample" style="background-color: rgb(255, 255, 255)">
+    <!-- <div class="accordion p-5" id="accordionExample" style="background-color: rgb(255, 255, 255)">
         <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
@@ -489,7 +489,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- FIN DE CARGA ACADEMICA ACORDION-->
 
 
@@ -532,28 +532,6 @@
             mirror: true,
             once: true
         });
-    </script>
-
-    <script>
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
     </script>
 </body>
 

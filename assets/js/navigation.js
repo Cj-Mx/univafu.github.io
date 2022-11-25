@@ -42,64 +42,35 @@ function loadNavigation() {
 
     document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html";
     document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html";
-
-    window.location.pathname === '/' && loadNotices();
-
+    let path = window.location.pathname.split('/');
+    path[1] + '/' + path[2] === 'univafu-universidad/licenciaturas' && modalShow();
+    // window.location.pathname === '/univafu-universidad' && modalShow();
+    // window.location.pathname.split('/')[1] === 'univafu-universidad' && modalShow();
+    // console.log(window.location.pathname.split('/'));
 }
 
+function modalShow(){
+    var modal = document.getElementById("myModal");
 
-let noticias = [
-    {
-        "img": [
-            {
-                "name": "assets/images/noticias/noticia1.jpg"
-            }
-        ],
-        "title": "Noticia 1",
-        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img": [
-            {
-                "name": "assets/images/noticias/noticia2.jpg"
-            }
-        ],
-        "title": "Noticia 2",
-        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img": [
-            {
-                "name": "assets/images/noticias/noticia3.jpg"
-            }
-        ],
-        "title": "Noticia 3",
-        "description": "ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl"
-    },
-    {
-        "img": [
-            {
-                "name": "assets/images/noticias/noticia4.jpg"
-            }
-        ],
-        "title": "Noticia 4",
-        "description": "4 ñaslkdpoqwkdlñksadpoqklñdkweimcxkcmrioemckl  lñaskdlñksalñdñasl sadlñasklñ kalñs 4"
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
     }
-]
-
-function loadNotices() {
-    noticias.map((noticia, index) => {
-        var noticeImg = document.querySelector(`.nt${index + 1}-img`);
-        var noticeTitle = document.querySelector(`.nt${index + 1}-title`);
-        var noticeDescription = document.querySelector(`.nt${index + 1}-description`);
-        noticeImg.src = noticia.img[0].name;
-        noticeTitle.innerHTML = noticia.title;
-        noticeDescription.innerHTML = noticia.description;
-    });
-}
-
-function showModal(nModal) {
-    document.querySelector('.modal-title').innerHTML = noticias[nModal].title;
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-plan")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    
+    
 }
 
 

@@ -3,10 +3,10 @@ h1{
 }
 
 .grid-idiomas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 130px;
 }
 
 .card{
@@ -21,6 +21,7 @@ box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
 -webkit-box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
 -moz-box-shadow: 5px 5px 5px 0px rgba(193, 192, 192, 0.75);
 transition: 0.5s;
+width: 350px;
 }
 
 .card:hover{
@@ -60,15 +61,6 @@ p{
     padding: 30px 4% ;
 }
 
-.servicios-list{
-    list-style: circle ;
-    padding: 5px 0;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-}
-
-
 .beneficios{
     padding: 30px 100px;
     margin: 100px 10%;
@@ -85,7 +77,7 @@ p{
 
 .contenedor-beneficios{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     color: #1C447E;
     font-weight: bold;
     text-align: center;
@@ -135,25 +127,15 @@ p{
     transition: 500ms;
 }
 
-
-
-@media(max-width: 1428px){
-    .contenedor-beneficios{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media(max-width: 950px){
-}
-
 @media(max-width: 760px){
     
     .contenedor-beneficios{
         grid-template-columns: 1fr;
     }
     .grid-idiomas{
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .grid-servicios{
@@ -164,20 +146,15 @@ p{
         padding: 5% 10%;
     }
 
-    .grid-servicios-title{
-        /* padding: 0 25%; */
-    }
-
     .beneficios{
         padding: 1%;
         margin: 50px 4%;
     }
 }
 @media(max-width: 650px){
-    .grid-idiomas{
-        grid-template-columns: 1fr;
+    .card{
+        width: 90%;
     }
-
     .grid-servicios-description{
     }
     .grid-servicios-description{

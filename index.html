@@ -40,37 +40,66 @@
                 <li><a href="https://es-la.facebook.com/univafu.oficial/" target="_blank"><i
                             class="fa fa-facebook"></i></a></li>
                 <li>
+                    <a href="#" class="k" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user"></i>
+                        Acceso a estudiantes</a>
 
-                    <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#exampleModal"><i
-                            class="fa fa-user"></i> Acceso a estudiantes</a>
                 </li>
             </ul>
         </div>
     </div>
-    <!-- Modal Acceso a estudiantes -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+
+    <!-- Modal algebraix -->
+    <div style="z-index: 999999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog"
+        aria-labelledby="algebraixTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión con Algebraix</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-header" style="background-color: #0083ee;">
+                    <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix
+                    </h5>
+                    <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/"
+                        target="_blank">
+                        <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i
+                                                class="fa fa-user"></i></span>
+                                    </div>
+                                    <input name="username" type="text" value="" class="input form-control" id="username"
+                                        placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <input name="password" type="password" value="" class="input form-control"
+                                        id="password" placeholder="Contraseña" required="true" aria-label="password"
+                                        aria-describedby="basic-addon1" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();"
+                                            style="height: 100%;">
+                                            <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
+                                            <i class="fa fa-eye-slash " id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button type="button" class="btn btn-algebraix" data-dismiss="modal"
+                                style="margin-right: 10px;">Cerrar</button>
+                            <button class="btn btn-algebraix" type="submit"
+                                onclick="algerForm.submit()">Ingresar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
     <!-- ***** Inicio de la cabecera ***** -->
     <header class="header-area header-sticky">
@@ -182,7 +211,8 @@
                         </li>
 
                         <li class="algebraix">
-                            <a href="#" class="menu-link menu-bar-link"><i class="fa fa-user"></i> Acceso a
+                            <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i
+                                    class="fa fa-user"></i> Acceso a
                                 estudiantes</a>
                         </li>
                         <li class="mobile-menu-header">
@@ -340,9 +370,33 @@
                                         est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci
                                         deleniti consectetur
                                         culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum fugiat voluptatibus facere natus, rerum consectetur quidem atque adipisci earum odit sint ipsum qui perferendis nihil doloremque enim praesentium ut doloribus deserunt accusamus labore animi accusantium soluta vel! Magnam, aspernatur. Tempora facere eaque, amet impedit quod quis? Libero, placeat quo reprehenderit iure nostrum fugit porro non similique deserunt possimus ipsam consequatur nesciunt corrupti at nulla adipisci, quibusdam numquam neque atque nobis deleniti laboriosam sit repudiandae expedita? Deleniti neque exercitationem earum provident eveniet dolorum optio aut, laboriosam unde sunt voluptatibus mollitia tempora laborum id qui quaerat? Unde eos similique accusantium sapiente molestiae!
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus assumenda asperiores? Obcaecati adipisci accusantium dicta quidem in itaque, autem ea voluptatem. Amet facere ipsa, laborum reprehenderit voluptatum temporibus voluptate officia placeat. Assumenda, minus corporis soluta provident error maiores ipsam, aliquam iste, sint architecto expedita. Temporibus magni earum asperiores distinctio aut, qui perspiciatis veniam maxime cumque officia aliquam quod minima reiciendis! Rerum cumque mollitia obcaecati nisi excepturi ratione placeat pariatur hic aliquam vel iste, quaerat ad possimus, voluptatibus repellat odio eaque unde magnam vitae voluptas facilis assumenda, omnis itaque similique. Earum inventore autem dignissimos perspiciatis qui sequi explicabo atque nesciunt.
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ratione ipsa veritatis placeat corrupti officiis, minus facilis saepe nostrum doloremque harum. Porro, vero eius? Magnam quasi tempore nihil nulla voluptates atque doloribus commodi maiores assumenda minus quod aperiam, excepturi optio aliquid, sed, dicta suscipit aliquam? Praesentium aliquid porro cum culpa?
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum fugiat
+                                        voluptatibus facere natus, rerum consectetur quidem atque adipisci earum odit
+                                        sint ipsum qui perferendis nihil doloremque enim praesentium ut doloribus
+                                        deserunt accusamus labore animi accusantium soluta vel! Magnam, aspernatur.
+                                        Tempora facere eaque, amet impedit quod quis? Libero, placeat quo reprehenderit
+                                        iure nostrum fugit porro non similique deserunt possimus ipsam consequatur
+                                        nesciunt corrupti at nulla adipisci, quibusdam numquam neque atque nobis
+                                        deleniti laboriosam sit repudiandae expedita? Deleniti neque exercitationem
+                                        earum provident eveniet dolorum optio aut, laboriosam unde sunt voluptatibus
+                                        mollitia tempora laborum id qui quaerat? Unde eos similique accusantium sapiente
+                                        molestiae!
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus assumenda
+                                        asperiores? Obcaecati adipisci accusantium dicta quidem in itaque, autem ea
+                                        voluptatem. Amet facere ipsa, laborum reprehenderit voluptatum temporibus
+                                        voluptate officia placeat. Assumenda, minus corporis soluta provident error
+                                        maiores ipsam, aliquam iste, sint architecto expedita. Temporibus magni earum
+                                        asperiores distinctio aut, qui perspiciatis veniam maxime cumque officia aliquam
+                                        quod minima reiciendis! Rerum cumque mollitia obcaecati nisi excepturi ratione
+                                        placeat pariatur hic aliquam vel iste, quaerat ad possimus, voluptatibus
+                                        repellat odio eaque unde magnam vitae voluptas facilis assumenda, omnis itaque
+                                        similique. Earum inventore autem dignissimos perspiciatis qui sequi explicabo
+                                        atque nesciunt.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ratione ipsa
+                                        veritatis placeat corrupti officiis, minus facilis saepe nostrum doloremque
+                                        harum. Porro, vero eius? Magnam quasi tempore nihil nulla voluptates atque
+                                        doloribus commodi maiores assumenda minus quod aperiam, excepturi optio aliquid,
+                                        sed, dicta suscipit aliquam? Praesentium aliquid porro cum culpa?
                                     </p>
                                     <button type="button" class="btn btn-primary" data-toggle="modal"
                                         data-target="#noticia1">Leer Más</button>
@@ -421,7 +475,56 @@
                                         est eligendi inventore quidem aut odio quo veniam aspernatur aliquam adipisci
                                         deleniti consectetur
                                         culpa delectus expedita veritatis, odit voluptatibus assumenda quas.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi odit officia eos labore voluptas accusamus, veniam harum laborum autem est odio quisquam, dolorem aspernatur nihil architecto dolores in! Aliquid eius voluptatibus quo illum veniam consectetur incidunt obcaecati assumenda, asperiores quasi. Dolore eius nemo, aliquid mollitia animi culpa. Non cumque fugit ex! In, perferendis nemo doloribus, temporibus inventore cumque asperiores esse eius fuga, consequuntur sapiente? Aperiam soluta explicabo, ullam tenetur eum numquam quo dolores itaque fugiat non aliquam consequuntur ex commodi quam quas ipsum cupiditate id pariatur temporibus ducimus suscipit necessitatibus eveniet asperiores quos! Ad expedita dicta dolores quasi, illum provident amet ducimus nihil perferendis. Velit ipsum, quos voluptatum quidem voluptates enim esse culpa, reprehenderit id voluptatem reiciendis at, consequatur nostrum molestias incidunt animi sed amet eaque nobis facilis fugit repudiandae quaerat exercitationem. Omnis iusto sapiente pariatur consectetur veritatis natus officia, molestias sequi sit accusamus dolores, facilis reiciendis blanditiis optio alias explicabo perspiciatis magni unde itaque minus illum ipsum? Beatae rerum, dolores non laborum eum veritatis quae id est aut repellendus fuga qui corporis esse recusandae sapiente ut incidunt repellat molestias optio. Doloremque fugiat aliquam distinctio amet neque repellendus eveniet tenetur delectus, itaque dolor laborum, ratione enim unde soluta sapiente culpa error. Eaque vel omnis reiciendis, hic nam tenetur, tempore voluptate odit recusandae cupiditate veniam illo, sed nemo fugiat distinctio. Officiis iure quibusdam dolorem eligendi omnis? Ex aliquid ut atque aliquam ipsa porro laboriosam quia reiciendis quam dolorum soluta animi error dolore neque consequuntur, magni perspiciatis repudiandae fugiat possimus ullam modi. Voluptates ipsum modi nihil recusandae, sint velit dicta adipisci aperiam consectetur repellendus rem iusto sunt, exercitationem, iure molestias veritatis quibusdam accusantium tempora at eaque. Dolore, deleniti. Natus, voluptas ipsam. Reiciendis quod illo blanditiis dignissimos vero perspiciatis mollitia. Nam labore enim numquam repellat aliquid vel aut assumenda minima eum dolor est alias exercitationem, reprehenderit praesentium saepe quia accusantium nesciunt corporis deserunt doloribus, commodi consequuntur ipsum ipsam! Voluptatum earum nobis asperiores ipsum sapiente modi, accusamus provident odio harum blanditiis soluta enim pariatur eligendi, beatae temporibus laborum obcaecati. Vel, harum ipsam animi quae veritatis odit odio itaque doloribus iste dolorum perferendis fugiat. Error, facere ex aliquid repellat explicabo dolor nisi recusandae veritatis dolorem dicta optio nihil provident, quis tempora blanditiis non aut officiis ducimus nulla pariatur! Vel, recusandae? Tempora dolores aliquid, iure ab officia architecto voluptates, tenetur sequi deserunt temporibus fuga recusandae unde hic nostrum? Hic nulla aspernatur laboriosam beatae non quae sunt aperiam quaerat molestiae, quibusdam temporibus fugiat et natus voluptatum rem quis, ad, harum totam a exercitationem culpa sequi? Rem corrupti excepturi molestias quos fugiat sunt architecto ea hic dolor suscipit natus adipisci maiores temporibus corporis iure nihil alias repellat voluptatibus nulla reprehenderit repellendus, dicta laborum. Labore voluptate et modi iusto cum. Reprehenderit deserunt laborum delectus suscipit quia, repellendus voluptatibus fuga necessitatibus, maxime ipsam quam deleniti repellat iure. Expedita distinctio fugiat sequi quidem? Minima voluptatibus magni cum reiciendis similique quibusdam laborum dolorem aperiam quos adipisci fugit ab aliquam quisquam eligendi blanditiis doloremque molestias fugiat quasi ullam, magnam, nesciunt in! Reiciendis?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi odit officia
+                                        eos labore voluptas accusamus, veniam harum laborum autem est odio quisquam,
+                                        dolorem aspernatur nihil architecto dolores in! Aliquid eius voluptatibus quo
+                                        illum veniam consectetur incidunt obcaecati assumenda, asperiores quasi. Dolore
+                                        eius nemo, aliquid mollitia animi culpa. Non cumque fugit ex! In, perferendis
+                                        nemo doloribus, temporibus inventore cumque asperiores esse eius fuga,
+                                        consequuntur sapiente? Aperiam soluta explicabo, ullam tenetur eum numquam quo
+                                        dolores itaque fugiat non aliquam consequuntur ex commodi quam quas ipsum
+                                        cupiditate id pariatur temporibus ducimus suscipit necessitatibus eveniet
+                                        asperiores quos! Ad expedita dicta dolores quasi, illum provident amet ducimus
+                                        nihil perferendis. Velit ipsum, quos voluptatum quidem voluptates enim esse
+                                        culpa, reprehenderit id voluptatem reiciendis at, consequatur nostrum molestias
+                                        incidunt animi sed amet eaque nobis facilis fugit repudiandae quaerat
+                                        exercitationem. Omnis iusto sapiente pariatur consectetur veritatis natus
+                                        officia, molestias sequi sit accusamus dolores, facilis reiciendis blanditiis
+                                        optio alias explicabo perspiciatis magni unde itaque minus illum ipsum? Beatae
+                                        rerum, dolores non laborum eum veritatis quae id est aut repellendus fuga qui
+                                        corporis esse recusandae sapiente ut incidunt repellat molestias optio.
+                                        Doloremque fugiat aliquam distinctio amet neque repellendus eveniet tenetur
+                                        delectus, itaque dolor laborum, ratione enim unde soluta sapiente culpa error.
+                                        Eaque vel omnis reiciendis, hic nam tenetur, tempore voluptate odit recusandae
+                                        cupiditate veniam illo, sed nemo fugiat distinctio. Officiis iure quibusdam
+                                        dolorem eligendi omnis? Ex aliquid ut atque aliquam ipsa porro laboriosam quia
+                                        reiciendis quam dolorum soluta animi error dolore neque consequuntur, magni
+                                        perspiciatis repudiandae fugiat possimus ullam modi. Voluptates ipsum modi nihil
+                                        recusandae, sint velit dicta adipisci aperiam consectetur repellendus rem iusto
+                                        sunt, exercitationem, iure molestias veritatis quibusdam accusantium tempora at
+                                        eaque. Dolore, deleniti. Natus, voluptas ipsam. Reiciendis quod illo blanditiis
+                                        dignissimos vero perspiciatis mollitia. Nam labore enim numquam repellat aliquid
+                                        vel aut assumenda minima eum dolor est alias exercitationem, reprehenderit
+                                        praesentium saepe quia accusantium nesciunt corporis deserunt doloribus, commodi
+                                        consequuntur ipsum ipsam! Voluptatum earum nobis asperiores ipsum sapiente modi,
+                                        accusamus provident odio harum blanditiis soluta enim pariatur eligendi, beatae
+                                        temporibus laborum obcaecati. Vel, harum ipsam animi quae veritatis odit odio
+                                        itaque doloribus iste dolorum perferendis fugiat. Error, facere ex aliquid
+                                        repellat explicabo dolor nisi recusandae veritatis dolorem dicta optio nihil
+                                        provident, quis tempora blanditiis non aut officiis ducimus nulla pariatur! Vel,
+                                        recusandae? Tempora dolores aliquid, iure ab officia architecto voluptates,
+                                        tenetur sequi deserunt temporibus fuga recusandae unde hic nostrum? Hic nulla
+                                        aspernatur laboriosam beatae non quae sunt aperiam quaerat molestiae, quibusdam
+                                        temporibus fugiat et natus voluptatum rem quis, ad, harum totam a exercitationem
+                                        culpa sequi? Rem corrupti excepturi molestias quos fugiat sunt architecto ea hic
+                                        dolor suscipit natus adipisci maiores temporibus corporis iure nihil alias
+                                        repellat voluptatibus nulla reprehenderit repellendus, dicta laborum. Labore
+                                        voluptate et modi iusto cum. Reprehenderit deserunt laborum delectus suscipit
+                                        quia, repellendus voluptatibus fuga necessitatibus, maxime ipsam quam deleniti
+                                        repellat iure. Expedita distinctio fugiat sequi quidem? Minima voluptatibus
+                                        magni cum reiciendis similique quibusdam laborum dolorem aperiam quos adipisci
+                                        fugit ab aliquam quisquam eligendi blanditiis doloremque molestias fugiat quasi
+                                        ullam, magnam, nesciunt in! Reiciendis?
                                     </p>
                                     <button type="button" class="btn btn-primary" data-toggle="modal"
                                         data-target="#noticia4">Leer Más</button>
@@ -468,13 +571,16 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-notice1" role="button" data-slide="prev">
@@ -541,13 +647,16 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-notice2" role="button" data-slide="prev">
@@ -612,13 +721,16 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-notice3" role="button" data-slide="prev">
@@ -683,13 +795,16 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg" alt="First slide">
+                                <img class="d-block w-100" src="assets/images/noticias/noticia1/1.jpg"
+                                    alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-notice4" role="button" data-slide="prev">
@@ -728,7 +843,7 @@
 
     <!-- Fin de modals de noticias -->
 
-        
+
     <section class="our-promociones" id="promociones">
         <div class="container">
             <div class="row">

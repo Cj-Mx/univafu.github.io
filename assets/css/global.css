@@ -815,6 +815,9 @@ banner
 }
 
 @media screen and (max-width: 767px) {
+    .caption{
+        padding:0 5%;
+    }
     .main-banner .caption h6 {
         font-weight: 500;
     }
@@ -2952,4 +2955,113 @@ img.btn-whatsapp:hover {
     #myImg {
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+/* Provides */
+
+.provides {
+  padding-bottom: 200px;
+}
+
+.provides h2 {
+  margin: 90px 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 3.3em;
+  color: #42b5f8;
+}
+
+.grid-provides {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.provide {
+  height: 300px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+
+.provide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 16px -6px #747373;
+}
+
+.provide>h3 {
+  padding: 25px 10px;
+  font-size: 1.2em;
+}
+
+.provide>img {
+  width: 150px;
+  height: 150px;
+}
+
+.provide:nth-child(1) {
+  background-color: #f5b868;
+}
+
+.provide:nth-child(2) {
+  background-color: #ffc65c;
+}
+
+.provide:nth-child(3) {
+  background-color: #04b5cc;
+}
+
+.provide:nth-child(4) {
+  background-color: #519cff;
+}
+
+@media (max-width: 992px) {
+  .grid-provides {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .provides>h2 {
+      font-size: 2.2em;
+  }
+  .provide>h3 {
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 720px) {
+  .provide {
+      width: 50vw;
+  }
+  .provides>h2 {
+      font-size: 2em;
+  }
+  .provide>h3 {
+      font-size: 1em;
+  }
+  .container {
+      margin: 0;
+      padding: 0;
+  }
+  .provide>img {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+
+.btn-algebraix-close{
+    background-color: #0083ee;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
 }

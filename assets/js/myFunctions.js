@@ -1,3 +1,5 @@
+
+
 // script para mostrar el navbar de otro color despues de scroll
 var scrollP = window.scrollY;
 window.onscroll = function () {
@@ -43,3 +45,17 @@ function sendMessageWhatsapp() {
 }
 
 
+function password_show_hide(){
+    var password = document.getElementById('password');
+    var iconShow = document.getElementById('show_eye');
+    var iconHide = document.getElementById('hide_eye');
+    if(password.type == 'password'){
+        password.type = 'text';
+        iconHide.classList.add('d-none');
+        iconShow.classList.remove('d-none');
+        return;
+    }
+    password.type = 'password';
+    iconShow.classList.add('d-none');
+    iconHide.classList.remove('d-none');
+}

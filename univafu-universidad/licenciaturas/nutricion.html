@@ -38,11 +38,65 @@
                 <li><a href="https://es-la.facebook.com/univafu.oficial/" target="_blank"><i
                             class="fa fa-facebook"></i></a></li>
                 <li>
-                    <a href="#" class="menu-link menu-bar-link"><i class="fa fa-user"></i> Acceso a estudiantes</a>
+                    <a href="#" class="k" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user"></i>
+                        Acceso a estudiantes</a>
                 </li>
             </ul>
         </div>
     </div>
+
+     <!-- Modal algebraix -->
+     <div style="z-index: 999999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog"
+     aria-labelledby="algebraixTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+             <div class="modal-header" style="background-color: #0083ee;">
+                 <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix
+                 </h5>
+                 <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/"
+                     target="_blank">
+                     <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
+                         <div class="col-12">
+                             <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                     <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i
+                                             class="fa fa-user"></i></span>
+                                 </div>
+                                 <input name="username" type="text" value="" class="input form-control" id="username"
+                                     placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                             </div>
+                         </div>
+                         <div class="col-12">
+                             <div class="input-group mb-3">
+                                 <input name="password" type="password" value="" class="input form-control"
+                                     id="password" placeholder="Contraseña" required="true" aria-label="password"
+                                     aria-describedby="basic-addon1" />
+                                 <div class="input-group-append">
+                                     <span class="input-group-text" onclick="password_show_hide();"
+                                         style="height: 100%;">
+                                         <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
+                                         <i class="fa fa-eye-slash " id="hide_eye"></i>
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div style="display: flex; justify-content: flex-end;">
+                         <button type="button" class="btn btn-algebraix" data-dismiss="modal"
+                             style="margin-right: 10px;">Cerrar</button>
+                         <button class="btn btn-algebraix" type="submit"
+                             onclick="algerForm.submit()">Ingresar</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
 
     <!-- ***** Inicio de la cabecera ***** -->
     <header class="header-area header-sticky">
@@ -154,7 +208,7 @@
                         </li>
 
                         <li class="algebraix">
-                            <a href="#" class="menu-link menu-bar-link"><i class="fa fa-user"></i> Acceso a
+                            <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user"></i> Acceso a
                                 estudiantes</a>
                         </li>
                         <li class="mobile-menu-header">
@@ -188,7 +242,8 @@
                             <p style="padding-right: 2%">Si tienes vocación de servicio, te quieres comprometer en la
                                 mejora de la calidad de vida de las personas mediante la práctica de hábitos saludables
                                 y en la participación de proyectos de investigación de las ciencias de la salud,
-                                <b>¡Esta carrera es para tí!</b></p>
+                                <b>¡Esta carrera es para tí!</b>
+                            </p>
                             <div class="main-button mt-2">
                                 <div class="scroll-to-section"><a class="btn btn-contact" href="#contact">Contactar</a>
                                 </div>
@@ -252,247 +307,55 @@
             </div>
         </div>
     </section>
-    <!-- Fin de la Sección About -->
+
+    <!-- Sección lo que ofrecemos -->
+    <section class="provides container ">
+        <h2 data-aos="fade-up"><span style="color: #eea300;">¿</span> Que nos distingue <span
+                style="color: #eea300;">?</span></h2>
+        <div class="grid-provides " data-aos="fade-up" data-aos-offset="230">
+            <div class="provide ">
+                <img src="../../assets/images/provides/instalaciones-icon.png " alt=" ">
+                <h3>INSTALACIONES DE VANGUARDIA</h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/practicas.png " alt=" ">
+                <h3>PRÁCTICAS DESDE EL PRIMER SEMESTRE</h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/internacional-icon.png " alt=" ">
+                <h3>MAESTROS INTERNACIONALES
+                </h3>
+            </div>
+            <div class="provide ">
+                <img src="../../assets/images/provides/convenio-icon.png " alt=" ">
+                <h3>CONVENIOS CON EMPRESAS</h3>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Plan de estudios -->
-    <div class="plan-estudios">
-        <!-- <h1 class="d-block text-center mt-5 bold">Plan de Estudios</h1> -->
-        <!-- Imagen - Click para mostrar -->
-        <img id="myImg" src="../../assets/images/plan-de-estudios/nutricion.png" alt="Plan estudios de Nutrición"
-           >
-    </div>
-
-    <!-- Modal imagen plan de estudios -->
-    <div id="myModal" class="modal-plan-estudios" style="z-index: 1111111">
-
-        <!-- Boton de cerrar -->
-        <span class="close-plan">&times;</span>
-
-        <!-- Contenido del Modal (Imagen) -->
-        <img class="modal-content" id="img01">
-
-        <!-- Texto del modal -->
-        <div id="caption"></div>
-    </div>
-    <!-- Fin del modal de plan de estudios -->
-
-    <!-- *********************************************************** -->
-    <!-- ***************   ACORDION CARGA ACADEMICA    ************* -->
-    <!-- *********************************************************** -->
-    <!-- CARGA ACADEMICA ACORDION-->
-    <!-- <div class="accordion p-5" id="accordionExample" style="background-color: rgb(255, 255, 255)">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                    aria-expanded="true" aria-controls="collapse1">
-                    1er Semestre
-                </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Inglés I</li>
-                            <li class="mx-5 my-2">Fundamentos de Investigación</li>
-                            <li class="mx-5 my-2">Psicología Humana</li>
-                            <li class="mx-5 my-2">Introducción y Formación a la Vida Profesional</li>
-                            <li class="mx-5 my-2">Nutrición Básica</li>
-                            <li class="mx-5 my-2">Química de Alimentos</li>
-                            <li class="mx-5 my-2">Anatomía y Fisiología Celular</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    2do Semestre
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Inglés II</li>
-                            <li class="mx-5 my-2">Desarrollo Integral y Responsabilidad Social</li>
-                            <li class="mx-5 my-2">Bioestadística</li>
-                            <li class="mx-5 my-2">Nutrición en el Desarrollo de la Vida</li>
-                            <li class="mx-5 my-2">Composición y Propiedades de los Alimentos</li>
-                            <li class="mx-5 my-2">Bioenergética y Respiración Celular</li>
-                            <li class="mx-5 my-2">Anatomía y Fisiología Humana</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                    aria-expanded="true" aria-controls="collapseThree">
-                    3er Semestre
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Inglés III</li>
-                            <li class="mx-5 my-2">Taller de Proyecto de Vida</li>
-                            <li class="mx-5 my-2">Propedéutica Clínica</li>
-                            <li class="mx-5 my-2">Nutrición en el Ciclo de la Vida</li>
-                            <li class="mx-5 my-2">Bromatología</li>
-                            <li class="mx-5 my-2">Metabolismo y Bioquímica Funcional</li>
-                            <li class="mx-5 my-2">Farmacología en Nutrición</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                    aria-expanded="true" aria-controls="collapseFour">
-                    4to Semestre
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Inglés IV</li>
-                            <li class="mx-5 my-2">Educación Financiera</li>
-                            <li class="mx-5 my-2">Salud Pública y Epidemología</li>
-                            <li class="mx-5 my-2">Taller de Evaluación del Estado Nutricional</li>
-                            <li class="mx-5 my-2">Gastroenterología y Nutrición</li>
-                            <li class="mx-5 my-2">Tecnología de Alimentos</li>
-                            <li class="mx-5 my-2">Taller de Calculo Alimentario</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                    aria-expanded="true" aria-controls="collapseFive">
-                    5to Semestre
-                </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Dietoterapia I</li>
-                            <li class="mx-5 my-2">Selección y Preparación de Alimentos II</li>
-                            <li class="mx-5 my-2">Patología de la Nutrición II</li>
-                            <li class="mx-5 my-2">Didáctica General</li>
-                            <li class="mx-5 my-2">Nutrición en Pediatría</li>
-                            <li class="mx-5 my-2">Liderazgo</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                    aria-expanded="true" aria-controls="collapseSix">
-                    6to Semestre
-                </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Dietoterapia II</li>
-                            <li class="mx-5 my-2">Nutrición en el Deporte</li>
-                            <li class="mx-5 my-2">Educación en Nutrición</li>
-                            <li class="mx-5 my-2">Nutrición y Práctica Comunitaria</li>
-                            <li class="mx-5 my-2">Nutrición en Geriatría</li>
-                            <li class="mx-5 my-2">Bioestadística</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section id="plan-estudios">
+        <div class="plan-estudios">
+            <!-- <h1 class="d-block text-center mt-5 bold">Plan de Estudios</h1> -->
+            <!-- Imagen - Click para mostrar -->
+            <img id="myImg" src="../../assets/images/plan-de-estudios/nutricion.png" alt="Plan estudios de Nutrición">
         </div>
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSeven">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                    aria-expanded="true" aria-controls="collapseSeven">
-                    7mo Semestre
-                </button>
-            </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Apoyo Metabólico</li>
-                            <li class="mx-5 my-2">Administración y Alimentación Institucional</li>
-                            <li class="mx-5 my-2">Programas de Nutrición y Legislación Alimentaria</li>
-                            <li class="mx-5 my-2">Cultura y Calidad en el Servicio</li>
-                            <li class="mx-5 my-2">Cultura Emprendedora</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEight">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
-                    aria-expanded="true" aria-controls="collapseEight">
-                    8vo Semestre
-                </button>
-            </h2>
-            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">Genética de la Nutrición</li>
-                            <li class="mx-5 my-2">Práctica Hospitalaria</li>
-                            <li class="mx-5 my-2">Práctica de Servicios de Alimentación</li>
-                            <li class="mx-5 my-2">Seminario de Trabajo de Investigación</li>
-                            <li class="mx-5 my-2">Desarrollo de Emprendedores</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <!-- Modal imagen plan de estudios -->
+        <div id="myModal" class="modal-plan-estudios" style="z-index: 1111111">
+
+            <!-- Boton de cerrar -->
+            <span class="close-plan">&times;</span>
+
+            <!-- Contenido del Modal (Imagen) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Texto del modal -->
+            <div id="caption"></div>
         </div>
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingNine">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
-                    aria-expanded="true" aria-controls="collapseNine">
-                    Servicio Social
-                </button>
-            </h2>
-            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                data-bs-parent="#accordionExample">
-                <div class="">
-                    <div>
-                        <ul>
-                            <li class="mx-5 my-2">El servicio social es obligatorio para los alumnos y egresados de
-                                educación superior incorporadas a SEPyC, y es requisito previo para la obtención del
-                                título correspondiente.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- FIN DE CARGA ACADEMICA ACORDION-->
-
-
+    </section>
     <!-- Inicio del contenedor del Footer -->
     <div class="footer">
         <p>Copyright © 2022 Univafu , Todos los derechos reservados.
@@ -515,10 +378,17 @@
 
     <script src="../../assets/js/navigation.js"></script>
 
-    <!-- script de bootstrap 5.2 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
 
 
     <!-- script que contiene las funciones para el scrollNavbar, progressbar y sendWhatsapp -->

@@ -1,20 +1,14 @@
-function enviarCorreo() {
-    // params = {
-    //     nombre: document.getElementById('nombre'),
-    //     email = document.getElementById('email');
-    //     telefono = document.getElementById('telefono');
-    //     mensaje = document.getElementById('mensaje');
-    // }
-    // nombre = document.getElementById('nombre');
-    // email = document.getElementById('email');
-    // telefono = document.getElementById('telefono');
-    // mensaje = document.getElementById('mensaje');
-    // if (email == '' || email == null) {
-    //     alert('no se ingresó correo');
-    //     email.focus();
-    //     return false;
-    // }
 
+
+function enviarCorreo() {
+    params = {
+         nombre: document.getElementById('nombre').value,
+         email : document.getElementById('email').value,
+         telefono : document.getElementById('telefono').value,
+         mensaje : document.getElementById('mensaje').value
+    }
+    var nombre = document.getElementById('nombre').value;
+    console.log(params);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("POST", "https://pagetest98.000webhostapp.com/assets/js/sendEmail.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -24,7 +18,6 @@ function enviarCorreo() {
         }
     };
     //correo enviado a mi archivo/ruta php
-    xmlhttp.send();
-
+    xmlhttp.send(JSON.stringify(params));
 
 }

@@ -358,11 +358,81 @@
     </section>
 
 
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="contact" action="#" method="post" name="formContact">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 style="color: #3d95d4">Contactanos</h2>
+                                        <h6 style="margin-bottom: 20px;">Nos gustaria recibir tus dudas y comentarios,
+                                            en breve uno de nuestros asesores se pondrá en contacto</h6>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="nombre" type="text" id="nombre" placeholder="Nombre*"
+                                                required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                                placeholder="Correo Electronico" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="telefono" type="text" id="telefono" placeholder="Telefono*"
+                                                required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="mensaje" type="text" class="form-control" id="mensaje"
+                                                placeholder="Mensaje" required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button-submit"
+                                                onclick="enviarCorreo()">Enviar
+                                                Mensaje</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="right-info">
+                        <ul>
+                            <li>
+                                <div class="icon-group-text">
+                                    <i class="fa fa-phone"></i>
+                                    <h6>Numero telefonico</h6>
+                                </div>
+                                <a href="tel:6688807374"> <span>(668) 880-7374</span></a>
+                            </li>
+                            <li>
+                                <div class="icon-group-text">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <h6>Domicilio</h6>
+                                </div>
+                                <span onclick="openMap()" style="cursor: pointer;">
+                                    Río Presidio, No. 1955 Nte. Col. Tepeca Los Mochis, Sinaloa, México.
+                                </span>
+                            </li>
 
-
-    <!-- Inicio del contenedor del Footer -->
-    <section id="footer">
-        <div class="footer">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer footer-index">
             <p>Copyright © 2022 Univafu , Todos los derechos reservados.
             </p>
             <div class="grid-redes">
@@ -378,9 +448,9 @@
             </div>
             <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de
                 privacidad</a>
-
-        </div>
+            </div>
     </section>
+
 
 
     <script src="../../assets/js/navigation.js"></script>

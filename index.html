@@ -1044,7 +1044,7 @@
                 <div class="col-lg-9 align-self-center">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="#" method="post" name="formContact">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h2 style="color: #3d95d4">Contactanos</h2>
@@ -1053,7 +1053,7 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <fieldset>
-                                            <input name="name" type="text" id="nombre" placeholder="Nombre*" required="">
+                                            <input name="nombre" type="text" id="nombre" placeholder="Nombre*" required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-4">
@@ -1064,19 +1064,19 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <fieldset>
-                                            <input name="subject" type="text" id="telefono" placeholder="Telefono*"
+                                            <input name="telefono" type="text" id="telefono" placeholder="Telefono*"
                                                 required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" type="text" class="form-control" id="mensaje"
+                                            <textarea name="mensaje" type="text" class="form-control" id="mensaje"
                                                 placeholder="Mensaje" required=""></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <button type="submit" id="form-submit" class="button" onclick="enviarCorreo()">Enviar
+                                            <button type="submit" id="form-submit" class="button-submit" onclick="enviarCorreo()">Enviar
                                                 Mensaje</button>
                                         </fieldset>
                                     </div>
@@ -1085,11 +1085,6 @@
                         </div>
                     </div>
                 </div>
-
-                <button type="submit" id="form-submit" class="button" onclick="enviarCorreo()">Enviar
-                    Mensaje</button>
-
-                    
                 <div class="col-lg-3">
                     <div class="right-info">
                         <ul>
@@ -1167,7 +1162,7 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    <script src="assets/js/sendMail.js"></script>
+    <!-- <script src="assets/js/sendMail.js"></script> -->
 </body>
 
 </html>

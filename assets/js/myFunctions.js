@@ -59,3 +59,40 @@ function password_show_hide(){
     iconShow.classList.add('d-none');
     iconHide.classList.remove('d-none');
 }
+
+$("#contact").submit(function(e) {
+    e.preventDefault();
+});
+
+// Validar formulario
+function validateForm(){
+    var form = document.formContact;
+    // console.log(form.email.validity);
+    let validateEmail = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value))
+    return form.nombre.value == '' || form.email.value == '' || form.telefono.value == '' || form.mensaje.value == '' || !validateEmail ?  false :  true; 
+}
+
+function enviarCorreo() {
+    if(!validateForm()){
+        return alert("Por favor rellena todos los campos correctamente");
+    };
+    params = {
+         nombre: document.getElementById('nombre').value,
+         email : document.getElementById('email').value,
+         telefono : document.getElementById('telefono').value,
+         mensaje : document.getElementById('mensaje').value
+    }
+    var nombre = document.getElementById('nombre').value;
+    console.log(params);
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "https://pagetest98.000webhostapp.com/assets/js/sendEmail.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState === 4 || this.status === 200) {
+            console.log(this.responseText); // echo from php
+        }
+    };
+    //correo enviado a mi archivo/ruta php
+    xmlhttp.send(JSON.stringify(params));
+
+}

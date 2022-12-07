@@ -45,58 +45,58 @@
         </div>
     </div>
 
-     <!-- Modal algebraix -->
-     <div style="z-index: 999999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog"
-     aria-labelledby="algebraixTitle" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content">
-             <div class="modal-header" style="background-color: #0083ee;">
-                 <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix
-                 </h5>
-                 <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                 </button>
-             </div>
-             <div class="modal-body">
-                 <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/"
-                     target="_blank">
-                     <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
-                         <div class="col-12">
-                             <div class="input-group mb-3">
-                                 <div class="input-group-prepend">
-                                     <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i
-                                             class="fa fa-user"></i></span>
-                                 </div>
-                                 <input name="username" type="text" value="" class="input form-control" id="username"
-                                     placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
-                             </div>
-                         </div>
-                         <div class="col-12">
-                             <div class="input-group mb-3">
-                                 <input name="password" type="password" value="" class="input form-control"
-                                     id="password" placeholder="Contraseña" required="true" aria-label="password"
-                                     aria-describedby="basic-addon1" />
-                                 <div class="input-group-append">
-                                     <span class="input-group-text" onclick="password_show_hide();"
-                                         style="height: 100%;">
-                                         <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
-                                         <i class="fa fa-eye-slash " id="hide_eye"></i>
-                                     </span>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div style="display: flex; justify-content: flex-end;">
-                         <button type="button" class="btn btn-algebraix" data-dismiss="modal"
-                             style="margin-right: 10px;">Cerrar</button>
-                         <button class="btn btn-algebraix" type="submit"
-                             onclick="algerForm.submit()">Ingresar</button>
-                     </div>
-                 </form>
-             </div>
-         </div>
-     </div>
- </div>
+    <!-- Modal algebraix -->
+    <div style="z-index: 999999;" class="modal fade" id="algebraix" tabindex="-1" role="dialog"
+        aria-labelledby="algebraixTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #0083ee;">
+                    <h5 class="modal-title" id="algebraixLongTitle" style="color: #fff;">Iniciar sesión con algebraix
+                    </h5>
+                    <button type="button" class="close btn-algebraix-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form #algeForm method="post" action="https://c1-univafu.algebraix.com/bin/g/start/login_do/"
+                        target="_blank">
+                        <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 0.5em;">
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1" style="height: 100%;"><i
+                                                class="fa fa-user"></i></span>
+                                    </div>
+                                    <input name="username" type="text" value="" class="input form-control" id="username"
+                                        placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <input name="password" type="password" value="" class="input form-control"
+                                        id="password" placeholder="Contraseña" required="true" aria-label="password"
+                                        aria-describedby="basic-addon1" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();"
+                                            style="height: 100%;">
+                                            <i class="fa fa-eye d-none" id="show_eye" style="height: 100%;"></i>
+                                            <i class="fa fa-eye-slash " id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button type="button" class="btn btn-algebraix" data-dismiss="modal"
+                                style="margin-right: 10px;">Cerrar</button>
+                            <button class="btn btn-algebraix" type="submit"
+                                onclick="algerForm.submit()">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ***** Inicio de la cabecera ***** -->
     <header class="header-area header-sticky">
@@ -208,7 +208,8 @@
                         </li>
 
                         <li class="algebraix">
-                            <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i class="fa fa-user"></i> Acceso a
+                            <a href="#" class="menu-link menu-bar-link" data-toggle="modal" data-target="#algebraix"><i
+                                    class="fa fa-user"></i> Acceso a
                                 estudiantes</a>
                         </li>
                         <li class="mobile-menu-header">
@@ -356,38 +357,112 @@
         </div>
 
     </section>
-    <!-- Inicio del contenedor del Footer -->
-    <div class="footer">
-        <p>Copyright © 2022 Univafu , Todos los derechos reservados.
-        </p>
-        <div class="grid-redes">
-            <a href="https://es-la.facebook.com/univafu.oficial/" target="_blank" style="color: #fff;"><i
-                    class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/univafu_oficial" target="_blank" style="color: rgb(255, 255, 255);"> <i
-                    class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);">
-                <i class="fa fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"
-                style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
+
+
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="contact" action="#" method="post" name="formContact">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 style="color: #3d95d4">Contactanos</h2>
+                                        <h6 style="margin-bottom: 20px;">Nos gustaria recibir tus dudas y comentarios,
+                                            en breve uno de nuestros asesores se pondrá en contacto</h6>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="nombre" type="text" id="nombre" placeholder="Nombre*"
+                                                required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                                placeholder="Correo Electronico" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <input name="telefono" type="text" id="telefono" placeholder="Telefono*"
+                                                required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="mensaje" type="text" class="form-control" id="mensaje"
+                                                placeholder="Mensaje" required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button-submit"
+                                                onclick="enviarCorreo()">Enviar
+                                                Mensaje</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="right-info">
+                        <ul>
+                            <li>
+                                <div class="icon-group-text">
+                                    <i class="fa fa-phone"></i>
+                                    <h6>Numero telefonico</h6>
+                                </div>
+                                <a href="tel:6688807374"> <span>(668) 880-7374</span></a>
+                            </li>
+                            <li>
+                                <div class="icon-group-text">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <h6>Domicilio</h6>
+                                </div>
+                                <span onclick="openMap()" style="cursor: pointer;">
+                                    Río Presidio, No. 1955 Nte. Col. Tepeca Los Mochis, Sinaloa, México.
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de
-            privacidad</a>
-
-    </div>
-    <!-- Fin del contenedor del Footer -->
-
+        <div class="footer footer-index">
+            <p>Copyright © 2022 Univafu , Todos los derechos reservados.
+            </p>
+            <div class="grid-redes">
+                <a href="https://es-la.facebook.com/univafu.oficial/" target="_blank" style="color: #fff;"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/univafu_oficial" target="_blank" style="color: rgb(255, 255, 255);"> <i
+                        class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/univafuuniversidad/" target="_blank" style="color: rgb(255, 255, 255);">
+                    <i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCI-WuL54rFKE2BvUewkTyPg" target="_blank"
+                    style="color: rgb(255, 255, 255);"> <i class="fa fa-youtube"></i></a>
+            </div>
+            <a href="http://127.0.0.1/avisoPrivacidad.html" id="router-privacidad" class="aviso-privacidad">Aviso de
+                privacidad</a>
+            </div>
+    </section>
+    
     <script src="../../assets/js/navigation.js"></script>
 
-      <!-- Bootstrap core JavaScript -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 
 

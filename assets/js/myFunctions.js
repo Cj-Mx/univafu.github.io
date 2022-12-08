@@ -72,7 +72,7 @@ function validateForm(){
     return form.nombre.value == '' || form.email.value == '' || form.telefono.value == '' || form.mensaje.value == '' || !validateEmail ?  false :  true; 
 }
 
-function enviarCorreo() {
+function enviarCorreo(emailTo) {
     if(!validateForm()){
         return alert("Por favor rellena todos los campos correctamente");
     };
@@ -80,7 +80,8 @@ function enviarCorreo() {
          nombre: document.getElementById('nombre').value,
          email : document.getElementById('email').value,
          telefono : document.getElementById('telefono').value,
-         mensaje : document.getElementById('mensaje').value
+         mensaje : document.getElementById('mensaje').value,
+         emailTo: emailTo
     }
     var nombre = document.getElementById('nombre').value;
     console.log(params);

@@ -86,7 +86,7 @@ function enviarCorreo(emailTo) {
     var nombre = document.getElementById('nombre').value;
     console.log(params);
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "https://pagetest298.000webhostapp.com/assets/js/sendEmail.php", true);
+    xmlhttp.open("POST", "https://pagetest398.000webhostapp.com/assets/js/sendEmail.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.onreadystatechange = function () {
         if (this.readyState === 4 || this.status === 200) {

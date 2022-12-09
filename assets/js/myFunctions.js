@@ -69,7 +69,7 @@ function validateForm(){
     var form = document.formContact;
     // console.log(form.email.validity);
     let validateEmail = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value))
-    return form.nombre.value == '' || form.email.value == '' || form.telefono.value == '' || form.mensaje.value == '' || !validateEmail ?  false :  true; 
+    return form.nombre.value == '' || form.email.value == '' || form.telefono.value == '' || form.mensaje.value == '' || !validateEmail || form.telefono.value.length != 10 ?  false :  true; 
 }
 
 function enviarCorreo(emailTo) {
@@ -86,7 +86,7 @@ function enviarCorreo(emailTo) {
     var nombre = document.getElementById('nombre').value;
     console.log(params);
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "https://pagetest98.000webhostapp.com/assets/js/sendEmail.php", true);
+    xmlhttp.open("POST", "https://pagetest298.000webhostapp.com/assets/js/sendEmail.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.onreadystatechange = function () {
         if (this.readyState === 4 || this.status === 200) {

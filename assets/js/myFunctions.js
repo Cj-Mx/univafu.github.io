@@ -41,7 +41,7 @@ reveal();
 
 // script para enviar mensajes whatsapp
 function sendMessageWhatsapp() {
-    window.open('https://wa.me/573001112233?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio', '_blank');
+    window.open('https://wa.me/+516688299539?text=Hola!%20Quisiera%20obtener%20mayor%20informacion', '_blank');
 }
 
 

@@ -3065,3 +3065,8 @@ img.btn-whatsapp:hover {
     font-weight: bold;
     font-size: 1.5em;
 }
+
+.btn-cerrar{
+    color: #fff;
+    font-size: 1.2em;
+}

@@ -43,7 +43,7 @@ function loadNavigation() {
     document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html";
     document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html";
     let path = window.location.pathname.split('/');
-    path[1] + '/' + path[2] === 'univafu-universidad/licenciaturas' && modalShow();
+    path[1] + '/' + path[2] === 'univafu-universidad/licenciaturas' || path[1] === 'prepa-univafu' && modalShow()  ;
     // window.location.pathname === '/univafu-universidad' && modalShow();
     // window.location.pathname.split('/')[1] === 'univafu-universidad' && modalShow();
     // console.log(window.location.pathname.split('/'));

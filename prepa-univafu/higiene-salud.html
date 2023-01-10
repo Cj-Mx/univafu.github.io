@@ -464,23 +464,6 @@
         });
     </script>
 
-
-<script>
-    var zoom = 1;
-    var zoomStep = 0.2;
-
-    document.getElementById("zoomIn").addEventListener("click", function() {
-      zoom += zoomStep;
-      document.getElementById("img01").style.transform = "scale(" + zoom + ")";
-    });
-    document.getElementById("zoomOut").addEventListener("click", function() {
-      if (zoom > zoomStep) {
-        zoom -= zoomStep;
-        document.getElementById("img01").style.transform = "scale(" + zoom + ")";
-      }
-    });
-  </script>
-
     <!-- script sweetalert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

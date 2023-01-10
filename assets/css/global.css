@@ -2891,6 +2891,13 @@ img.btn-whatsapp:hover {
     width: 100%;
     max-width: 850px;
 }
+.modal-content-prepa{
+    width: 95vw;
+    max-width: 95vw;
+    margin: auto;
+    display: block;
+
+}
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {

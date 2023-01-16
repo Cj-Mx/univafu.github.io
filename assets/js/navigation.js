@@ -1,47 +1,26 @@
 function loadNavigation() {
-    // Router para servidor
-    // document.getElementById("router-index").href = "https://univafu-ng.000webhostapp.com" ;
-    // document.getElementById("router-secundaria").href = "https://univafu-ng.000webhostapp.com/colegio-valle-fuerte/Secundaria" ;
-    // document.getElementById("router-prepa-hs").href = "https://univafu-ng.000webhostapp.com/prepa-univafu/higiene-salud" ;
-    // document.getElementById("router-prepa-ti").href = "https://univafu-ng.000webhostapp.com/prepa-univafu/tecnologias" ;
-    // document.getElementById("router-uni-lnut").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/licenciaturas/nutricion" ;
-    // document.getElementById("router-uni-gtyg").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/licenciaturas/gestion-turistica-gastronomia" ;
-    // document.getElementById("router-uni-tfyr").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/licenciaturas/terapia-fisica" ;
-    // document.getElementById("router-uni-tayl").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/licenciaturas/terapia-audicion" ;
-    // document.getElementById("router-uni-lmkt").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/licenciaturas/marketing-digital" ;
+    document.getElementById("router-index").href = "https://univafu.edu.mx";
 
-    // document.getElementById("router-uni-mdch").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/posgrados/desarrollo-capital-humano" ;
-    // document.getElementById("router-uni-mnch").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/posgrados/nutricion-clinica" ;
-    // document.getElementById("router-uni-epyr").href = "https://univafu-ng.000webhostapp.com/univafu-universidad/posgrados/especialidad-prevencion" ;
-
-    // document.getElementById("router-fundacion-cli").href = "https://univafu-ng.000webhostapp.com/fundacion-univafu/clinica"
-
-    // document.getElementById("router-idiomas").href = "https://univafu-ng.000webhostapp.com/univafu-idiomas/idiomas" ;
-    // document.getElementById("router-privacidad").href = "https://univafu-ng.000webhostapp.com/avisoPrivacidad" ;
-
-
-    document.getElementById("router-index").href = "http://127.0.0.1:5500";
-
-    document.getElementById("router-secundaria").href = "http://127.0.0.1:5500/colegio-valle-fuerte/Secundaria.html";
-    document.getElementById("router-prepa-hs").href = "http://127.0.0.1:5500/prepa-univafu/higiene-salud.html";
-    // document.getElementById("router-prepa-ti").href = "http://127.0.0.1:5500/prepa-univafu/tecnologias.html";
-    document.getElementById("router-uni-lnut").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/nutricion.html";
-    document.getElementById("router-uni-gtyg").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html";
-    document.getElementById("router-uni-tfyr").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-fisica.html";
-    document.getElementById("router-uni-tayl").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/terapia-audicion.html";
-    document.getElementById("router-uni-lmkt").href = "http://127.0.0.1:5500/univafu-universidad/licenciaturas/marketing-digital.html";
-    document.getElementById("router-posgrados").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/posgrados.html";
+    document.getElementById("router-secundaria").href = "https://univafu.edu.mx/colegio-valle-fuerte/Secundaria.html";
+    document.getElementById("router-prepa-hs").href = "https://univafu.edu.mx/prepa-univafu/higiene-salud.html";
+    // document.getElementById("router-prepa-ti").href = "https://univafu.edu.mx/prepa-univafu/tecnologias.html";
+    document.getElementById("router-uni-lnut").href = "https://univafu.edu.mx/univafu-universidad/licenciaturas/nutricion.html";
+    document.getElementById("router-uni-gtyg").href = "https://univafu.edu.mx/univafu-universidad/licenciaturas/gestion-turistica-gastronomia.html";
+    document.getElementById("router-uni-tfyr").href = "https://univafu.edu.mx/univafu-universidad/licenciaturas/terapia-fisica.html";
+    document.getElementById("router-uni-tayl").href = "https://univafu.edu.mx/univafu-universidad/licenciaturas/terapia-audicion.html";
+    document.getElementById("router-uni-lmkt").href = "https://univafu.edu.mx/univafu-universidad/licenciaturas/marketing-digital.html";
+    document.getElementById("router-posgrados").href = "https://univafu.edu.mx/univafu-universidad/posgrados/posgrados.html";
 
 
     // POSGRADOS NO SE ABRIERON
-    // document.getElementById("router-uni-mdch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/desarrollo-capital-humano.html";
-    // document.getElementById("router-uni-mnch").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/nutricion-clinica.html";
-    // document.getElementById("router-uni-epyr").href = "http://127.0.0.1:5500/univafu-universidad/posgrados/especialidad-prevencion.html";
+    // document.getElementById("router-uni-mdch").href = "https://univafu.edu.mx/univafu-universidad/posgrados/desarrollo-capital-humano.html";
+    // document.getElementById("router-uni-mnch").href = "https://univafu.edu.mx/univafu-universidad/posgrados/nutricion-clinica.html";
+    // document.getElementById("router-uni-epyr").href = "https://univafu.edu.mx/univafu-universidad/posgrados/especialidad-prevencion.html";
 
-    document.getElementById("router-fundacion-cli").href = "http://127.0.0.1:5500/fundacion-univafu/clinica.html";
+    document.getElementById("router-fundacion-cli").href = "https://univafu.edu.mx/fundacion-univafu/clinica.html";
 
-    document.getElementById("router-idiomas").href = "http://127.0.0.1:5500/univafu-idiomas/idiomas.html";
-    document.getElementById("router-privacidad").href = "http://127.0.0.1:5500/avisoPrivacidad.html";
+    document.getElementById("router-idiomas").href = "https://univafu.edu.mx/univafu-idiomas/idiomas.html";
+    document.getElementById("router-privacidad").href = "https://univafu.edu.mx/avisoPrivacidad.html";
     let path = window.location.pathname.split('/');
     (path[1] + '/' + path[2] === 'univafu-universidad/licenciaturas' || path[1] === 'prepa-univafu') && modalShow()  ;
     // window.location.pathname === '/univafu-universidad' && modalShow();

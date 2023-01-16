@@ -40,7 +40,7 @@ reveal();
 
 
 // script para enviar mensajes whatsapp
-function sendMessageWhatsapp(tel = '6688299539') {
+function sendMessageWhatsapp(tel = '16688299539') {
     window.open(`https://wa.me/+52${tel}?text=Hola!%20Quisiera%20obtener%20mayor%20informacion`, '_blank');
 }
 
